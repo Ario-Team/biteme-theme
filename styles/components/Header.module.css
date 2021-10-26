@@ -1,0 +1,330 @@
+.a_global{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: url("/images/slider/slider-bg-image-1.jpg");
+}
+.head_top{
+    display: flex;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 5%;
+    align-items: center;
+}
+.headtop_left{
+    display: flex;
+    flex: 0 0 24.5%;
+    height: 100%;
+    justify-content: right;
+    color: #d3d3d3;
+}
+
+.headtop_left>a{
+    font-size: 15px;
+}
+
+.headtop_left>a>span{
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.headtop_left>a>svg{
+    margin-right: 10px;
+    color: #deb150;
+}
+
+.headtop_bottom{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    flex: 0 0 27.8%;
+    color: #d3d3d3;
+}
+
+.headtop_bottom>a:nth-of-type(1){
+    margin: 0 35px;
+    font-size: 15px;
+}
+
+.headtop_bottom>a:nth-of-type(2){
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.head_bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    height: 8%;
+    align-items: center;
+}
+
+.head_logo{
+    display: flex;
+    flex: 0 0 23.5%;
+    height: 100%;
+    justify-content: right;
+}
+
+.head_logo>div{
+    width: 168px;
+    height: 55px;
+}
+
+.head_menu{
+    display: flex;
+    flex: 0 0 48.8%;
+    height: 100%;
+    align-items: center;
+}
+
+.head_menu>nav{
+    width: 100%;
+}
+
+.head_menu>nav>ul{
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.head_menu>nav>ul>li{
+    display: inline-block;
+    padding: 0 17px;
+    font-size: 18px;
+}
+@media screen and (min-width: 320px){
+    .head_top{
+        height: 86px;
+        flex-wrap: wrap;
+        background-color: #000;
+    }
+    .headtop_left{
+        flex: 0 0 100%;
+        height: 30%;
+        justify-content: center;
+    }
+    .headtop_left>a{
+        font-size: 15px;
+    }
+    .headtop_left>a>span{
+        font-size: 15px;
+    }
+    .headtop_bottom{
+        flex: 0 0 93%;
+        height: 60%;
+        justify-content: center;
+    }
+    .headtop_bottom>a:nth-of-type(1){
+        margin: 0 35px;
+        font-size: 13px;
+    }
+    .headtop_bottom>a:nth-of-type(2){
+        font-size: 15px;
+    }
+    .head_bottom{
+        height: 86px;
+        align-items: end;
+        background-color: #000;
+    }
+    .head_logo{
+        flex: 0 0 58.5%;
+        align-items: center;
+        justify-content: left;
+        padding-left: 20px;
+    }
+    .head_logo>div{
+        width: 168px;
+        height: 55px;
+    }
+    .head_menu>nav{
+        display: none;
+    }
+
+}
+@media screen and (min-width: 576px){
+    .head_top{
+        height: 64px;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    .headtop_left{
+        flex: 0 0 31.5%;
+        height: 100%;
+        justify-content: right;
+    }
+    .headtop_left>a{
+        font-size: 14px;
+    }
+    .headtop_left>a>span{
+        font-size: 13px;
+    }
+    .headtop_bottom{
+        height: 100%;
+        flex: 0 0 44.5%;
+    }
+    .headtop_bottom>a:nth-of-type(1){
+        margin: 0 15px;
+        font-size: 12px;
+    }
+    .headtop_bottom>a:nth-of-type(2){
+        font-size: 14px;
+    }
+    .head_bottom{
+        height: 86px;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .head_logo{
+        flex: 0 0 30.5%;
+        justify-content: right;
+        padding-left: 0px;
+    }
+    .head_logo>div{
+        width: 150px;
+        height: 50px;
+    }
+}
+@media screen and (min-width: 768px){
+    .head_top{
+        height: 40px;
+    }
+    .headtop_left{
+        flex: 0 0 25.5%;
+    }
+    .headtop_left>a{
+        font-size: 12px;
+    }
+    .headtop_bottom{
+        flex: 0 0 39.5%;
+    }
+    .headtop_bottom>a:nth-of-type(1){
+        margin: 0 35px;
+    }
+    .headtop_bottom>a:nth-of-type(2){
+        font-size: 15px;
+    }
+    .head_bottom{
+        height: 86px;
+    }
+    .head_logo{
+        flex: 0 0 23.5%;
+    }
+    .head_logo>div{
+        width: 140px;
+    }
+}
+@media screen and (min-width: 993px){
+    .head_top{
+        height: 40px;
+    }
+    .headtop_left{
+        flex: 0 0 19.5%;
+    }
+    .headtop_left>a{
+        font-size: 14px;
+    }
+    .headtop_left>a>span{
+        font-size: 14px;
+    }
+    .headtop_bottom{
+        flex: 0 0 29.5%;
+        justify-content: left;
+    }
+    .headtop_bottom>a:nth-of-type(1){
+        font-size: 13px;
+        margin: 0 22px;
+    }
+    .headtop_bottom>a:nth-of-type(2){
+        font-size: 15px;
+    }
+    .head_bottom{
+        height: 71px;
+    }
+    .head_logo{
+        flex: 0 0 18.5%;
+    }
+    .head_logo>div{
+        width: 150px;
+        height: 50px;
+    }
+    .head_menu{
+        flex: 0 0 55.5%;
+    }
+    .head_menu>nav{
+        display: block;
+    }
+    .head_menu>nav>ul>li{
+        font-size: 14px;
+    }
+
+}
+@media screen and (min-width: 1201px){
+    .headtop_left{
+        flex: 0 0 20.5%;
+    }
+    .headtop_left>a{
+        font-size: 15px;
+    }
+    .headtop_left>a>span{
+        font-size: 15px;
+    }
+    .headtop_bottom{
+        flex: 0 0 28.5%;
+    }
+    .headtop_bottom>a:nth-of-type(1){
+        font-size: 14px;
+    }
+    .headtop_bottom>a:nth-of-type(2){
+        font-size: 16px;
+    }
+    .head_logo{
+        flex: 0 0 19.5%;
+    }
+    .head_logo>div{
+        width: 168px;
+        height: 55px;
+    }
+    .head_menu{
+        flex: 0 0 48.5%;
+    }
+    .head_menu>nav>ul>li{
+        font-size: 15px;
+    }
+}
+@media screen and (min-width: 1440px){
+    .headtop_left{
+        flex: 0 0 24.5%;
+    }
+    .headtop_bottom{
+        flex: 0 0 26.8%;
+    }
+    .headtop_bottom>a:nth-of-type(1){
+        font-size: 15px;
+    }
+    .headtop_bottom>a:nth-of-type(2){
+        font-size: 17px;
+    }
+    .head_logo{
+        flex: 0 0 23.5%;
+    }
+    .head_menu{
+        flex: 0 0 47.8%;
+    }
+    .head_menu>nav>ul>li{
+        font-size: 18px;
+    }
+}
