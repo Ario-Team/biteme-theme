@@ -1,6 +1,8 @@
 body {
-    direction: ltr;
-    font-size: 100%;
+  direction: ltr;
+  font-size: 100%;
+  font-family: "Allura", cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* html,
@@ -16,12 +18,12 @@ body,
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    outline: none;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
 }
 
 header,
@@ -33,27 +35,27 @@ section,
 figure,
 figcaption,
 article {
-    display: block;
+  display: block;
 }
 
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 a:visited {
-    color: inherit;
+  color: inherit;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 [class*="wrapper-"],
 [class*="col-"] {
-    float: left;
+  float: left;
 }
