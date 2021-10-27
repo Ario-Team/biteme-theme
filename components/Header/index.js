@@ -1,7 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faClock as farClock } from "@fortawesome/free-solid-svg-icons";
+import {
+  faClock as farClock,
+  faEnvelope,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
 import HeaderStyle from "styles/components/Header.module.css";
 
 const Header = () => {
@@ -15,13 +19,19 @@ const Header = () => {
           </a>
         </div>
         <div className={HeaderStyle.headtop_bottom}>
-          <a className={HeaderStyle.a_global} href="tel:+1801454587">+1 801 4545 87</a>
-          <a className={HeaderStyle.a_global} href="mailto:contact@gmail.com">contact@gmail.com</a>
+          <a className={HeaderStyle.a_global} href="tel:+1801454587">
+            <FontAwesomeIcon icon={faPhone} />
+            <span>+1 801 4545 87</span>
+          </a>
+          <a className={HeaderStyle.a_global} href="mailto:contact@gmail.com">
+            <FontAwesomeIcon icon={faEnvelope} />
+            <span>contact@gmail.com</span>
+          </a>
         </div>
       </div>
       <div className={HeaderStyle.head_bottom}>
         <div className={HeaderStyle.head_logo}>
-          <Link  href="/" passHref={true}>
+          <Link href="/" passHref={true}>
             <Image
               src="/images/logo-icon.png"
               width="100%"
