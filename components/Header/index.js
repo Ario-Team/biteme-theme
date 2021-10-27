@@ -6,7 +6,7 @@ import {
   faEnvelope,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
-import HeaderStyle from "styles/components/Header.module.css";
+import HeaderStyle from "styles/components/Header/Header.module.scss";
 
 const Header = () => {
   return (

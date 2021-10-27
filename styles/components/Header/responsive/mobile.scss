@@ -1,0 +1,51 @@
+/*
+  This is the mobile responsive file for Header module
+*/
+@media screen and (min-width: 320px) {
+  .head_top {
+    height: 86px;
+    flex-wrap: wrap;
+    background-color: #000;
+  }
+  .headtop_left {
+    flex: 0 0 100%;
+    height: 30%;
+    justify-content: center;
+  }
+  .headtop_left > a {
+    font-size: 15px;
+  }
+  .headtop_left > a > span {
+    font-size: 15px;
+  }
+  .headtop_bottom {
+    flex: 0 0 93%;
+    height: 60%;
+    justify-content: center;
+  }
+  .headtop_bottom > a:nth-of-type(1) {
+    margin: 0 35px;
+    font-size: 13px;
+  }
+  .headtop_bottom > a:nth-of-type(2) {
+    font-size: 15px;
+  }
+  .head_bottom {
+    height: 86px;
+    align-items: end;
+    background-color: #000;
+  }
+  .head_logo {
+    flex: 0 0 58.5%;
+    align-items: center;
+    justify-content: left;
+    padding-left: 20px;
+  }
+  .head_logo > div {
+    width: 168px;
+    height: 55px;
+  }
+  .head_menu > nav {
+    display: none;
+  }
+}
