@@ -19,6 +19,7 @@
   background-color: rgba(0, 0, 0, 0.3);
   height: 5%;
   align-items: center;
+  z-index: 3;
 }
 .headtop_left {
   display: flex;
@@ -48,6 +49,7 @@
   align-items: center;
   flex: 0 0 27.8%;
   color: #d3d3d3;
+  z-index: 3;
 }
 
 .headtop_bottom > a:nth-of-type(1) {

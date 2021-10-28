@@ -10,7 +10,8 @@ import HeaderStyle from "styles/components/Header/Header.module.scss";
 
 const Header = () => {
   return (
-    <header className={HeaderStyle.header}>
+    <div className={HeaderStyle.header}>
+       <div className={HeaderStyle.background_slider}></div>
       <div className={HeaderStyle.head_top}>
         <div className={HeaderStyle.headtop_left}>
           <a className={HeaderStyle.a_global}>
@@ -34,8 +35,8 @@ const Header = () => {
           <Link href="/" passHref={true}>
             <Image
               src="/images/logo-icon.png"
-              width="100%"
-              height="100%"
+              width="168px"
+              height="55px"
               alt="Logo"
             />
           </Link>
@@ -65,7 +66,7 @@ const Header = () => {
           </nav>
         </div>
       </div>
-    </header>
+    </div>
   );
 };
 

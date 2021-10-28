@@ -4,29 +4,40 @@
 @media screen and (min-width: 768px) {
   .head_top {
     height: 40px;
+    background-color: #000;
   }
   .headtop_left {
-    flex: 0 0 25.5%;
+    flex: 0 0 26.5%;
   }
   .headtop_left > a {
-    font-size: 12px;
+    font-size: 13px;
+  }
+  .headtop_left > a > span {
+    font-size: 13px;
   }
   .headtop_bottom {
-    flex: 0 0 39.5%;
+    flex: 0 0 50.5%;
   }
   .headtop_bottom > a:nth-of-type(1) {
-    margin: 0 35px;
+    font-size: 13px;
+    margin: 0 26px;
   }
   .headtop_bottom > a:nth-of-type(2) {
-    font-size: 15px;
+    font-size: 13px;
+    margin: 0 10px;
+
+  }
+  .headtop_bottom > a > span{
+    font-size: 13px;
   }
   .head_bottom {
-    height: 86px;
+    height: 71px;
   }
   .head_logo {
-    flex: 0 0 23.5%;
+    flex: 0 0 25%;
   }
   .head_logo > div {
-    width: 140px;
+    width: 168px;
+    height: 55px;
   }
 }

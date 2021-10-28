@@ -2,44 +2,62 @@
   This is the mobile responsive file for Header module
 */
 @media screen and (min-width: 320px) {
+  .background_slider{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+  }
   .head_top {
-    height: 86px;
+    height: 84px;
     flex-wrap: wrap;
     background-color: #000;
+    z-index: 3;
+    position: relative;
   }
   .headtop_left {
     flex: 0 0 100%;
     height: 30%;
     justify-content: center;
+    z-index: 3;
   }
   .headtop_left > a {
-    font-size: 15px;
+    font-size: 13px;
   }
   .headtop_left > a > span {
-    font-size: 15px;
+    font-size: 13px;
   }
   .headtop_bottom {
-    flex: 0 0 93%;
+    flex: 0 0 100%;
     height: 60%;
     justify-content: center;
+    z-index: 3;
   }
   .headtop_bottom > a:nth-of-type(1) {
-    margin: 0 35px;
+    margin: 0 10px;
     font-size: 13px;
   }
   .headtop_bottom > a:nth-of-type(2) {
-    font-size: 15px;
+    font-size: 13px;
+    margin: 0 10px;
+  }
+  .headtop_bottom > a >svg {
+    margin-right: 6px;
+    color: #deb150;
   }
   .head_bottom {
     height: 86px;
     align-items: end;
     background-color: #000;
+    z-index: 3;
+    position: relative;
   }
   .head_logo {
     flex: 0 0 58.5%;
     align-items: center;
     justify-content: left;
     padding-left: 20px;
+    z-index: 3;
   }
   .head_logo > div {
     width: 168px;
