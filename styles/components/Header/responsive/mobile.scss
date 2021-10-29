@@ -2,7 +2,7 @@
   This is the mobile responsive file for Header module
 */
 @media screen and (min-width: 320px) {
-  .background_slider{
+  .background_slider {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -41,29 +41,62 @@
     font-size: 13px;
     margin: 0 10px;
   }
-  .headtop_bottom > a >svg {
+  .headtop_bottom > a > svg {
     margin-right: 6px;
     color: #deb150;
   }
   .head_bottom {
     height: 86px;
-    align-items: end;
-    background-color: #000;
+    // align-items: end;
+    background-color: rgba(0, 0, 0, 0.8);
     z-index: 3;
     position: relative;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
   }
   .head_logo {
     flex: 0 0 58.5%;
     align-items: center;
     justify-content: left;
-    padding-left: 20px;
+    padding-left: 5px;
     z-index: 3;
   }
   .head_logo > div {
     width: 168px;
     height: 55px;
   }
+  .head_menu {
+    flex: 0 0 100%;
+  }
   .head_menu > nav {
     display: none;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 993px) {
+  .head_menu {
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 250px;
+  }
+  .head_menu > nav {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    border-top: 1px solid #d7d7d7;
+    padding: 20px 0 0;
+    display: block;
+  }
+  .head_menu > nav > ul {
+    flex-wrap: wrap;
+    height: 100%;
+  }
+  .head_menu > nav > ul > li {
+    font-size: 13px;
+    width: 100%;
+  }
+  .navbar_toggle_menu {
+    display: block;
   }
 }

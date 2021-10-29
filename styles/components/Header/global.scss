@@ -7,6 +7,7 @@
 .header {
   width: 100%;
   height: 100vh;
+  background-repeat: no-repeat;
   background-image: url("/images/slider/slider-bg-image-1.jpg");
   overflow-x: hidden;
 }
@@ -87,13 +88,15 @@
 
 .head_menu {
   display: flex;
-  flex: 0 0 48.8%;
+  flex: 0 0 8%;
   height: 100%;
   align-items: center;
+  position: relative;
 }
 
 .head_menu > nav {
   width: 100%;
+  position: absolute;
 }
 
 .head_menu > nav > ul {
@@ -109,4 +112,40 @@
   display: inline-block;
   padding: 0 17px;
   font-size: 18px;
+}
+
+.navbar_toggle_menu {
+  // padding-right: 10px;
+  padding-right: 20px;
+  padding-top: 21px;
+  cursor: pointer;
+}
+
+.navbar_toggle_menu > span {
+  width: 40px;
+  display: block;
+  clear: both;
+  margin-bottom: 6px;
+  height: 4px;
+  background-color: white;
+  transition: 400ms ease;
+  transition-property: opacity, transform;
+  opacity: 1;
+  transform-origin: top left;
+  transform: rotate(0);
+}
+.navbar_toggle_menu[active] > span:nth-child(1) {
+  transform: rotate(45deg);
+  transition-delay: 200ms;
+  margin-left: 2px;
+}
+
+.navbar_toggle_menu[active] > span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar_toggle_menu[active] > span:nth-child(3) {
+  transform: rotate(-45deg);
+  transition-delay: 200ms;
+  margin-top: 13px;
 }

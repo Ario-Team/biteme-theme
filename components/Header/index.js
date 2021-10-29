@@ -1,3 +1,4 @@
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,9 +10,12 @@ import {
 import HeaderStyle from "styles/components/Header/Header.module.scss";
 
 const Header = () => {
+  React.useEffect(() => {
+    window.addEventListener("resize", windowResize);
+  }, []);
   return (
     <div className={HeaderStyle.header}>
-       <div className={HeaderStyle.background_slider}></div>
+      <div className={HeaderStyle.background_slider}></div>
       <div className={HeaderStyle.head_top}>
         <div className={HeaderStyle.headtop_left}>
           <a className={HeaderStyle.a_global}>
@@ -30,7 +34,7 @@ const Header = () => {
           </a>
         </div>
       </div>
-      <div className={HeaderStyle.head_bottom}>
+      <div id="head_bottom" className={HeaderStyle.head_bottom}>
         <div className={HeaderStyle.head_logo}>
           <Link href="/" passHref={true}>
             <Image
@@ -41,8 +45,17 @@ const Header = () => {
             />
           </Link>
         </div>
-        <div className={HeaderStyle.head_menu}>
-          <nav>
+        <div
+          id="navbar_toggle_menu"
+          className={HeaderStyle.navbar_toggle_menu}
+          onClick={clickToggle}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div id="head_menu" className={HeaderStyle.head_menu}>
+          <nav id="site-nav">
             <ul>
               <li>
                 <Link href="/">HOME</Link>
@@ -69,5 +82,78 @@ const Header = () => {
     </div>
   );
 };
+
+/**
+ * @description This function will handle the resize window
+ */
+function windowResize() {
+  // If the window width was under the 993 deactive the hamburger button and hidden the menu
+  if (window.innerWidth < 993) {
+    const head_menu = document.querySelector("#head_menu");
+    const toggleButton = document.querySelector("#navbar_toggle_menu");
+    if (toggleButton.hasAttribute("active")) {
+      toggleButton.removeAttribute("active");
+    }
+    if (head_menu.style.visibility == "visible") {
+      head_menu.style.visibility = "hidden";
+      head_menu.style.animation = "";
+    }
+  }
+  // if the window width was bigger than 993 make the menu visible
+  if (window.innerWidth > 993) {
+    const head_menu = document.querySelector("#head_menu");
+    if (head_menu.style.visibility == "hidden") {
+      head_menu.style.visibility = "visible";
+    }
+  }
+}
+
+/**
+ * @description this function will handle click on the humberger menu
+ * @param {any} e
+ */
+function clickToggle(e) {
+  // catch the target
+  let target = e.target;
+  // If clicked on the spans catch the div
+  if (target.id != "navbar_toggle_menu") {
+    target = target.parentElement;
+  }
+  // if attribute active was there remove it
+  if (target.hasAttribute("active")) {
+    target.removeAttribute("active");
+  } else {
+    // else add it
+    target.setAttribute("active", "");
+  }
+  // run the menu handler
+  toggleHeadMenu();
+}
+/**
+ * @description This function will handle the visibility of the navbar on phone
+ */
+function toggleHeadMenu() {
+  // grab  the menu
+  const head_menu = document.querySelector("#head_menu");
+  // if menu was visible run the fadeOut animation and make the menu hidden
+  if (
+    head_menu.style.animation == "0.8s ease 0s 1 normal none running fadeIn"
+  ) {
+    head_menu.style.animation = "fadeOut";
+    head_menu.style.animationDuration = ".7s";
+    setTimeout(() => {
+      head_menu.style.visibility = "hidden";
+    }, 690);
+  }
+  // Else add the fadeIn animation and make it visible
+  else if (
+    head_menu.style.animation == "0.7s ease 0s 1 normal none running fadeOut" ||
+    head_menu.style.animation == ""
+  ) {
+    head_menu.style.animation = "fadeIn";
+    head_menu.style.animationDuration = ".8s";
+    head_menu.style.visibility = "visible";
+  }
+}
 
 export default Header;
