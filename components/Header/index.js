@@ -8,6 +8,10 @@ import {
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import HeaderStyle from "styles/components/Header/Header.module.scss";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Pagination, Navigation } from "swiper";
+
+SwiperCore.use([Pagination, Navigation]);
 
 const Header = () => {
   React.useEffect(() => {
@@ -15,7 +19,39 @@ const Header = () => {
   }, []);
   return (
     <div className={HeaderStyle.header}>
-      <div className={HeaderStyle.background_slider}></div>
+      <Swiper
+        className={HeaderStyle.background_slider}
+        navigation={true}
+        pagination={true}
+      >
+        <SwiperSlide
+          style={{
+            backgroundImage: "url('images/slider/slider-bg-image-1.jpg')",
+            width: "100%",
+            height: "100%",
+          }}
+        >
+          1
+        </SwiperSlide>
+        <SwiperSlide
+          style={{
+            backgroundImage: "url('images/slider/slider-bg-image-2.jpg')",
+            width: "100%",
+            height: "100%",
+          }}
+        >
+          2
+        </SwiperSlide>
+        <SwiperSlide
+          style={{
+            backgroundImage: "url('images/slider/slider-bg-image-3.jpg')",
+            width: "100%",
+            height: "100%",
+          }}
+        >
+          3
+        </SwiperSlide>
+      </Swiper>
       <div className={HeaderStyle.head_top}>
         <div className={HeaderStyle.headtop_left}>
           <a className={HeaderStyle.a_global}>

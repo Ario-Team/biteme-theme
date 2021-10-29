@@ -7,9 +7,32 @@
     height: 100%;
     position: absolute;
     z-index: 2;
-    background-repeat: no-repeat;
-    background-image: url("/images/slider/slider-bg-image-1.jpg");
   }
+  .background_slider > div::after {
+    color: gray;
+    background: white;
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: center;
+    transition: all 0.2s ease-in;
+  }
+  .background_slider > div > span {
+    width: 16px;
+    height: 16px;
+    border-radius: 0;
+    background-color: #acafb5;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+  .background_slider > div > span[class*="swiper-pagination-bullet-active"] {
+    background-color: #deb150;
+  }
+
+  .background_slider > div:hover::after {
+    color: white;
+    background: #deb150;
+  }
+
   .head_top {
     height: 84px;
     flex-wrap: wrap;

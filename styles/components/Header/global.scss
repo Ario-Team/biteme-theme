@@ -20,6 +20,19 @@
   align-items: center;
   z-index: 3;
 }
+.headtop_bottom > a > span::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  display: block;
+  background-color: white;
+  transition: 300ms;
+}
+
+.headtop_bottom > a > span:hover::after {
+  width: 100%;
+}
+
 .headtop_left {
   display: flex;
   flex: 0 0 24.5%;
