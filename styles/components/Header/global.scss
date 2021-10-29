@@ -103,6 +103,7 @@
   height: 100%;
   align-items: center;
   position: relative;
+  visibility: visible;
 }
 
 .head_menu > nav {
@@ -160,9 +161,14 @@
 
 .background_slider .navbar_toggle_menu {
   // padding-right: 10px;
-  padding-right: 20px;
-  padding-top: 21px;
+  // padding-right: 20px;
+  // padding-top: 21px;
   cursor: pointer;
+}
+
+.navbar_toggle_menu {
+  padding-right: 25px;
+  padding-top: 18px;
 }
 
 .navbar_toggle_menu > span {
@@ -243,9 +249,9 @@
   text-transform: uppercase;
   transition: 400ms ease;
   white-space: nowrap;
-  padding: 12px 40px 12px 40px;
+  padding: 12px 48px 12px 48px;
   text-align: center;
-  margin: 0px 12px;
+  margin: 7px 12px;
 }
 .slider_item > div:last-child {
   padding-top: 30px;

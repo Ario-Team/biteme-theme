@@ -17,7 +17,7 @@
   .head_logo {
     flex: 0 0 23.5%;
   }
-  .head_logo>span>img{
+  .head_logo > span > img {
     width: 168px;
     height: 55px;
   }
@@ -26,5 +26,19 @@
   }
   .head_menu > nav > ul > li {
     font-size: 12px;
+  }
+  .slider_item {
+    height: 112%;
+  }
+  .slider_item > h2 {
+    font-size: 60px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+  }
+  .slider_item > h3 {
+    font-size: 85px;
+  }
+  .slider_item > p {
+    padding: 20px 21px;
   }
 }

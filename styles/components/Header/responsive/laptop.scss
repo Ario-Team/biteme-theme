@@ -41,15 +41,32 @@
   .head_menu {
     flex: 0 0 51.5%;
     z-index: 3;
+    height: 100%;
+    align-items: center;
+    position: relative;
+    visibility: visible;
+    background-color: rgba(0, 0, 0, 0);
   }
   .head_menu > nav {
     display: block;
+    width: 100%;
+    position: absolute;
+    border: none;
   }
   .head_menu > nav > ul > li {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
     font-size: 12px;
+    font-weight: 600;
+    font-family: sans-serif;
+    width: auto;
   }
 
   .navbar_toggle_menu {
     display: none;
+  }
+  .background_slider > div[class*="swiper-button"]::after {
+    visibility: visible;
   }
 }
