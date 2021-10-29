@@ -25,9 +25,8 @@
   .headtop_bottom > a:nth-of-type(2) {
     font-size: 13px;
     margin: 0 10px;
-
   }
-  .headtop_bottom > a > span{
+  .headtop_bottom > a > span {
     font-size: 13px;
   }
   .head_bottom {
@@ -39,5 +38,11 @@
   .head_logo > div {
     width: 168px;
     height: 55px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .background_slider > div[class*="swiper-button"]::after {
+    visibility: hidden;
   }
 }
