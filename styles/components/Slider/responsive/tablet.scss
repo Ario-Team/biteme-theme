@@ -1,0 +1,25 @@
+/*
+  This is the tablet responsive for the Slider component
+*/
+
+@media screen and (min-width: 768px) {
+  .slider_item {
+    height: 115%;
+  }
+  .slider_item > h2 {
+    font-size: 50px;
+    padding-bottom: 7px;
+  }
+  .slider_item > h3 {
+    font-size: 70px;
+  }
+  .slider_item > p {
+    padding: 15px 21px;
+  }
+  .slider_item > div[class*="slide_item_buttons"] {
+    padding-top: 0px;
+  }
+  .background_slider > div[class*="swiper-button"]::after {
+    visibility: visible !important;
+  }
+}

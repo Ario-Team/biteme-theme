@@ -1,0 +1,19 @@
+/*
+  This is the pc responsive for the Slider component
+*/
+@media screen and (min-width: 1440px) {
+  .slider_item {
+    height: 112%;
+  }
+  .slider_item > h2 {
+    font-size: 60px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+  }
+  .slider_item > h3 {
+    font-size: 85px;
+  }
+  .slider_item > p {
+    padding: 20px 21px;
+  }
+}

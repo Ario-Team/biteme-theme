@@ -8,10 +8,7 @@ import {
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import HeaderStyle from "styles/components/Header/Header.module.scss";
-import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Pagination, Navigation } from "swiper";
-
-SwiperCore.use([Pagination, Navigation]);
+import Slider from "components/Slider";
 
 const Header = () => {
   React.useEffect(() => {
@@ -19,51 +16,7 @@ const Header = () => {
   }, []);
   return (
     <div className={HeaderStyle.header}>
-      <Swiper
-        className={HeaderStyle.background_slider}
-        navigation={true}
-        pagination={true}
-      >
-        <SwiperSlide
-          style={{
-            background: "no-repeat center",
-            backgroundImage: "url('images/slider/slider-bg-image-1.jpg')",
-            width: "100%",
-            height: "100%",
-          }}
-        >
-          <div className={HeaderStyle.slider_item}>
-            <div>
-              <Image
-                src="/images/slider/caption/caption-top.png"
-                alt=""
-                width="141px"
-                height="21px"
-              />
-            </div>
-            <h2>Welcome to our</h2>
-            <h3>Restaurant</h3>
-            <p>the best Multi Cuisine Restaurant</p>
-            <div className="slide_item_buttons">
-              <Link href="/book" passHref={true}>
-                <button>Book Table</button>
-              </Link>
-              <Link href="/menu" passHref={true}>
-                <button>View Menu</button>
-              </Link>
-            </div>
-            <div>
-              <Image
-                src="/images/slider/caption/caption-bottom.png"
-                alt=""
-                width="141px"
-                height="21px"
-              />
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide></SwiperSlide>
-      </Swiper>
+      <Slider />
       <div className={HeaderStyle.head_top}>
         <div className={HeaderStyle.headtop_left}>
           <a className={HeaderStyle.a_global}>
