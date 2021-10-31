@@ -67,7 +67,7 @@ const AboutUs = () => {
             </span>
             <p className={AboutUsStyles.heading_content_paragraph}>
               Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
+              industry. Lorem Ipsum has been the industry standard dummy text
               ever since the when an unknown printer took a galley of type and
               scrambled it to make a type specimen book. It has survived not
               only five centuries simply dummy text of the printing standard
