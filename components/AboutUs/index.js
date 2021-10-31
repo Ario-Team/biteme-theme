@@ -1,5 +1,6 @@
 import AboutUsStyles from "styles/components/AboutUs/AboutUs.module.scss";
 import Image from "next/image";
+import Link from "next/link";
 import { InView } from "react-intersection-observer";
 import animationController from "./utils/animationController";
 
@@ -9,7 +10,7 @@ const AboutUs = () => {
       <InView
         className={AboutUsStyles.animations_container}
         onChange={animationController}
-        threshold={([0.05, 0.4], [0.05, 0.4])}
+        threshold={[0.05, 0.4]}
       >
         <div>
           <figure>
@@ -48,7 +49,88 @@ const AboutUs = () => {
           </figure>
         </div>
       </InView>
-      <div></div>
+      <div className={AboutUsStyles.information_container}>
+        <div className={AboutUsStyles.information_box}>
+          <h2 className={AboutUsStyles.heading_top}>Our story</h2>
+          <h1 className={AboutUsStyles.heading_bottom}>About us</h1>
+          <Image
+            src="/images/aboutus/heading-element.png"
+            width="171px"
+            height="21px"
+            alt=""
+            className={AboutUsStyles.heading_subimage}
+          />
+          <div className={AboutUsStyles.heading_content}>
+            <span className={AboutUsStyles.heading_content_header}>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry Lorem Ipsum has.{" "}
+            </span>
+            <p className={AboutUsStyles.heading_content_paragraph}>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book. It has survived not
+              only five centuries simply dummy text of the printing standard
+              dummy text eve and typesetting.{" "}
+            </p>
+          </div>
+          <div className={AboutUsStyles.badge_boxes}>
+            <Link href="/delivery" passHref={true}>
+              <div className={AboutUsStyles.badge_item}>
+                <figure className={AboutUsStyles.badge_item_icon}>
+                  <Image
+                    src="/images/aboutus/boxes-icon/feature1.png"
+                    width="65px"
+                    height="55"
+                    alt=""
+                  />
+                </figure>
+                <h5 className={AboutUsStyles.badge_item_title}>
+                  Free delivery
+                </h5>
+              </div>
+            </Link>
+            <Link href="/coocked" passHref={true}>
+              <div className={AboutUsStyles.badge_item}>
+                <figure className={AboutUsStyles.badge_item_icon}>
+                  <Image
+                    src="/images/aboutus/boxes-icon/feature2.png"
+                    width="65px"
+                    height="55"
+                    alt=""
+                  />{" "}
+                </figure>
+                <h5 className={AboutUsStyles.badge_item_title}>
+                  Freshly cooked
+                </h5>
+              </div>
+            </Link>
+            <Link href="/support" passHref={true}>
+              <div className={AboutUsStyles.badge_item}>
+                <figure className={AboutUsStyles.badge_item_icon}>
+                  <Image
+                    src="/images/aboutus/boxes-icon/feature3.png"
+                    width="65px"
+                    height="55"
+                    alt=""
+                  />{" "}
+                </figure>
+                <h5 className={AboutUsStyles.badge_item_title}>
+                  24 Hourse support
+                </h5>
+              </div>
+            </Link>
+          </div>
+        </div>
+        <div className={AboutUsStyles.chief_container}>
+          <Image
+            src="/images/aboutus/chef.png"
+            width="457px"
+            height="769px"
+            alt=""
+          />
+        </div>
+      </div>
     </div>
   );
 };
