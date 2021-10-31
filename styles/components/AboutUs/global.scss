@@ -1,0 +1,43 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url("/images/aboutus/body-bg.jpg");
+  position: relative;
+}
+
+.animations_container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  color: red;
+  justify-content: space-between;
+}
+
+.animations_container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.animations_container > div > figure {
+  position: absolute;
+  visibility: hidden;
+}
+.animations_container > div:nth-child(1) > figure:first-child {
+  left: -100px;
+  top: 1%;
+}
+.animations_container > div:nth-child(1) > figure:last-child {
+  left: 0;
+  bottom: 2%;
+}
+.animations_container > div:nth-child(2) > figure:first-child {
+  right: 0;
+  top: 140px;
+}
+.animations_container > div:nth-child(2) > figure:last-child {
+  visibility: visible;
+  right: 50px;
+  bottom: 9%;
+}
