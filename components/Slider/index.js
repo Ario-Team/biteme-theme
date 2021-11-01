@@ -19,6 +19,7 @@ export default function Slider() {
           background: "no-repeat center",
           backgroundSize: "cover",
           backgroundImage: "url('images/slider/slider-bg-image-1.jpg')",
+          backgroundAttachment: "fixed",
           width: "100%",
           height: "100%",
         }}
