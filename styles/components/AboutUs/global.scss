@@ -7,15 +7,18 @@
   overflow: hidden;
   background-image: url("/images/aboutus/body-bg.jpg");
   position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .animations_container {
   display: flex;
   position: absolute;
   width: 100%;
-  height: 100vh;
+  height: 97%;
   color: red;
   justify-content: space-between;
+  overflow: hidden;
   z-index: 1;
 }
 
@@ -40,7 +43,7 @@
 }
 .animations_container > div:nth-child(2) > figure:first-child {
   right: 0;
-  top: 140px;
+  top: 92px;
 }
 .animations_container > div:nth-child(2) > figure:last-child {
   visibility: visible;
@@ -49,8 +52,150 @@
 }
 
 .information_container {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
   width: 100%;
   height: 100vh;
   position: absolute;
   z-index: 2;
+  flex-wrap: wrap;
+}
+
+.information_box {
+  flex: 0 0 50%;
+  max-width: 50%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+  z-index: 4;
+}
+
+.heading_top {
+  text-align: center;
+  font-family: Allura, cursive;
+  flex: 0 0 100%;
+  color: #deb150;
+  font-size: 45px;
+}
+
+.heading_bottom {
+  text-align: center;
+  flex: 0 0 100%;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 55px;
+}
+
+.heading_subfigure {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading_subimage {
+  display: flex;
+  justify-content: center;
+  flex: 0 0 100%;
+}
+
+.heading_content {
+  width: 100%;
+  flex: 0 0 100%;
+}
+
+.heading_content_header {
+  width: 100%;
+  font-size: 22px;
+  color: #deb150;
+  text-align: center;
+  font-weight: normal;
+  line-height: 1.5;
+  display: block;
+}
+
+.heading_content_paragraph {
+  width: 100%;
+  font-size: 16px;
+  color: #c0bebf;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.7;
+  padding: 20px 0 40px 0;
+}
+
+.badge_boxes {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.badge_item {
+  width: 190px;
+  background-color: #ffffff;
+  position: relative;
+  transition: 300ms linear;
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 263px;
+  position: relative;
+  cursor: pointer;
+}
+
+.badge_item:hover h5 {
+  color: #deb150;
+  background: #18191e;
+}
+
+.badge_item::before {
+  content: "";
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+}
+
+.badge_item_icon {
+  background: #202127;
+  width: 100%;
+  height: 155px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.badge_img {
+  width: 65px;
+  height: 55px;
+}
+
+.badge_item_title {
+  background: #deb150;
+  display: flex;
+  height: 108px;
+  justify-content: center;
+  align-items: center;
+  font-size: 21px;
+  padding: 0 25px;
+  line-height: 1.4;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  color: #1d252f;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.chief_container {
+  display: flex;
+  align-items: flex-end;
+  margin: 0px 20px;
+  z-index: 4;
 }

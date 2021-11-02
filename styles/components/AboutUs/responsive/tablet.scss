@@ -1,0 +1,22 @@
+/*
+  This is the tablet responsive file for Header module
+*/
+@media screen and (min-width: 768px) {
+  .information_box {
+    height: 45%;
+  }
+  .badge_boxes {
+    flex-wrap: nowrap;
+  }
+  .badge_item {
+    margin-top: 0px;
+  }
+  .chief_container {
+    align-items: flex-end;
+  }
+  .chief_image {
+    position: relative;
+    width: 527px;
+    height: 886px;
+  }
+}

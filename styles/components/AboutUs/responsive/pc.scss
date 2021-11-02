@@ -1,0 +1,26 @@
+/*
+  This is the PC responsive file for Header module
+*/
+@media screen and (min-width: 1440px) {
+  .animations_container > div:nth-child(1) > figure:last-child {
+    left: 0;
+    bottom: 2%;
+  }
+  .animations_container > div:nth-child(2) > figure:first-child {
+    right: 0;
+    top: 92px;
+  }
+  .animations_container > div:nth-child(2) > figure:last-child {
+    right: 50px;
+  }
+  .badge_boxes {
+    justify-content: space-evenly;
+  }
+  .badge_item_title {
+    font-size: 21px;
+    padding: 0 25px;
+  }
+  .chief_container {
+    margin: 0px 20px;
+  }
+}

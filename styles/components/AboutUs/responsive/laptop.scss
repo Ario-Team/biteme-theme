@@ -2,7 +2,24 @@
     Laptop responsive styles for AboutUs component
 */
 @media screen and (min-width: 993px) {
+  .animations_container > div:nth-child(1) > figure:last-child {
+    left: 5px;
+    bottom: 33%;
+  }
+  .animations_container > div:nth-child(2) > figure:last-child {
+    right: 50px;
+    bottom: 35%;
+  }
   .animations_container {
     display: block;
+  }
+  .information_box {
+    flex: 0 0 65%;
+    max-width: 65%;
+    height: 51%;
+    margin-top: 30px;
+  }
+  .chief_container {
+    height: 48%;
   }
 }

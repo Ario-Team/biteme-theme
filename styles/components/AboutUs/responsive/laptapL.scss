@@ -1,0 +1,40 @@
+/*
+  This is the Laptop with larg screen responsive file for Header module
+*/
+@media screen and (min-width: 1201px) {
+  .animations_container {
+    height: 95%;
+  }
+  .animations_container > div:nth-child(1) > figure:last-child {
+    left: -55px;
+    bottom: 2%;
+  }
+  .animations_container > div:nth-child(2) > figure:first-child {
+    right: 0px;
+    top: 85px;
+  }
+  .animations_container > div:nth-child(2) > figure:last-child {
+    right: 6px;
+    bottom: 9%;
+  }
+  .information_box {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 0px;
+    height: 100%;
+  }
+  .badge_item {
+    margin-left: 7px;
+    margin-right: 7px;
+  }
+  .badge_item_title {
+    font-size: 20px;
+    padding: 0 20px;
+  }
+  .chief_container {
+    display: flex;
+    align-items: end;
+    height: 100%;
+    margin: 0px 5px;
+  }
+}

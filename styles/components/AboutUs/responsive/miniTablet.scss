@@ -1,0 +1,35 @@
+/*
+  This is the Mini Laptop responsive file for Header module
+*/
+@media screen and (min-width: 576px) {
+  .information_container {
+    padding-top: 40px;
+  }
+
+  .information_box {
+    margin-top: 30px;
+    height: 58%;
+  }
+  .badge_boxes {
+    height: auto;
+  }
+  .heading_subfigure {
+    padding: 15px 0px;
+  }
+  .heading_content_header {
+    padding: 15px 0px;
+  }
+  .badge_item {
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .heading_bottom {
+    font-size: 55px;
+  }
+  .chief_image {
+    position: relative;
+    width: 457px;
+    height: 769px;
+  }
+}
