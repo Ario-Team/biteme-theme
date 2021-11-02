@@ -1,0 +1,10 @@
+/*
+    Tablet responsive for the OfferBox component
+*/
+
+@media screen and (min-width: 768px) {
+  .container > h1 {
+    font-size: 50px;
+    line-height: 1.2;
+  }
+}

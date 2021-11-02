@@ -1,0 +1,40 @@
+/*
+    Laptop responsive for the OfferBox component
+*/
+@media screen and (min-width: 993px) {
+  .container {
+    width: 970px;
+    margin: auto;
+  }
+  .offerboxes {
+    flex-direction: row !important;
+    padding-top: 20px;
+    padding-bottom: 80px;
+  }
+  .offerboxes > div {
+    position: relative;
+    padding: 0 15px !important;
+  }
+  .offerboxes > div > div,
+  .offerboxes > div > div > div {
+    height: 100%;
+  }
+  .offerboxes > div > div > div {
+    padding: 20px 10px !important;
+    height: 100%;
+  }
+  .offerboxes > :nth-child(1) {
+    left: 33.33333333%;
+  }
+  .offerboxes > :nth-child(2) {
+    right: 33.33333333%;
+  }
+  .offerboxes > * {
+    width: 33.33333333% !important;
+  }
+  .offerbox_content {
+    padding: 0px 20px 0px 20px;
+    text-align: center;
+    line-height: 27px;
+  }
+}

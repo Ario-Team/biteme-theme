@@ -1,0 +1,41 @@
+/*
+    Global Styles for the OfferBoxes component
+*/
+.main_container {
+  width: 100%;
+  width: 100%;
+  max-height: max-content;
+  background-image: url("/images/OfferBox/special-menu-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+.container > h2 {
+  font-family: "Allura", cursive;
+  font-size: 45px;
+  font-weight: normal;
+  line-height: 1;
+  color: #deb150;
+  margin: 0;
+  padding: 0;
+}
+.container > h1 {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+}
+.container > figure {
+  margin-top: 10px;
+}
+
+.container > .offerboxes {
+  display: flex;
+  width: 100%;
+}
