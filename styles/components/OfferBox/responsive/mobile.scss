@@ -1,0 +1,110 @@
+/*
+    Mobile responsive for offerBox component
+*/
+@media only screen and (min-width: 320px) {
+  .container > h1 {
+    font-size: 40px;
+    line-height: 1;
+  }
+  .container > .offerboxes {
+    flex-direction: column;
+    line-height: 22.85px;
+  }
+  .container > .offerboxes > * {
+    position: relative;
+    width: 100%;
+    padding: 0px 15px;
+  }
+  .container > .offerboxes > div {
+    padding: 20px 15px;
+    text-align: center;
+    color: white;
+  }
+  .container > .offerboxes > div > div {
+    background-color: #202127;
+    padding: 20px;
+  }
+  .container > .offerboxes > div > div > div {
+    position: relative;
+    padding: 30px 20px;
+    border: #303035 solid 2px;
+    overflow: hidden;
+  }
+  .offerbox_heading3 {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.5;
+  }
+  .discount_percent {
+    font-size: 22px;
+    color: #18191e;
+    font-weight: 600;
+    line-height: 1.2;
+    background-color: #deb150;
+    padding: 6px 2px;
+    max-width: 130px;
+    clear: both;
+    margin: 5px auto 10px auto;
+  }
+  .price {
+    color: #919191;
+    padding: 10px 0 20px 0;
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .price > span:first-child {
+    text-decoration: line-through;
+    font-weight: 300;
+    padding-right: 10px;
+  }
+  .price > span:last-child {
+    color: #deb150;
+  }
+  .offerbox_content {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .offer_button {
+    position: relative;
+    margin-top: 30px;
+    border: 1px solid #deb150;
+    color: #deb150;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 22px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 12px 40px;
+    overflow: hidden;
+    transition: 400ms ease;
+    transition-property: color, background;
+    cursor: pointer;
+    background: transparent;
+    z-index: 10;
+  }
+  .offer_button:hover {
+    color: black;
+    background: #deb150;
+  }
+  .offer_button > svg {
+    padding-left: 5px;
+  }
+  .offer_bg_icon {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.1;
+  }
+  .container > .offerboxes > figure {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+  }
+  .container > .offerboxes > figure > span {
+    width: 100%;
+    height: 100%;
+  }
+}

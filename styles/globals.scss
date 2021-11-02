@@ -63,3 +63,11 @@ a:visited {
 [class*="col-"] {
   float: left;
 }
+.stiky {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  animation: fadeInDown;
+  animation-duration: 400ms;
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
