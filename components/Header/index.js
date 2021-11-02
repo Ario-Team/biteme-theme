@@ -1,4 +1,4 @@
-import React from "react";
+import { useRef, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,13 +11,22 @@ import HeaderStyle from "styles/components/Header/Header.module.scss";
 import Slider from "components/Slider";
 import windowResize from "./utils/windowResize";
 import handleMenuAnimation from "./utils/handleMenuAnimation";
+import setStikyNav from "./utils/setStikyNav";
 
 const Header = () => {
-  React.useEffect(() => {
+  const headbottom = useRef();
+  const main = useRef();
+
+  useEffect(() => {
+    main.current.setAttribute("data-init-offset", headbottom.current.offsetTop);
+
     window.addEventListener("resize", windowResize);
+    window.addEventListener("scroll", (e) => {
+      setStikyNav(e, main.current, window, headbottom.current);
+    });
   }, []);
   return (
-    <div className={HeaderStyle.header}>
+    <div className={HeaderStyle.header} onScroll={setStikyNav} ref={main}>
       <Slider />
       <div className={HeaderStyle.head_top}>
         <div className={HeaderStyle.headtop_left}>
@@ -37,7 +46,11 @@ const Header = () => {
           </a>
         </div>
       </div>
-      <div id="head_bottom" className={HeaderStyle.head_bottom}>
+      <div
+        id="head_bottom"
+        className={HeaderStyle.head_bottom}
+        ref={headbottom}
+      >
         <div className={HeaderStyle.head_logo}>
           <Link href="/" passHref={true}>
             <Image

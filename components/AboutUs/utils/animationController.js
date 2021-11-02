@@ -1,5 +1,4 @@
 export default function animationController(inView, entry) {
-  console.dir(inView);
   const intersectionRatio = entry.intersectionRatio;
   if (inView) {
     const rootElement = entry.target;
@@ -22,7 +21,6 @@ export default function animationController(inView, entry) {
     }
   } else {
     const rootElement = entry.target;
-    console.log(intersectionRatio);
     const imagesWithAnimation = [...rootElement.querySelectorAll("figure")];
     imagesWithAnimation.map((elm) => {
       elm.style.visibility = "hidden";
