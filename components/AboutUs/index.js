@@ -31,20 +31,9 @@ const AboutUs = () => {
             />
           </figure>
         </div>
-<<<<<<< HEAD
-        <div>
-          <figure>
-            <Image
-              src="/images/aboutus/element-3.png"
-              alt=""
-              width="289px"
-              height="304px"
-            />
-=======
         <div className={AboutUsStyles.chief_container}>
           <figure className={AboutUsStyles.chief_image}>
             <Image src="/images/aboutus/chef.png" layout="fill" alt="" />
->>>>>>> 8547fa8 (Remove unused attribute from the Image tag)
           </figure>
           <figure>
             <Image
