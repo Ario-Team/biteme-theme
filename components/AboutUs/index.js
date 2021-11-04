@@ -31,9 +31,14 @@ const AboutUs = () => {
             />
           </figure>
         </div>
-        <div className={AboutUsStyles.chief_container}>
-          <figure className={AboutUsStyles.chief_image}>
-            <Image src="/images/aboutus/chef.png" layout="fill" alt="" />
+        <div>
+          <figure>
+            <Image
+              src="/images/aboutus/element-3.png"
+              width="289px"
+              height="304px"
+              alt=""
+            />
           </figure>
           <figure>
             <Image
