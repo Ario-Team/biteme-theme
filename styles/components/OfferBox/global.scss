@@ -3,8 +3,8 @@
 */
 .main_container {
   width: 100%;
-  width: 100%;
-  max-height: max-content;
+  height: auto;
+  position: relative;
   background-image: url("/images/OfferBox/special-menu-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;

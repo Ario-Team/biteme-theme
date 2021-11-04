@@ -5,6 +5,10 @@
   .container {
     width: 1170px;
   }
+  .offerbox_heading3 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
   .offerboxes > div > div {
     height: 95%;
   }
@@ -14,11 +18,16 @@
   .offerboxes h3 {
     padding-top: 30px;
   }
-
+  .price > span:first-child {
+    padding-right: 12px;
+  }
   .discount_percent {
-    margin-top: 40px;
+    margin: 5px auto 17px auto;
+    font-size: 23px;
+    max-width: 142px;
   }
   .offerbox_content {
-    padding: 10px 0px 50px 0px;
+    padding: 10px 0px 5px 0px;
+    line-height: 31px;
   }
 }

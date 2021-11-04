@@ -11,9 +11,28 @@
     padding-top: 20px;
     padding-bottom: 80px;
   }
+  .container > h2 {
+    margin: 15px 0px;
+  }
+  .container > h1 {
+    margin: 10px 0px;
+  }
   .offerboxes > div {
     position: relative;
     padding: 0 15px !important;
+  }
+  .container > figure {
+    margin: 10px 0px;
+  }
+  .offerbox_heading3 {
+    margin-bottom: 20px;
+    font-size: 29px;
+  }
+  .discount_percent {
+    margin: 5px auto 12px auto;
+  }
+  .price {
+    padding: 15px 0 15px 0;
   }
   .offerboxes > div > div,
   .offerboxes > div > div > div {
@@ -32,8 +51,19 @@
   .offerboxes > * {
     width: 33.33333333% !important;
   }
+  .offer_button {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 35px;
+    padding: 12px 37px;
+  }
+  .offer_button > svg {
+    width: 16px;
+    margin-left: 3px;
+  }
   .offerbox_content {
-    padding: 0px 20px 0px 20px;
+    font-family: "Montserrat", sans-serif;
+    color: #c0bebf;
+    padding: 10px 5px 15px 5px;
     text-align: center;
     line-height: 27px;
   }
