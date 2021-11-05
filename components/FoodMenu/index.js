@@ -1,5 +1,5 @@
 import { InView } from "react-intersection-observer";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import animationController from "./utils/animationController";
 import FoodMenuStyles from "styles/components/FoodMenu/FoodMenu.module.scss";
