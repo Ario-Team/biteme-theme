@@ -27,7 +27,7 @@ const Header = () => {
   }, []);
   return (
     <div className={HeaderStyle.header} onScroll={setStikyNav} ref={main}>
-      <Slider />
+      {/* <Slider /> */}
       <div className={HeaderStyle.head_top}>
         <div className={HeaderStyle.headtop_left}>
           <a className={HeaderStyle.a_global}>
