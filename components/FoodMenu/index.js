@@ -1,12 +1,12 @@
 import { InView } from "react-intersection-observer";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Image from "next/image";
 import animationController from "./utils/animationController";
 import FoodMenuStyles from "styles/components/FoodMenu/FoodMenu.module.scss";
 
 const FoodMenu = ({ list }) => {
-  const [activeMenu, setActiveMenu] = useState(0);
-  useEffect(() => {
+  const [activeMenu, setActiveMenu] = React.useState(0);
+  React.useEffect(() => {
     const tabs = [...document.querySelectorAll("*[data-id]")];
     tabs.map((elm) =>
       elm.dataset.id == activeMenu
