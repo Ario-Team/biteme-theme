@@ -125,13 +125,7 @@ const AboutUs = () => {
       </div>
       <div className={AboutUsStyles.chief_container}>
         <figure className={AboutUsStyles.chief_image}>
-          <Image
-            src="/images/aboutus/chef.png"
-            layout="fill"
-            width="457px"
-            height="769px"
-            alt=""
-          />
+          <Image src="/images/aboutus/chef.png" layout="fill" alt="" />
         </figure>
       </div>
     </div>
