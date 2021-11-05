@@ -8,7 +8,7 @@ import {
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import HeaderStyle from "styles/components/Header/Header.module.scss";
-// import Slider from "components/Slider";
+import Slider from "components/Slider";
 import windowResize from "./utils/windowResize";
 import handleMenuAnimation from "./utils/handleMenuAnimation";
 import setStikyNav from "./utils/setStikyNav";
@@ -27,7 +27,7 @@ const Header = () => {
   }, []);
   return (
     <div className={HeaderStyle.header} onScroll={setStikyNav} ref={main}>
-      {/* <Slider /> */}
+      <Slider />
       <div className={HeaderStyle.head_top}>
         <div className={HeaderStyle.headtop_left}>
           <a className={HeaderStyle.a_global}>
