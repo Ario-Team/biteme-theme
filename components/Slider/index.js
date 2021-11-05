@@ -11,8 +11,9 @@ export default function Slider() {
   return (
     <Swiper
       className={SliderStyle.background_slider}
-      navigation={true}
-      pagination={true}
+      navigation
+      pagination={{ clickable: true }}
+      scrollbar
     >
       <SwiperSlide
         style={{
