@@ -42,13 +42,13 @@ const FoodMenu = ({ list }) => {
         </figure>
       </div>
       {/* Main container */}
-      <div>
+      <div className={FoodMenuStyles.container_allmenu}>
         {/* Heading 2 */}
-        <h2>Yummy n testy</h2>
+        <h2 className={FoodMenuStyles.First_title}>Yummy n testy</h2>
         {/* Heading 1 */}
-        <h1>delicious Menu</h1>
+        <h1 className={FoodMenuStyles.Second_title}>delicious Menu</h1>
         {/* Image under Heading 1 */}
-        <figure>
+        <figure className={FoodMenuStyles.third_title}>
           <Image
             src="/images/aboutus/heading-element.png"
             width="171px"
@@ -82,11 +82,10 @@ const FoodMenu = ({ list }) => {
           <div className={FoodMenuStyles.menu_list}>
             {/* Menu left image */}
             <div className={FoodMenuStyles.menu_left_image}>
-              <figure>
+              <figure className={FoodMenuStyles.menu_left_figure}>
                 <Image
                   src={list[activeMenu].primaryImage}
-                  width="453px"
-                  height="536px"
+                  layout="fill"
                   alt=""
                 />
               </figure>
