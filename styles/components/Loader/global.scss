@@ -1,0 +1,21 @@
+/*
+    Global styles for the loader
+*/
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: fixed;
+  z-index: 100;
+}
+.loader_image {
+  background-image: url("/images/loader.gif");
+  width: 64px;
+  height: 64px;
+}
+.display_none {
+  display: none;
+}
