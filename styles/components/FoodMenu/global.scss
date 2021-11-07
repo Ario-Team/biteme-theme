@@ -86,6 +86,12 @@
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0;
   color: #9a9da5;
+  transition: 400ms ease;
+}
+
+.tab_item[active] {
+  background-color: #deb150 !important;
+  color: black !important;
 }
 
 .menu_list {
