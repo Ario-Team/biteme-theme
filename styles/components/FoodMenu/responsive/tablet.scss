@@ -1,0 +1,41 @@
+@media screen and (min-width: 768px) {
+  .tab_item {
+    font-weight: 500;
+    font-size: 18px;
+    display: inline-block;
+    flex: 0 0 0;
+    padding: 8px 30px;
+    margin: 0 4px 0 0;
+    list-style: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    background: rgb(0, 0, 0);
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0;
+    color: #9a9da5;
+  }
+  .menu_tab > ul > li:nth-of-type(2) {
+    display: inline-block;
+  }
+  .menu_left_figure {
+    width: 690px;
+    height: 816px;
+    position: relative;
+    margin-bottom: 60px;
+  }
+  .menu_right_items {
+    z-index: 10;
+    width: 689px;
+  }
+  .menu_item {
+    flex-wrap: nowrap;
+  }
+  .menu_item_image {
+    margin-bottom: 0px;
+  }
+  .menu_item_content {
+    margin-left: 0px;
+    flex: 0 0 80%;
+    max-width: 80%;
+  }
+}

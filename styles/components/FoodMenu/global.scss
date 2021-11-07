@@ -4,7 +4,7 @@
 
 .container {
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-image: url("/images/aboutus/body-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -18,7 +18,6 @@
   position: absolute;
   left: 0px;
   top: 20px;
-  z-index: -1;
 }
 
 .animation_two {
@@ -26,4 +25,157 @@
   position: absolute;
   right: -50px;
   bottom: 100px;
+}
+
+.container_allmenu {
+  margin-top: 50px;
+}
+
+.First_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0px;
+  font-family: "Allura", cursive;
+  font-size: 45px;
+  font-weight: normal;
+  line-height: 1;
+  color: #deb150;
+}
+
+.Second_title {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0px;
+  color: #ffffff;
+  font-size: 50px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.third_title {
+  display: flex;
+  margin: 15px 0px 35px 0;
+  justify-content: center;
+}
+
+.menu_box {
+  margin-bottom: 80px;
+}
+
+.menu_tab {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px;
+}
+
+.menu_tab > ul {
+  display: flex;
+}
+
+.tab_item {
+  font-weight: 500;
+  font-size: 18px;
+  display: inline-block;
+  padding: 8px 30px;
+  margin: 0 4px 0 0;
+  list-style: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  background: #000000;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0;
+  color: #9a9da5;
+}
+
+.menu_list {
+  display: flex;
+  justify-content: center;
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-right: 70px;
+}
+
+.menu_left_image {
+  width: 445px;
+  margin-right: 40px;
+}
+
+.menu_left_figure {
+  width: 445px;
+  height: 526px;
+  position: relative;
+  box-shadow: 0px 2px 48px 9px rgb(0 0 0 / 43%);
+}
+
+.menu_left_figure::before {
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  content: "";
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  left: 35px;
+  right: 35px;
+  z-index: 4;
+}
+
+.menu_right_items {
+  width: 665px;
+}
+
+.menu_item {
+  display: flex;
+  padding: 0 0 12px 0;
+  border-bottom: #5d5f65 dotted 4px;
+  margin-bottom: 20px;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.menu_item_image {
+  height: 100px;
+  margin-right: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.menu_item_content {
+  flex: 0 0 80%;
+  max-width: 80%;
+}
+
+.menu_item_title {
+  font-size: 21px;
+  font-weight: 700;
+  float: left;
+  text-align: left;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.menu_item_price {
+  float: right;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: right;
+  color: #deb150;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.menu_item_paragraph {
+  float: left;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  color: #c0bebf;
+  text-transform: capitalize;
+  padding: 8px 0 0 0;
+  margin: 0;
+  line-height: 1.7;
 }

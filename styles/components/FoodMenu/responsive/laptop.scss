@@ -1,0 +1,43 @@
+@media screen and (min-width: 993px) {
+  .animation_one {
+    display: block;
+  }
+
+  .animation_two {
+    display: block;
+  }
+  .menu_box {
+    display: block;
+  }
+  .animation_two {
+    right: -145px;
+    z-index: 1;
+    filter: blur(0.7px);
+  }
+  .menu_left_image {
+    width: 445px;
+    margin-right: 35px;
+    display: block;
+  }
+  .menu_left_figure {
+    width: 445px;
+    height: 526px;
+    position: relative;
+    margin-bottom: 0px;
+  }
+  .menu_right_items {
+    z-index: 10;
+    width: 460px;
+  }
+  .menu_item_image {
+    margin-right: -8px;
+  }
+  .menu_item_content {
+    flex: 0 0 80%;
+    max-width: 80%;
+    padding-left: 20px;
+  }
+  .menu_list {
+    flex-wrap: nowrap;
+  }
+}
