@@ -1,0 +1,21 @@
+/*
+    Global stylesheet for the PapularDishes component
+*/
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url("/images/PapularDishes/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.heading_sub_image {
+  width: max-content;
+  height: max-content;
+}

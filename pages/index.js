@@ -4,6 +4,7 @@ import indexStyles from "styles/pages/index.module.scss";
 import AboutUs from "components/AboutUs";
 import OfferBox from "components/OfferBox";
 import FoodMenu from "components/FoodMenu";
+import PapularDishes from "components/PapularDishes";
 
 export default function Home({ list }) {
   return (
@@ -13,6 +14,7 @@ export default function Home({ list }) {
       <AboutUs />
       <OfferBox />
       <FoodMenu list={list} />
+      <PapularDishes />
     </main>
   );
 }
