@@ -1,4 +1,4 @@
-import React from "react";
+import { useRef, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -14,10 +14,10 @@ import handleMenuAnimation from "./utils/handleMenuAnimation";
 import setStikyNav from "./utils/setStikyNav";
 
 const Header = () => {
-  const headbottom = React.useRef();
-  const main = React.useRef();
+  const headbottom = useRef();
+  const main = useRef();
 
-  React.useEffect(() => {
+  useEffect(() => {
     main.current.setAttribute("data-init-offset", headbottom.current.offsetTop);
 
     window.addEventListener("resize", windowResize);

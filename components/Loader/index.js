@@ -1,4 +1,3 @@
-import React from "react";
 import Styles from "styles/components/Loader/Loader.module.scss";
 
 const Loader = ({ isLoading }) => {
