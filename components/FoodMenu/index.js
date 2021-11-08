@@ -1,18 +1,42 @@
 import { InView } from "react-intersection-observer";
-import React from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import animationController from "./utils/animationController";
 import FoodMenuStyles from "styles/components/FoodMenu/FoodMenu.module.scss";
 
 const FoodMenu = ({ list }) => {
-  const [activeMenu, setActiveMenu] = React.useState(0);
-  React.useEffect(() => {
-    const tabs = [...document.querySelectorAll("*[data-id]")];
-    tabs.map((elm) =>
-      elm.dataset.id == activeMenu
-        ? elm.setAttribute("active", "")
-        : elm.removeAttribute("active")
-    );
+  const [activeMenu, setActiveMenu] = useState("0");
+  useEffect(() => {
+    const tabs = [
+      ...document.querySelectorAll(
+        "*[class*='tab_item_container'] > div[data-id][class*='tab_item']"
+      ),
+    ];
+    const foodItems = [
+      ...document.querySelectorAll(
+        "*[class*='tab_item_container'] > div[class*='menu_list']"
+      ),
+    ];
+    // Tabas
+    tabs.map((elm) => {
+      if (elm.dataset.id == activeMenu) {
+        if (!elm.hasAttribute("active")) {
+          elm.setAttribute("active", "");
+        }
+      } else {
+        elm.removeAttribute("active");
+      }
+    });
+    // Foods
+    foodItems.map((elm) => {
+      if (elm.dataset.parentId == activeMenu) {
+        if (!elm.hasAttribute("active")) {
+          elm.setAttribute("active", "");
+        }
+      } else {
+        elm.removeAttribute("active");
+      }
+    });
   }, [activeMenu]);
   return (
     <InView
@@ -60,66 +84,87 @@ const FoodMenu = ({ list }) => {
         <div className={FoodMenuStyles.menu_box}>
           {/* Menu Tabs */}
           <div className={FoodMenuStyles.menu_tab}>
-            <ul>
+            <div className={FoodMenuStyles.tab_item_container}>
               {
-                // return unique li for each menu
+                // return unique Items for menu
                 list.map(function (value, key) {
                   return (
-                    <li
-                      key={key}
-                      data-id={key}
-                      className={FoodMenuStyles.tab_item}
-                      onClick={(e) => setActiveMenu(e.target.dataset.id)}
-                    >
-                      {value.title}
-                    </li>
+                    <>
+                      <div
+                        key={key}
+                        data-id={key}
+                        onClick={(e) =>
+                          setActiveMenu(e.currentTarget.dataset.id)
+                        }
+                        className={FoodMenuStyles.tab_item}
+                      >
+                        {value.title}
+                      </div>
+                      <div
+                        className={FoodMenuStyles.menu_list}
+                        data-parent-id={key}
+                      >
+                        {/* Menu left image */}
+                        <div className={FoodMenuStyles.menu_left_image}>
+                          <figure className={FoodMenuStyles.menu_left_figure}>
+                            <Image
+                              src={value.primaryImage}
+                              layout="fill"
+                              alt=""
+                            />
+                          </figure>
+                        </div>
+                        <div className={FoodMenuStyles.menu_right_items}>
+                          {value.foods.map((food, foodKey) => {
+                            return (
+                              <div
+                                key={foodKey}
+                                className={FoodMenuStyles.menu_item}
+                              >
+                                <figure
+                                  className={FoodMenuStyles.menu_item_image}
+                                >
+                                  <Image
+                                    src={food.image}
+                                    width="100px"
+                                    height="100px"
+                                    alt=""
+                                  />
+                                </figure>
+                                <div
+                                  className={FoodMenuStyles.menu_item_content}
+                                >
+                                  <h4
+                                    className={FoodMenuStyles.menu_item_title}
+                                  >
+                                    {food.title}
+                                  </h4>
+                                  <div
+                                    className={FoodMenuStyles.menu_item_price}
+                                  >
+                                    {food.price}
+                                  </div>
+                                  <p
+                                    className={
+                                      FoodMenuStyles.menu_item_paragraph
+                                    }
+                                  >
+                                    {food.description}
+                                  </p>
+                                </div>
+                              </div>
+                            );
+                          })}
+                        </div>
+                      </div>
+                      );
+                    </>
                   );
                 })
               }
-            </ul>
+            </div>
           </div>
           {/* Menu Items */}
-          <div className={FoodMenuStyles.menu_list}>
-            {/* Menu left image */}
-            <div className={FoodMenuStyles.menu_left_image}>
-              <figure className={FoodMenuStyles.menu_left_figure}>
-                <Image
-                  src={list[activeMenu].primaryImage}
-                  layout="fill"
-                  alt=""
-                />
-              </figure>
-            </div>
-            {/* Menu items */}
-            <div className={FoodMenuStyles.menu_right_items}>
-              {/* Return unique element for each item */}
-              {list[activeMenu].foods.map(function (item, key) {
-                return (
-                  <div key={key} className={FoodMenuStyles.menu_item}>
-                    <figure className={FoodMenuStyles.menu_item_image}>
-                      <Image
-                        src={item.image}
-                        width="100px"
-                        height="100px"
-                        alt=""
-                      />
-                    </figure>
-                    <div className={FoodMenuStyles.menu_item_content}>
-                      <h4 className={FoodMenuStyles.menu_item_title}>
-                        {item.title}
-                      </h4>
-                      <div className={FoodMenuStyles.menu_item_price}>
-                        {item.price}
-                      </div>
-                      <p className={FoodMenuStyles.menu_item_paragraph}>
-                        {item.description}
-                      </p>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
         </div>
       </div>
     </InView>

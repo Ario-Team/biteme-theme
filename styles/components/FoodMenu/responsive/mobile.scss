@@ -10,15 +10,16 @@
     flex-wrap: wrap;
   }
   .menu_tab {
-    width: 100%;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
   }
-  .menu_tab > ul {
+  .tab_item_container {
     width: 100%;
     justify-content: center;
   }
   .tab_item {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     list-style: none;
     cursor: pointer;
     letter-spacing: 0;
@@ -29,16 +30,21 @@
     padding: 14px 15px;
     font-family: "Montserrat", sans-serif;
     flex: 0 0 94%;
-    max-width: 94%;
-    background: #deb150;
-    color: #000000;
+    width: 100%;
   }
-  .menu_tab > ul > li:nth-of-type(2) {
-    display: none;
+  .tab_item_container {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
   }
+
   .menu_list {
     margin-right: 0px;
     flex-wrap: wrap;
+    display: none;
+  }
+  .menu_list[active] {
+    display: block !important;
   }
   .menu_left_image {
     width: 100%;
