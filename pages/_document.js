@@ -6,7 +6,6 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <meta name="description" content="Food Website" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta name="keywords" content="food" />
           <meta name="application-name" content="Application Name" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
