@@ -10,4 +10,16 @@
   .menu_left_image {
     margin-right: 40px;
   }
+  .tab_item_container > .tab_item[data-id="0"] {
+    left: 31vw;
+  }
+  .tab_item_container > .tab_item[data-id="1"] {
+    left: 41vw;
+  }
+  .tab_item_container > .tab_item[data-id="2"] {
+    left: 51vw;
+  }
+  .tab_item_container > .tab_item[data-id="3"] {
+    left: 61vw;
+  }
 }

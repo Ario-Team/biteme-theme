@@ -16,4 +16,16 @@
     max-width: 80%;
     padding-left: 0px;
   }
+  .tab_item_container > .tab_item[data-id="0"] {
+    left: 25vw;
+  }
+  .tab_item_container > .tab_item[data-id="1"] {
+    left: 37.5vw;
+  }
+  .tab_item_container > .tab_item[data-id="2"] {
+    left: 50vw;
+  }
+  .tab_item_container > .tab_item[data-id="3"] {
+    left: 62vw;
+  }
 }

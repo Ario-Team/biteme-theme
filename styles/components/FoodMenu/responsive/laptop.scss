@@ -44,4 +44,16 @@
     flex-wrap: nowrap;
     margin-top: 55px;
   }
+  .tab_item_container > .tab_item[data-id="0"] {
+    left: 19vw;
+  }
+  .tab_item_container > .tab_item[data-id="1"] {
+    left: 33.5vw;
+  }
+  .tab_item_container > .tab_item[data-id="2"] {
+    left: 48vw;
+  }
+  .tab_item_container > .tab_item[data-id="3"] {
+    left: 63vw;
+  }
 }
