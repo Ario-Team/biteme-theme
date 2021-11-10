@@ -5,6 +5,7 @@ import AboutUs from "components/AboutUs";
 import OfferBox from "components/OfferBox";
 import FoodMenu from "components/FoodMenu";
 import PapularDishes from "components/PapularDishes";
+import BookTable from "components/BookTable";
 
 export default function Home({ list }) {
   return (
@@ -18,6 +19,7 @@ export default function Home({ list }) {
       <OfferBox />
       <FoodMenu list={list} />
       <PapularDishes />
+      <BookTable />
     </main>
   );
 }
