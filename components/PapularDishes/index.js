@@ -30,7 +30,7 @@ const PapularDishes = () => {
             <h6 className={Styles.item_content_price}>$20</h6>
             <h4 className={Styles.item_content_title}>Italian Pizza</h4>
             <Image
-              src="/images/aboutus/heading-element.png"
+              src="/images/aboutus/heading-element2.png"
               width="171px"
               height="21px"
               alt=""
@@ -65,7 +65,7 @@ const PapularDishes = () => {
             <h6 className={Styles.item_content_price}>$20</h6>
             <h4 className={Styles.item_content_title}>Italian Pizza</h4>
             <Image
-              src="/images/aboutus/heading-element.png"
+              src="/images/aboutus/heading-element2.png"
               width="171px"
               height="21px"
               alt=""
@@ -100,7 +100,7 @@ const PapularDishes = () => {
             <h6 className={Styles.item_content_price}>$20</h6>
             <h4 className={Styles.item_content_title}>Italian Pizza</h4>
             <Image
-              src="/images/aboutus/heading-element.png"
+              src="/images/aboutus/heading-element2.png"
               width="171px"
               height="21px"
               alt=""
