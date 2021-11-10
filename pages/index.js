@@ -9,6 +9,9 @@ import PapularDishes from "components/PapularDishes";
 export default function Home({ list }) {
   return (
     <main className={indexStyles.container}>
+      <Head>
+        <title>Biteme | Home</title>
+      </Head>
       <Head></Head>
       <Header />
       <AboutUs />
