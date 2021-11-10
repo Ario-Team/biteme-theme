@@ -7,15 +7,159 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: auto;
   overflow: hidden;
   background-image: url("/images/PapularDishes/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
-
+.heading2 {
+  font-family: "Allura", cursive;
+  font-size: 45px;
+  font-weight: normal;
+  line-height: 1;
+  color: #deb150;
+  margin: 40px 0px 25px 0px;
+}
+.heading1 {
+  color: #ffffff;
+  font-size: 50px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+  display: block;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 0 35px 0;
+}
 .heading_sub_image {
   width: max-content;
   height: max-content;
+  margin: 0px 0px 30px 0px;
+}
+
+.items_container {
+  width: 1170px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  flex: 0 0 31%;
+  max-width: 30.7%;
+  background: #deb150;
+  position: relative;
+  margin-left: 15px;
+  margin-right: 15px;
+  transition: 0.5s;
+}
+
+.item:hover button {
+  border: #202127 solid 1px;
+  background: #202127;
+  color: #ffffff;
+}
+
+.item::before {
+  border: 2px solid #000000;
+  content: "";
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+.item_image {
+  width: 100%;
+  height: 435px;
+  position: relative;
+}
+
+.item_content {
+  width: 100%;
+  text-align: center;
+  padding: 0 25px;
+  position: relative;
+  margin-top: -23px;
+  min-height: 330px;
+  z-index: 1000;
+}
+
+.item_content_price {
+  margin: 0 auto;
+  margin-top: 0;
+  max-width: 90px;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background: #18191e;
+  padding: 0;
+  line-height: 1.5;
+}
+
+.item_content_title {
+  position: relative;
+  float: left;
+  width: 100%;
+  font-size: 21px;
+  color: #000000;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.5;
+  padding: 20px 0 0 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.item_content_paragraphh {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #000000;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.8;
+  padding: 25px 0 30px 0;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.item_content_button {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 12px 40px 12px 40px;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 10;
+  display: inline-block;
+  margin: 0 auto;
+  border: #202127 solid 1px;
+  color: #202127;
+  font-family: "Montserrat", sans-serif;
+  background: inherit;
+  transition: 0.5s;
+}
+
+.item_content_button > svg {
+  margin-left: 3px;
+  margin-top: 5px;
+}
+
+.item_corner_image {
+  position: absolute;
+  bottom: 22px;
+  left: 25px;
+  opacity: 0.3;
+  z-index: 0;
+  width: 184px;
+  height: 156px;
 }

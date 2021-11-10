@@ -1,0 +1,18 @@
+@media screen and (min-width: 1201px) {
+  .items_container {
+    width: 1170px;
+  }
+  .item {
+    flex: 0 0 31%;
+    max-width: 30.7%;
+  }
+  .item_image {
+    height: 435px;
+  }
+  .item_content {
+    min-height: 330px;
+  }
+  .item_content_paragraphh {
+    padding: 25px 0 30px 0;
+  }
+}

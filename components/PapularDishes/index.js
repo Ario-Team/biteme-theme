@@ -22,8 +22,7 @@ const PapularDishes = () => {
           <figure className={Styles.item_image}>
             <Image
               src="http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/popular1.jpg"
-              width="100%"
-              height="100%"
+              layout="fill"
               alt=""
             />
           </figure>
@@ -49,8 +48,7 @@ const PapularDishes = () => {
           <div className={Styles.item_corner_image}>
             <Image
               src="/images/OfferBox/special-menu-icon.png"
-              width="100px"
-              height="100px"
+              layout="fill"
               alt=""
             />
           </div>
@@ -59,8 +57,7 @@ const PapularDishes = () => {
           <figure className={Styles.item_image}>
             <Image
               src="http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/popular2.jpg"
-              width="100%"
-              height="100%"
+              layout="fill"
               alt=""
             />
           </figure>
@@ -86,8 +83,7 @@ const PapularDishes = () => {
           <div className={Styles.item_corner_image}>
             <Image
               src="/images/OfferBox/special-menu-icon.png"
-              width="100px"
-              height="100px"
+              layout="fill"
               alt=""
             />
           </div>
@@ -96,8 +92,7 @@ const PapularDishes = () => {
           <figure className={Styles.item_image}>
             <Image
               src="http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/popular3.jpg"
-              width="100%"
-              height="100%"
+              layout="fill"
               alt=""
             />
           </figure>
@@ -123,8 +118,7 @@ const PapularDishes = () => {
           <div className={Styles.item_corner_image}>
             <Image
               src="/images/OfferBox/special-menu-icon.png"
-              width="100px"
-              height="100px"
+              layout="fill"
               alt=""
             />
           </div>

@@ -11,7 +11,7 @@
     top: 92px;
   }
   .animations_container > div:nth-child(2) > figure:last-child {
-    right: 50px;
+    right: 85px;
   }
   .badge_boxes {
     justify-content: space-evenly;
@@ -20,7 +20,11 @@
     font-size: 21px;
     padding: 0 25px;
   }
+  .information_box {
+    max-width: 682dpx;
+  }
   .chief_container {
+    max-width: 460px;
     margin: 0px 20px;
   }
 }

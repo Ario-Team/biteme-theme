@@ -13,10 +13,12 @@
   }
   .chief_container {
     align-items: flex-end;
+    width: 100%;
+    justify-content: center;
   }
   .chief_image {
     position: relative;
-    width: 527px;
-    height: 886px;
+    width: 72%;
+    height: 110.5vw;
   }
 }

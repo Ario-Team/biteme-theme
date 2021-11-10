@@ -1,0 +1,22 @@
+@media screen and (min-width: 993px) {
+  .items_container {
+    width: 970px;
+    flex-wrap: nowrap;
+  }
+  .item {
+    flex: 0 0 30%;
+    max-width: 31%;
+    margin-bottom: 0px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  .item_image {
+    height: 354px;
+  }
+  .item_content {
+    min-height: 345px;
+  }
+  .item_content_paragraphh {
+    padding: 25px 0 25px 0;
+  }
+}

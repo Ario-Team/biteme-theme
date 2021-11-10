@@ -30,14 +30,18 @@
     width: 460px;
   }
   .menu_item_image {
-    margin-right: -8px;
+    margin-right: -22px;
   }
   .menu_item_content {
     flex: 0 0 80%;
     max-width: 80%;
-    padding-left: 20px;
+    padding-left: 35px;
+  }
+  .menu_list[active] {
+    display: flex !important;
   }
   .menu_list {
     flex-wrap: nowrap;
+    margin-top: 55px;
   }
 }
