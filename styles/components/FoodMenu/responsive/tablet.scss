@@ -19,11 +19,17 @@
     position: absolute;
     top: 0%;
   }
-  .tab_item:nth-child(1) {
-    left: 31%;
+  .tab_item_container > .tab_item[data-id="0"] {
+    left: 31vw;
   }
-  .tab_item:nth-child(2) {
-    right: 31%;
+  .tab_item_container > .tab_item[data-id="1"] {
+    left: 40vw;
+  }
+  .tab_item_container > .tab_item[data-id="2"] {
+    left: 49vw;
+  }
+  .tab_item_container > .tab_item[data-id="3"] {
+    left: 58vw;
   }
   .tab_item_container {
     margin-top: 25px;
