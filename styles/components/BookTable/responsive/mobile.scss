@@ -1,0 +1,40 @@
+@media screen and (min-width: 320px) {
+  .heading2 {
+    font-size: 35px;
+  }
+  .heading1 {
+    font-size: 34px;
+  }
+  .dates {
+    flex-wrap: wrap;
+  }
+  .dates > div:nth-of-type(1) {
+    padding-right: 0px;
+    margin-top: 5px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .dates > div:nth-of-type(2) {
+    width: 100%;
+    text-align: center;
+    padding-left: 0px;
+    margin-top: 15px;
+  }
+  .form {
+    width: 80%;
+  }
+  .form_booktable {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .form_booktable_message {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .form_booktable_button {
+    padding: 12px 23px;
+  }
+}

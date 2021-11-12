@@ -1,0 +1,15 @@
+@media screen and (min-width: 993px) {
+  .form {
+    width: 970px;
+  }
+  .form_booktable {
+    flex: 0 0 33%;
+    max-width: 33%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .form_booktable_message {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
