@@ -1,11 +1,13 @@
 import Head from "next/head";
-import Header from "components/Header";
 import indexStyles from "styles/pages/index.module.scss";
-import AboutUs from "components/AboutUs";
-import OfferBox from "components/OfferBox";
-import FoodMenu from "components/FoodMenu";
-import PapularDishes from "components/PapularDishes";
-import BookTable from "components/BookTable";
+import dynamic from "next/dynamic";
+import Header from "components/Header";
+
+const AboutUs = dynamic(() => import("components/AboutUs"));
+const OfferBox = dynamic(() => import("components/OfferBox"));
+const FoodMenu = dynamic(() => import("components/FoodMenu"));
+const PapularDishes = dynamic(() => import("components/PapularDishes"));
+const BookTable = dynamic(() => import("components/BookTable"));
 
 export default function Home({ list }) {
   return (
@@ -13,7 +15,6 @@ export default function Home({ list }) {
       <Head>
         <title>Biteme | Home</title>
       </Head>
-      <Head></Head>
       <Header />
       <AboutUs />
       <OfferBox />
