@@ -8,6 +8,7 @@ const OfferBox = dynamic(() => import("components/OfferBox"));
 const FoodMenu = dynamic(() => import("components/FoodMenu"));
 const PapularDishes = dynamic(() => import("components/PapularDishes"));
 const BookTable = dynamic(() => import("components/BookTable"));
+const Team = dynamic(() => import("components/Team"));
 
 export default function Home({ list }) {
   return (
@@ -21,6 +22,7 @@ export default function Home({ list }) {
       <FoodMenu list={list} />
       <PapularDishes />
       <BookTable />
+      <Team />
     </main>
   );
 }

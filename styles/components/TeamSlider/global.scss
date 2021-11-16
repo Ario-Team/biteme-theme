@@ -1,0 +1,15 @@
+/*
+    Global stylesheet for the Team component
+*/
+.slider_container {
+  color: white;
+}
+
+.slider_container > div:first-child {
+  width: max-content;
+  height: 70vh;
+}
+
+.right_slider_item {
+  width: max-content;
+}

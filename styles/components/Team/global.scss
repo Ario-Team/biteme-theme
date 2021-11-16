@@ -1,0 +1,15 @@
+/*
+    Global stylesheet for the Team component
+*/
+
+.container {
+  width: 100vw;
+  height: max-content;
+  background-image: url("/images/BookTable/book-table-bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.animations_container > div {
+  width: max-content;
+}
