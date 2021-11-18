@@ -80,8 +80,7 @@ const TeamSlider = () => {
           <div>
             <Image
               src="http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/team-3.png"
-              width="356px"
-              height="457px"
+              layout="fill"
               alt=""
             />
           </div>
@@ -99,24 +98,30 @@ const TeamSlider = () => {
                 TeamSliderStyle.right_slider_item_social_icons_container
               }
             >
-              <Link href="/facebook" passHref>
-                <FontAwesomeIcon
-                  className={TeamSliderStyle.icon_item}
-                  icon={faFacebookF}
-                />
-              </Link>
-              <Link href="/twitter" passHref>
-                <FontAwesomeIcon
-                  className={TeamSliderStyle.icon_item}
-                  icon={faTwitter}
-                />
-              </Link>
-              <Link href="/googleplus" passHref>
-                <FontAwesomeIcon
-                  className={TeamSliderStyle.icon_item}
-                  icon={faGooglePlusG}
-                />
-              </Link>
+              <div className={TeamSliderStyle.icon}>
+                <Link href="/facebook" passHref>
+                  <FontAwesomeIcon
+                    className={TeamSliderStyle.icon_item}
+                    icon={faFacebookF}
+                  />
+                </Link>
+              </div>
+              <div className={TeamSliderStyle.icon}>
+                <Link href="/twitter" passHref>
+                  <FontAwesomeIcon
+                    className={TeamSliderStyle.icon_item}
+                    icon={faTwitter}
+                  />
+                </Link>
+              </div>
+              <div className={TeamSliderStyle.icon}>
+                <Link href="/googleplus" passHref>
+                  <FontAwesomeIcon
+                    className={TeamSliderStyle.icon_item}
+                    icon={faGooglePlusG}
+                  />
+                </Link>
+              </div>
             </div>
           </div>
         </SwiperSlide>

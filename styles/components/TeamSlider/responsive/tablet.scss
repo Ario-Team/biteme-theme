@@ -1,0 +1,29 @@
+@media screen and (min-width: 768px) {
+  .slider_container {
+    width: 700px;
+    padding-bottom: 65px;
+  }
+  .left_slider {
+    display: none;
+  }
+  .right_slider_item {
+    width: 670px;
+    flex-wrap: nowrap;
+  }
+  .right_slider_item > div:nth-of-type(1) {
+    width: 725px;
+    height: 336px;
+    margin-right: 25px;
+  }
+  .right_slider_item > div:nth-of-type(1)::before {
+    right: 20px;
+  }
+  .right_slider_item > div:nth-of-type(2) {
+    margin-top: 0px;
+    text-align: left;
+    width: auto;
+  }
+  .right_slider_item_description {
+    width: 95%;
+  }
+}

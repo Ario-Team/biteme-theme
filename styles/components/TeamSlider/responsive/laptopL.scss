@@ -1,0 +1,26 @@
+@media screen and (min-width: 1201px) {
+  .slider_container {
+    width: 1170px;
+  }
+  .left_slider {
+    width: 118px;
+  }
+  .right_slider_item {
+    width: 900px;
+  }
+  .right_slider_item > div:nth-of-type(1) {
+    width: 765px;
+    height: 457px;
+    margin-right: 25px;
+  }
+  .right_slider_item > div:nth-of-type(1)::before {
+    right: 20px;
+  }
+  .right_slider_item_description {
+    width: 100%;
+  }
+  .right_slider_item_description {
+    width: 90%;
+    font-size: 18px;
+  }
+}

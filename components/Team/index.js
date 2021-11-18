@@ -33,7 +33,7 @@ const Team = () => {
             />
           </figure>
         </div>
-        <div>
+        {/* <div>
           <figure>
             <Image
               src="/images/Team/team-element-3.png"
@@ -42,11 +42,11 @@ const Team = () => {
               alt=""
             />
           </figure>
-        </div>
+        </div> */}
       </div>
-      <div>
-        <h2>Our team</h2>
-        <h1>Expert Chefs</h1>
+      <div className={TeamStyles.header}>
+        <h2 className={TeamStyles.first_heading}>Our team</h2>
+        <h1 className={TeamStyles.last_heading}>Expert Chefs</h1>
         <div>
           <figure>
             <Image
