@@ -33,16 +33,16 @@ const Team = () => {
             />
           </figure>
         </div>
-        {/* <div>
-          <figure>
-            <Image
-              src="/images/Team/team-element-3.png"
-              width="222px"
-              height="265px"
-              alt=""
-            />
-          </figure>
-        </div> */}
+      </div>
+      <div className={TeamStyles.animations_container_two}>
+        <figure>
+          <Image
+            src="/images/Team/team-element-3.png"
+            width="222px"
+            height="265px"
+            alt=""
+          />
+        </figure>
       </div>
       <div className={TeamStyles.header}>
         <h2 className={TeamStyles.first_heading}>Our team</h2>

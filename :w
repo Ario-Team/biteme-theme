@@ -9,7 +9,6 @@
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
 }
 .animations_container {
   width: 210px;
@@ -21,23 +20,9 @@
   display: inline;
   width: max-content;
 }
-
-.animations_container > div:first-child {
-  display: grid;
-  grid-template-columns: 100% 100%;
-  column-gap: 1vw;
-  width: max-content;
-}
-.animations_container_two {
-  position: absolute;
-  right: 90px;
-  bottom: 30px;
-}
-
 .header {
   text-align: center;
 }
-
 .first_heading {
   padding: 60px 0px 15px 0px;
   font-family: "Allura", cursive;
