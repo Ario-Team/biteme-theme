@@ -175,7 +175,9 @@ const TeamSlider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide className={TeamSliderStyle.right_slider_item}>
-<div>            <Image
+          <div>
+            {" "}
+            <Image
               src="http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/team-3.png"
               layout="fill"
               alt=""
