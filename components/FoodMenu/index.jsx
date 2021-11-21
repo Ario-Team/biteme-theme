@@ -89,7 +89,7 @@ const FoodMenu = ({ list }) => {
                 // return unique Items for menu
                 list.map(function (value, key) {
                   return (
-                    <div key={key}>
+                    <>
                       <div
                         key={key}
                         data-id={key}
@@ -158,7 +158,7 @@ const FoodMenu = ({ list }) => {
                         </div>
                       </div>
                       );
-                    </div>
+                    </>
                   );
                 })
               }
