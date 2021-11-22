@@ -40,12 +40,12 @@ export default function Customers() {
             {/* Paragraph */}
             <p className={CustomersStyle.item_paragraph}>
               Lorem Ipsum is simply dummy text of the printing and typing indus
-              try Lorem Ipsum has een the indus try's standard dummy text
+              try Lorem Ipsum has een the indus try&apos;s standard dummy text
               Loremsimply
             </p>
             {/* Title */}
             <h5 className={CustomersStyle.item_title}>Monster Dustinegre</h5>
-            {/*} Desription */}
+            {/* Desription */}
             <h6>MD, Envato</h6>
           </div>
         </SwiperSlide>
@@ -61,7 +61,7 @@ export default function Customers() {
             </figure>
             <p className={CustomersStyle.item_paragraph}>
               Lorem Ipsum is simply dummy text of the printing and typing indus
-              try Lorem Ipsum has een the indus try's standard dummy text
+              try Lorem Ipsum has een the indus try&apos;s standard dummy text
               Loremsimply
             </p>
             <h5 className={CustomersStyle.item_title}>Monster Dustinegre</h5>
@@ -80,7 +80,7 @@ export default function Customers() {
             </figure>
             <p className={CustomersStyle.item_paragraph}>
               Lorem Ipsum is simply dummy text of the printing and typing indus
-              try Lorem Ipsum has een the indus try's standard dummy text
+              try Lorem Ipsum has een the indus try&apos;s standard dummy text
               Loremsimply
             </p>
             <h5 className={CustomersStyle.item_title}>Monster Dustinegre</h5>
@@ -99,7 +99,7 @@ export default function Customers() {
             </figure>
             <p className={CustomersStyle.item_paragraph}>
               Lorem Ipsum is simply dummy text of the printing and typing indus
-              try Lorem Ipsum has een the indus try's standard dummy text
+              try Lorem Ipsum has een the indus try&apos;s standard dummy text
               Loremsimply
             </p>
             <h5 className={CustomersStyle.item_title}>Monster Dustinegre</h5>
@@ -118,7 +118,7 @@ export default function Customers() {
             </figure>
             <p className={CustomersStyle.item_paragraph}>
               Lorem Ipsum is simply dummy text of the printing and typing indus
-              try Lorem Ipsum has een the indus try's standard dummy text
+              try Lorem Ipsum has een the indus try&apos;s standard dummy text
               Loremsimply
             </p>
             <h5 className={CustomersStyle.item_title}>Monster Dustinegre</h5>
@@ -137,7 +137,7 @@ export default function Customers() {
             </figure>
             <p className={CustomersStyle.item_paragraph}>
               Lorem Ipsum is simply dummy text of the printing and typing indus
-              try Lorem Ipsum has een the indus try's standard dummy text
+              try Lorem Ipsum has een the indus try&apos;s standard dummy text
               Loremsimply
             </p>
             <h5 className={CustomersStyle.item_title}>Monster Dustinegre</h5>
