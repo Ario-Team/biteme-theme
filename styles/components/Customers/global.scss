@@ -7,4 +7,123 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.first_heading {
+  padding: 60px 0px 15px 0px;
+  font-family: "Allura", cursive;
+  font-size: 45px;
+  font-weight: normal;
+  line-height: 1;
+  color: #deb150;
+  text-align: center;
+}
+
+.last_heading {
+  color: #ffffff;
+  font-size: 55px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+  display: block;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 0 20px 0;
+}
+
+.img_heading {
+  text-align: center;
+  margin: 0px 0px 60px 0px;
+}
+
+.customers_slider {
+  width: 1280px;
+  padding: 50px 80px;
+  padding-bottom: 130px;
+}
+
+.customers_slider > div:nth-of-type(1) {
+  padding-bottom: 25px;
+}
+
+.customers_slider > div > span {
+  width: 17px;
+  height: 17px;
+  background-color: #636e78;
+  transition: 400ms ease;
+  transition-property: background-color;
+  margin: 8px !important;
+  opacity: 1;
+}
+
+.item {
+  width: 485px !important;
+  margin-right: 150px !important;
+  background-color: rgb(32, 33, 39);
+  border-radius: 0px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: rgb(0 0 0 / 43%) 0px 2px 48px 9px;
+}
+
+.item_child {
+  background-color: #18191e;
+  border-radius: 0;
+  padding: 0 30px 30px 30px;
+  border: #33343c solid 2px;
+}
+
+.item_image {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  margin-top: -60px;
+  background-color: white;
+  border-radius: 200px;
+  overflow: hidden;
+}
+
+.item_paragraph {
+  color: #c0bebf;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  padding: 35px 0;
+  display: block;
+  width: 100%;
+  clear: both;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.item_title {
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 20px;
+  padding: 0;
+  display: block;
+  width: 100%;
+  clear: both;
+  margin: 0 0 6px;
+  text-transform: uppercase;
+}
+
+.item_last_title {
+  color: #c0bebf;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  padding: 0;
+  display: block;
+  width: 100%;
+  clear: both;
+  margin: 15px 0;
 }

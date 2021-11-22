@@ -28,13 +28,17 @@ const PapularDishes = () => {
           </figure>
           <div className={Styles.item_content}>
             <h6 className={Styles.item_content_price}>$20</h6>
-            <h4 className={Styles.item_content_title}>Italian Pizza</h4>
+            <h4 className={Styles.item_content_title}>Italian Pizza
+            <figure className={Styles.icon_image}>
             <Image
+
               src="/images/aboutus/heading-element2.png"
               width="171px"
               height="21px"
               alt=""
             />
+            </figure>
+            </h4>
             <p className={Styles.item_content_paragraphh}>
               Tomato, fresh milk, potatos Lorem Ipsum is simply dummy text
             </p>
@@ -63,13 +67,17 @@ const PapularDishes = () => {
           </figure>
           <div className={Styles.item_content}>
             <h6 className={Styles.item_content_price}>$20</h6>
-            <h4 className={Styles.item_content_title}>Italian Pizza</h4>
+            <h4 className={Styles.item_content_title}>Italian Pizza
+            <figure className={Styles.icon_image}>
             <Image
+
               src="/images/aboutus/heading-element2.png"
               width="171px"
               height="21px"
               alt=""
             />
+            </figure>
+            </h4>
             <p className={Styles.item_content_paragraphh}>
               Tomato, fresh milk, potatos Lorem Ipsum is simply dummy text
             </p>
@@ -98,13 +106,17 @@ const PapularDishes = () => {
           </figure>
           <div className={Styles.item_content}>
             <h6 className={Styles.item_content_price}>$20</h6>
-            <h4 className={Styles.item_content_title}>Italian Pizza</h4>
+            <h4 className={Styles.item_content_title}>Italian Pizza
+            <figure className={Styles.icon_image}>
             <Image
+
               src="/images/aboutus/heading-element2.png"
               width="171px"
               height="21px"
               alt=""
             />
+            </figure>
+            </h4>
             <p className={Styles.item_content_paragraphh}>
               Tomato, fresh milk, potatos Lorem Ipsum is simply dummy text
             </p>

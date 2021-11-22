@@ -9,9 +9,9 @@ export default function Customers() {
   return (
     <div className={CustomersStyle.container}>
       {/* Title */}
-      <h2>Our customer says</h2>
-      <h1>testimonial</h1>
-      <figure>
+      <h2 className={CustomersStyle.first_heading}>Our customer says</h2>
+      <h1 className={CustomersStyle.last_heading}>testimonial</h1>
+      <figure className={CustomersStyle.img_heading}>
         <Image
           src="/images/aboutus/heading-element.png"
           width="171px"
@@ -27,7 +27,7 @@ export default function Customers() {
       >
         {/* Sliders*/}
         <SwiperSlide className={CustomersStyle.item}>
-          <div>
+          <div className={CustomersStyle.item_child}>
             {/*Customer picture*/}
             <figure className={CustomersStyle.item_image}>
               <Image
@@ -46,11 +46,11 @@ export default function Customers() {
             {/* Title */}
             <h5 className={CustomersStyle.item_title}>Monster Dustinegre</h5>
             {/* Desription */}
-            <h6>MD, Envato</h6>
+            <h6 className={CustomersStyle.item_last_title}>MD, Envato</h6>
           </div>
         </SwiperSlide>
         <SwiperSlide className={CustomersStyle.item}>
-          <div>
+          <div className={CustomersStyle.item_child}>
             <figure className={CustomersStyle.item_image}>
               <Image
                 src="http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/testimonial-user-2.png"
@@ -65,11 +65,11 @@ export default function Customers() {
               Loremsimply
             </p>
             <h5 className={CustomersStyle.item_title}>Monster Dustinegre</h5>
-            <h6>MD, Envato</h6>
+            <h6 className={CustomersStyle.item_last_title}>MD, Envato</h6>
           </div>
         </SwiperSlide>
         <SwiperSlide className={CustomersStyle.item}>
-          <div>
+          <div className={CustomersStyle.item_child}>
             <figure className={CustomersStyle.item_image}>
               <Image
                 src="http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/testimonial-user-2.png"
@@ -84,11 +84,11 @@ export default function Customers() {
               Loremsimply
             </p>
             <h5 className={CustomersStyle.item_title}>Monster Dustinegre</h5>
-            <h6>MD, Envato</h6>
+            <h6 className={CustomersStyle.item_last_title}>MD, Envato</h6>
           </div>
         </SwiperSlide>
         <SwiperSlide className={CustomersStyle.item}>
-          <div>
+          <div className={CustomersStyle.item_child}>
             <figure className={CustomersStyle.item_image}>
               <Image
                 src="http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/testimonial-user-2.png"
@@ -103,11 +103,11 @@ export default function Customers() {
               Loremsimply
             </p>
             <h5 className={CustomersStyle.item_title}>Monster Dustinegre</h5>
-            <h6>MD, Envato</h6>
+            <h6 className={CustomersStyle.item_last_title}>MD, Envato</h6>
           </div>
         </SwiperSlide>
         <SwiperSlide className={CustomersStyle.item}>
-          <div>
+          <div className={CustomersStyle.item_child}>
             <figure className={CustomersStyle.item_image}>
               <Image
                 src="http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/testimonial-user-2.png"
@@ -122,11 +122,11 @@ export default function Customers() {
               Loremsimply
             </p>
             <h5 className={CustomersStyle.item_title}>Monster Dustinegre</h5>
-            <h6>MD, Envato</h6>
+            <h6 className={CustomersStyle.item_last_title}>MD, Envato</h6>
           </div>
         </SwiperSlide>
         <SwiperSlide className={CustomersStyle.item}>
-          <div>
+          <div className={CustomersStyle.item_child}>
             <figure className={CustomersStyle.item_image}>
               <Image
                 src="http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/testimonial-user-2.png"
@@ -141,7 +141,7 @@ export default function Customers() {
               Loremsimply
             </p>
             <h5 className={CustomersStyle.item_title}>Monster Dustinegre</h5>
-            <h6>MD, Envato</h6>
+            <h6 className={CustomersStyle.item_last_title}>MD, Envato</h6>
           </div>
         </SwiperSlide>
       </Swiper>

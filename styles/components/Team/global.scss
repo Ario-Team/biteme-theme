@@ -8,6 +8,7 @@
   background-image: url("/images/aboutus/body-bg.jpg");
   background-attachment: fixed;
   background-size: cover;
+  overflow-x: hidden;
   background-repeat: no-repeat;
   position: relative;
 }
@@ -22,12 +23,12 @@
   width: max-content;
 }
 
-.animations_container > div:first-child {
-  display: grid;
-  grid-template-columns: 100% 100%;
-  column-gap: 1vw;
-  width: max-content;
-}
+// .animations_container > div:first-child {
+//   display: grid;
+//   grid-template-columns: 100% 100%;
+//   column-gap: 1vw;
+//   width: max-content;
+// }
 .animations_container_two {
   position: absolute;
   right: 90px;
