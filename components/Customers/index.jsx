@@ -1,9 +1,9 @@
 import CustomersStyle from "styles/components/Customers/Customers.module.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Pagination } from "swiper";
+import SwiperCore, { Pagination, Autoplay } from "swiper";
 import Image from "next/image";
 
-SwiperCore.use([Pagination]);
+SwiperCore.use([Pagination, Autoplay]);
 
 export default function Customers() {
   return (
@@ -24,6 +24,7 @@ export default function Customers() {
         className={CustomersStyle.customers_slider}
         pagination={{ clickable: true }}
         slidesPerView="2"
+        autoplay={{ delay: "5000" }}
       >
         {/* Sliders*/}
         <SwiperSlide className={CustomersStyle.item}>

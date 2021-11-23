@@ -3,6 +3,7 @@ import "animate.css/animate.min.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import "swiper/css/autoplay";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Loader from "components/Loader";

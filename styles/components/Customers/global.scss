@@ -50,7 +50,9 @@
   padding-bottom: 25px;
 }
 
-.customers_slider > div > span {
+.customers_slider
+  > div[class*="swiper-pagination"]
+  > span[class*="swiper-pagination-bullet"] {
   width: 17px;
   height: 17px;
   background-color: #636e78;
@@ -59,7 +61,11 @@
   margin: 8px !important;
   opacity: 1;
 }
-
+.customers_slider
+  > div[class*="swiper-pagination"]
+  > span[class*="swiper-pagination-bullet-active"] {
+  background-color: #deb150;
+}
 .item {
   width: 485px !important;
   margin-right: 150px !important;
