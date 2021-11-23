@@ -22,8 +22,8 @@ const Catering = () => {
           </figure>
           <p className={CateringStyles.paragraph}>
             Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry Lorem Ipsum has been theindustry'sstandard dummy text ever
-            since the when anunknown printer took galley.
+            industry Lorem Ipsum has been theindustry&apos;sstandard dummy text
+            ever since the when anunknown printer took galley.
           </p>
           <Link href="/" passHref>
             <span className={CateringStyles.button}>
