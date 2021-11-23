@@ -2,7 +2,7 @@ import TeamSliderStyle from "styles/components/TeamSlider/TeamSlider.module.scss
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Controller } from "swiper";
 import SwiperCore, { Pagination, Navigation } from "swiper";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,11 +11,14 @@ import {
   faTwitter,
   faGooglePlusG,
 } from "@fortawesome/free-brands-svg-icons";
+import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 SwiperCore.use([Pagination, Navigation]);
 
 const TeamSlider = () => {
   const [mainSwiper, setMainSwiper] = useState(null);
   const [secondSwiper, setSecondSwiper] = useState(null);
+  const nextRef = useRef(null);
+  const prevRef = useRef(null);
   return (
     <div className={TeamSliderStyle.slider_container}>
       <Swiper
@@ -75,6 +78,7 @@ const TeamSlider = () => {
         onSwiper={setSecondSwiper}
         controller={{ control: mainSwiper }}
         className={TeamSliderStyle.right_slider}
+        navigation={{ nextEl: nextRef.current, prevEl: prevRef.current }}
       >
         <SwiperSlide className={TeamSliderStyle.right_slider_item}>
           <div>
@@ -322,6 +326,20 @@ const TeamSlider = () => {
             </div>
           </div>
         </SwiperSlide>
+        <div className={TeamSliderStyle.navigation_buttons}>
+          <button ref={prevRef}>
+            <FontAwesomeIcon
+              icon={faArrowLeft}
+              className={TeamSliderStyle.button}
+            />
+          </button>
+          <button ref={nextRef}>
+            <FontAwesomeIcon
+              icon={faArrowRight}
+              className={TeamSliderStyle.button}
+            />
+          </button>
+        </div>
       </Swiper>
     </div>
   );

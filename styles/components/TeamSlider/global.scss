@@ -29,6 +29,7 @@
 }
 .right_slider {
   display: flex;
+  flex-direction: column;
   width: 950px;
 }
 .right_slider_item {
@@ -116,4 +117,27 @@
   font-family: FontAwesome, serif;
   font-size: 17px;
   font-weight: 400;
+}
+
+.navigation_buttons {
+  align-self: center;
+  justify-self: center;
+  margin-top: 5.5vh;
+}
+.navigation_buttons > button {
+  color: #a5a7ab;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.navigation_buttons > button > .button {
+  font-size: 2rem;
+}
+.navigation_buttons > button:first-child {
+  margin-right: 10vw;
+}
+.navigation_buttons > button[class*="swiper-button-disabled"] {
+  opacity: 0.35;
+  cursor: auto;
+  pointer-events: none;
 }
