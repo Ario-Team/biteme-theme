@@ -11,6 +11,7 @@ const BookTable = dynamic(() => import("components/BookTable"));
 const Team = dynamic(() => import("components/Team"));
 const Customers = dynamic(() => import("components/Customers"));
 const Statics = dynamic(() => import("components/Statics"));
+const Catering = dynamic(() => import("components/Catering"));
 
 export default function Home({ list }) {
   return (
@@ -27,6 +28,7 @@ export default function Home({ list }) {
       <Team />
       <Customers />
       <Statics />
+      <Catering />
     </main>
   );
 }
