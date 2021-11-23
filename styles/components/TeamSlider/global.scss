@@ -129,12 +129,17 @@
   background: transparent;
   border: 0;
   cursor: pointer;
+  transition: 400ms ease-in;
+  transition-property: color;
+}
+.navigation_buttons > button:hover {
+  color: #deb150;
 }
 .navigation_buttons > button > .button {
   font-size: 2rem;
 }
 .navigation_buttons > button:first-child {
-  margin-right: 10vw;
+  margin-right: 5vw;
 }
 .navigation_buttons > button[class*="swiper-button-disabled"] {
   opacity: 0.35;
