@@ -11,8 +11,7 @@ import {
 const Statics = () => {
   return (
     <div className={StaticsStyle.container}>
-      <div className={StaticsStyle.animations}>
-        <div>
+        <div className={StaticsStyle.animation1}>
           <figure>
             <Image
               src="/images/Statics/stats-elements-1.png"
@@ -22,7 +21,7 @@ const Statics = () => {
             />
           </figure>
         </div>
-        <div>
+        <div className={StaticsStyle.animation2}>
           <figure>
             <Image
               src="/images/Statics/stats-elements-2.png"
@@ -32,7 +31,7 @@ const Statics = () => {
             />
           </figure>
         </div>
-        <div>
+        <div className={StaticsStyle.animation3}>
           <figure>
             <Image
               src="/images/Statics/stats-elements-3.png"
@@ -42,7 +41,6 @@ const Statics = () => {
             />
           </figure>
         </div>
-      </div>
       <div className={StaticsStyle.statics_container}>
         <div className={StaticsStyle.static}>
           <figure className={StaticsStyle.static_icon}>

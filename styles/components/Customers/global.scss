@@ -42,7 +42,8 @@
 
 .customers_slider {
   width: 1280px;
-  padding: 50px 80px;
+  // padding: 50px 80px;
+  padding-top: 50px;
   padding-bottom: 130px;
 }
 
@@ -68,12 +69,13 @@
 }
 .item {
   width: 485px !important;
-  margin-right: 150px !important;
+  margin-right: 100px !important;
+  margin-left: 60px;
   background-color: rgb(32, 33, 39);
   border-radius: 0px;
   text-align: center;
   padding: 20px;
-  box-shadow: rgb(0 0 0 / 43%) 0px 2px 48px 9px;
+  // box-shadow: rgb(0 0 0 / 43%) 0px 2px 48px 9px;
 }
 
 .item_child {

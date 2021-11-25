@@ -1,0 +1,24 @@
+@media screen and (min-width: 993px) {
+  .animation1 {
+    left: 0px;
+    display: block;
+  }
+  .animation2 {
+    right: 0px;
+    display: block;
+  }
+  .animation3 {
+    display: block;
+  }
+  .statics_container {
+    width: 970px;
+  }
+  .static {
+    width: 25%;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .static_description {
+    padding: 35px 0 0 0;
+  }
+}
