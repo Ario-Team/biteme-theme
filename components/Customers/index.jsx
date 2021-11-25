@@ -2,10 +2,12 @@ import CustomersStyle from "styles/components/Customers/Customers.module.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Pagination, Autoplay } from "swiper";
 import Image from "next/image";
+import { useEffect, createRef } from "react";
 
 SwiperCore.use([Pagination, Autoplay]);
 
 export default function Customers() {
+  const sliderRef = createRef();
   return (
     <div className={CustomersStyle.container}>
       {/* Title */}
@@ -23,8 +25,16 @@ export default function Customers() {
       <Swiper
         className={CustomersStyle.customers_slider}
         pagination={{ clickable: true }}
-        slidesPerView="2"
         autoplay={{ delay: "5000" }}
+        loop={true}
+        breakpoints={{
+          320: {
+            slidesPerView: "1",
+          },
+          993: {
+            slidesPerView: "2",
+          },
+        }}
       >
         {/* Sliders*/}
         <SwiperSlide className={CustomersStyle.item}>
