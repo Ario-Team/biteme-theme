@@ -3,7 +3,84 @@
  */
 
 .container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
   width: 100%;
-  height: max-content;
+  height: auto;
   background: #2980b9 url("/images/Catering/catering-bg.jpg") repeat-x 50% 0;
+  padding: 150px 0px;
+}
+
+.content_container {
+  width: 555px;
+  background: #202127;
+  padding: 20px;
+  position: relative;
+}
+
+.content_container::before {
+  border: #303035 solid 2px;
+  content: "";
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+.content {
+  width: 100%;
+  position: relative;
+  padding: 45px 20px;
+}
+
+.heading2 {
+  font-family: "Allura", cursive;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 1;
+  color: #deb150;
+  margin-bottom: 10px;
+}
+
+.heading1 {
+  color: #ffffff;
+  font-size: 35px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 10px;
+  display: block;
+  font-family: "Montserrat", sans-serif;
+}
+
+.sub_image_container {
+  margin: 0 0 40px 0;
+}
+
+.paragraph {
+  width: 100%;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 2;
+  font-weight: 400;
+  color: #c0bebf;
+  padding: 0px 0 40px 0;
+}
+
+.button {
+  border: 1px solid #deb150;
+  color: #deb150;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 12px 40px 12px 40px;
+  cursor: pointer;
+  z-index: 10;
+  display: inline-block;
 }
