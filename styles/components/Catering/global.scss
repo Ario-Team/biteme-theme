@@ -9,7 +9,18 @@
   width: 100%;
   height: auto;
   background: #2980b9 url("/images/Catering/catering-bg.jpg") repeat-x 50% 0;
+  animation: infinite-shift-left 1000s linear;
   padding: 150px 0px;
+}
+
+/* Background image animation START  */
+@keyframes infinite-shift-left {
+  0% {
+    background-position: 50000px;
+  }
+  100% {
+    background-position: 0;
+  }
 }
 
 .content_container {
