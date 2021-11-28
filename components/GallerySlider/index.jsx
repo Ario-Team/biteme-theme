@@ -68,5 +68,5 @@ const GallerySlider = forwardRef(({ gallery, start }, ref) => {
     </div>
   );
 });
-
+GallerySlider.displayName = "GallerySlider";
 export default GallerySlider;

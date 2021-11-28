@@ -129,5 +129,4 @@ const Gallery = ({ gallery }) => {
     </section>
   );
 };
-
 export default Gallery;
