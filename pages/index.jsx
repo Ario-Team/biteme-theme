@@ -2,6 +2,8 @@ import Head from "next/head";
 import indexStyles from "styles/pages/index.module.scss";
 import dynamic from "next/dynamic";
 import Header from "components/Header";
+import foodList from "../fakeData/foodMenuData";
+import galleryData from "../fakeData/galleryData";
 
 const AboutUs = dynamic(() => import("components/AboutUs"));
 const OfferBox = dynamic(() => import("components/OfferBox"));
@@ -12,8 +14,9 @@ const Team = dynamic(() => import("components/Team"));
 const Customers = dynamic(() => import("components/Customers"));
 const Statics = dynamic(() => import("components/Statics"));
 const Catering = dynamic(() => import("components/Catering"));
+const Gallery = dynamic(() => import("components/Gallery"));
 
-export default function Home({ list }) {
+export default function Home({ foodList, galleryData }) {
   return (
     <main className={indexStyles.container}>
       <Head>
@@ -22,13 +25,14 @@ export default function Home({ list }) {
       <Header />
       <AboutUs />
       <OfferBox />
-      <FoodMenu list={list} />
+      <FoodMenu list={foodList} />
       <PapularDishes />
       <BookTable />
       <Team />
       <Customers />
       <Statics />
       <Catering />
+      <Gallery gallery={galleryData} />
     </main>
   );
 }
@@ -36,165 +40,8 @@ export default function Home({ list }) {
 export async function getServerSideProps() {
   return {
     props: {
-      list: [
-        {
-          title: "snacks",
-          primaryImage:
-            "http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/menu-dish1.jpg",
-          foods: [
-            {
-              title: "Jumbo Shrimp",
-              image:
-                "http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/dish1.jpg",
-              description:
-                "Tomato, fresh milk potatos Lorem Ipsum is simplydummy text of the printingand typesettin simply dummy text.",
-              price: "$45",
-            },
-            {
-              title: "Jumbo Shrimp",
-              image:
-                "http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/dish1.jpg",
-              description:
-                "Tomato, fresh milk potatos Lorem Ipsum is simplydummy text of the printingand typesettin simply dummy text.",
-              price: "$45",
-            },
-            {
-              title: "Jumbo Shrimp",
-              image:
-                "http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/dish1.jpg",
-              description:
-                "Tomato, fresh milk potatos Lorem Ipsum is simplydummy text of the printingand typesettin simply dummy text.",
-              price: "$45",
-            },
-            {
-              title: "Jumbo Shrimp",
-              image:
-                "http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/dish1.jpg",
-              description:
-                "Tomato, fresh milk potatos Lorem Ipsum is simplydummy text of the printingand typesettin simply dummy text.",
-              price: "$45",
-            },
-          ],
-        },
-        {
-          title: "snacks",
-          primaryImage:
-            "http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/menu-dish1.jpg",
-          foods: [
-            {
-              title: "Jumbo Shrimp",
-              image:
-                "http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/dish1.jpg",
-              description:
-                "Tomato, fresh milk potatos Lorem Ipsum is simplydummy text of the printingand typesettin simply dummy text.",
-              price: "$45",
-            },
-            {
-              title: "Jumbo Shrimp",
-              image:
-                "http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/dish1.jpg",
-              description:
-                "Tomato, fresh milk potatos Lorem Ipsum is simplydummy text of the printingand typesettin simply dummy text.",
-              price: "$45",
-            },
-            {
-              title: "Jumbo Shrimp",
-              image:
-                "http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/dish1.jpg",
-              description:
-                "Tomato, fresh milk potatos Lorem Ipsum is simplydummy text of the printingand typesettin simply dummy text.",
-              price: "$45",
-            },
-            {
-              title: "Jumbo Shrimp",
-              image:
-                "http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/dish1.jpg",
-              description:
-                "Tomato, fresh milk potatos Lorem Ipsum is simplydummy text of the printingand typesettin simply dummy text.",
-              price: "$45",
-            },
-          ],
-        },
-        {
-          title: "snacks",
-          primaryImage:
-            "http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/menu-dish1.jpg",
-          foods: [
-            {
-              title: "Jumbo Shrimp",
-              image:
-                "http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/dish1.jpg",
-              description:
-                "Tomato, fresh milk potatos Lorem Ipsum is simplydummy text of the printingand typesettin simply dummy text.",
-              price: "$45",
-            },
-            {
-              title: "Jumbo Shrimp",
-              image:
-                "http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/dish1.jpg",
-              description:
-                "Tomato, fresh milk potatos Lorem Ipsum is simplydummy text of the printingand typesettin simply dummy text.",
-              price: "$45",
-            },
-            {
-              title: "Jumbo Shrimp",
-              image:
-                "http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/dish1.jpg",
-              description:
-                "Tomato, fresh milk potatos Lorem Ipsum is simplydummy text of the printingand typesettin simply dummy text.",
-              price: "$45",
-            },
-            {
-              title: "Jumbo Shrimp",
-              image:
-                "http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/dish1.jpg",
-              description:
-                "Tomato, fresh milk potatos Lorem Ipsum is simplydummy text of the printingand typesettin simply dummy text.",
-              price: "$45",
-            },
-          ],
-        },
-
-        {
-          title: "Desert",
-          primaryImage:
-            "http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/menu-dish2.jpg",
-          foods: [
-            {
-              title: "Chese Bread",
-              image:
-                "http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/dish2.jpg",
-              description:
-                "Tomato Ipsum is simplydummy text of the fresh milk potatos Lorem printingand typesettin simply dummy text.",
-              price: "$45",
-            },
-            {
-              title: "Chese Bread",
-              image:
-                "http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/dish2.jpg",
-              description:
-                "Tomato Ipsum is simplydummy text of the fresh milk potatos Lorem printingand typesettin simply dummy text.",
-              price: "$45",
-            },
-            {
-              title: "Chese Bread",
-              image:
-                "http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/dish2.jpg",
-              description:
-                "Tomato Ipsum is simplydummy text of the fresh milk potatos Lorem printingand typesettin simply dummy text.",
-              price: "$45",
-            },
-            {
-              title: "Chese Bread",
-              image:
-                "http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/dish2.jpg",
-              description:
-                "Tomato Ipsum is simplydummy text of the fresh milk potatos Lorem printingand typesettin simply dummy text.",
-              price: "$45",
-            },
-          ],
-        },
-      ],
+      foodList,
+      galleryData,
     },
   };
 }
