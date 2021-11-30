@@ -1,0 +1,16 @@
+@media screen and (min-width: 320px) {
+  .gallery {
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 292px;
+    height: 2380px;
+  }
+  .gallery_item_image {
+    margin: 0 auto;
+  }
+  .tab_item {
+    width: 100%;
+    display: block;
+    background-color: transparent;
+  }
+}

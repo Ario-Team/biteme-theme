@@ -1,0 +1,36 @@
+@media screen and (min-width: 576px) {
+  .events_container {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .event_container {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .event_container::before {
+    top: 20px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+  }
+  .event_image_container {
+    height: 50vw;
+  }
+  .event_date {
+    width: 120px;
+    height: 120px;
+    font-size: 33px;
+    padding: 25px 0 0 0;
+  }
+  .event_date::before {
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+  }
+  .event_address,
+  .event_time {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}

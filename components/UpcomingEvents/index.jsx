@@ -18,7 +18,7 @@ const UpcomingEvents = () => {
             <Image
               className={UpcomingEventsStyle.event_image}
               src="http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/event-1.jpg"
-              layout="responsive"
+              layout="fill"
               width="571px"
               height="318px"
               alt="Event image"
@@ -32,7 +32,7 @@ const UpcomingEvents = () => {
               New year party with DJ
             </h3>
           </Link>
-          <ul>
+          <ul className={UpcomingEventsStyle.event_address_time}>
             <li className={UpcomingEventsStyle.event_address}>
               <FontAwesomeIcon icon={faMapMarker} />
               Foody Restaurant, Est bay 12356
@@ -44,7 +44,7 @@ const UpcomingEvents = () => {
           </ul>
           <div style={{ clear: "both" }}></div>
           <Link href="/book" passHref>
-            <button>Book Ticket</button>
+            <button className={UpcomingEventsStyle.event_button}>Book Ticket</button>
           </Link>
         </section>
         <section className={UpcomingEventsStyle.event_container}>
@@ -52,7 +52,7 @@ const UpcomingEvents = () => {
             <Image
               className={UpcomingEventsStyle.event_image}
               src="http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/event-2.jpg"
-              layout="responsive"
+              layout="fill"
               width="571px"
               height="318px"
               alt="Event image"
@@ -66,7 +66,7 @@ const UpcomingEvents = () => {
               DJ &#38; Dance Party
             </h3>
           </Link>
-          <ul>
+          <ul className={UpcomingEventsStyle.event_address_time}>
             <li className={UpcomingEventsStyle.event_address}>
               <FontAwesomeIcon icon={faMapMarker} />
               Foody Restaurant, Est bay 12356
@@ -78,7 +78,7 @@ const UpcomingEvents = () => {
           </ul>
           <div style={{ clear: "both" }}></div>
           <Link href="/book" passHref>
-            <button>Book Ticket</button>
+            <button className={UpcomingEventsStyle.event_button}>Book Ticket</button>
           </Link>
         </section>
       </div>

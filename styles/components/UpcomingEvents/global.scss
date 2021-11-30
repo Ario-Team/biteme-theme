@@ -1,10 +1,169 @@
+/*
+  Global stylesheet for the Upcoming Events component
+ */
+
 .container {
   position: relative;
   width: 100%;
-  height: max-content;
+  height: auto;
   background-image: url("/images/UpcomingEvents/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.heading2 {
+  padding: 0px 0px 10px 0px;
+  font-family: "Allura", cursive;
+  font-size: 45px;
+  font-weight: normal;
+  line-height: 1;
+  color: #deb150;
+  text-align: center;
+}
+
+.heading1 {
+  color: #ffffff;
+  font-size: 50px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+  display: block;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 0 65px 0;
+}
+
+.events_container {
+  position: relative;
+  width: 1170px;
+  margin-left: auto;
+  display: flex;
+  margin-right: auto;
+}
+
+.event_container {
+  width: 50%;
+  float: left;
+  background: #deb150;
+  position: relative;
+  padding-bottom: 42px;
+  text-align: center;
+  margin-left: 23px;
+  margin-right: 23px;
+}
+
+.event_container::before {
+  border: 2px solid rgba(24, 25, 30, 0.9);
+  content: "";
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  z-index: 1;
+}
+
+.event_image_container {
+  position: relative;
+  width: 100%;
+}
+
+.event_date {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 120px;
+  height: 120px;
+  background: #deb150;
+  font-size: 33px;
+  font-weight: bold;
+  line-height: 1;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: #18191e;
+  padding: 25px 0 0 0;
+}
+
+.event_date::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+  border: 2px solid #33343c;
+}
+
+.event_title {
+  float: left;
+  width: 100%;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 45px 25px 15px 25px;
+  margin: 0;
+  color: #18191e;
+  position: relative;
+  z-index: 100;
+}
+
+.event_address-time {
+  float: left;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  margin: 15px 0 0 0;
+}
+
+.event_address,
+.event_time {
+  width: 100%;
+  text-align: center;
+  list-style: none;
+  color: #18191e;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.event_address > svg,
+.event_time > svg {
+  margin-right: 5px;
+}
+
+.event_button {
+  font-size: 13px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  line-height: 22px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 12px 47px 12px 47px;
+  position: relative;
+  cursor: pointer;
+  z-index: 10;
+  display: inline-block;
+  margin: 25px 0;
+  border: #202127 solid 1px;
+  color: #202127;
+  background-color: transparent;
+  transition: 400ms ease;
+  transition-property: color, background;
+}
+
+.event_container:hover button {
+  border: #202127 solid 1px;
+  background: #202127;
+  color: #ffffff;
 }
