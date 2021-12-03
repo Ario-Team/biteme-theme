@@ -1,0 +1,25 @@
+/*
+    Laptop stylesheet for the ContactUs component
+*/
+
+@media only screen and (min-width: 993px) {
+  .form_container {
+    width: 75%;
+  }
+  .heading4 {
+    text-align: left;
+    margin-left: 6vw;
+  }
+  .time_container,
+  .contact_info_item {
+    text-align: left;
+  }
+
+  .contact_info_item {
+    display: flex;
+    flex-direction: row;
+    > .contact_info_icon {
+      margin-right: 1vw;
+    }
+  }
+}

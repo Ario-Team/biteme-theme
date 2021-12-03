@@ -2,7 +2,6 @@ import Image from "next/image";
 import { useState, useEffect, createRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
-import Dynamic from "next/dynamic";
 import GalleryStyles from "styles/components/Gallery/Gallery.module.scss";
 import GallerySlider from "components/GallerySlider";
 
