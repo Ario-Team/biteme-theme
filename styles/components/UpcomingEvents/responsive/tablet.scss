@@ -1,0 +1,16 @@
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 30px 0;
+  }
+  .events_container {
+    width: 750px;
+    flex-wrap: wrap;
+  }
+  .event_container {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .event_image_container {
+    height: 384px;
+  }
+}

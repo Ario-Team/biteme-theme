@@ -1,0 +1,27 @@
+@media screen and (min-width: 768px) {
+  .gallery {
+    width: 750px;
+    grid-template-columns: 375px 375px;
+    grid-template-rows: 292px 292px;
+    height: 1190px;
+  }
+  .tab_item {
+    display: inline-block;
+    float: none;
+    width: auto;
+    margin: 1px 1px;
+    padding: 14px 32px 12px;
+    line-height: normal;
+    min-width: 130px !important;
+    min-height: 41px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+  }
+}

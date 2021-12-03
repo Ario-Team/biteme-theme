@@ -1,0 +1,11 @@
+@media screen and (min-width: 993px) {
+  .gallery {
+    width: 970px;
+    grid-template-columns: 323px 323px 323px;
+    grid-template-rows: 292px 292px;
+    height: 900px;
+  }
+  .gallery_item_image {
+    margin: 0 0;
+  }
+}

@@ -40,8 +40,8 @@ const Gallery = ({ gallery }) => {
   }, [slider]);
   return (
     <section className={GalleryStyles.container}>
-      <h2 className={GalleryStyles.heading1}>Fresh &#38; healthy food</h2>
-      <h1 className={GalleryStyles.heading2}>Gallery</h1>
+      <h2 className={GalleryStyles.heading2}>Fresh &#38; healthy food</h2>
+      <h1 className={GalleryStyles.heading1}>Gallery</h1>
       <figure className={GalleryStyles.sub_image}>
         <Image
           src="/images/aboutus/heading-element.png"
@@ -88,13 +88,12 @@ const Gallery = ({ gallery }) => {
                   <figure className={GalleryStyles.gallery_item_image}>
                     <Image
                       src={value.imageSrc}
-                      width="290px"
-                      height="290px"
+                      layout="fill"
                       alt=""
                     />
                   </figure>
                   <div className={GalleryStyles.gallery_item_slider_button}>
-                    <div>
+                    <div className={GalleryStyles.gallery_item_slider_icon}>
                       <FontAwesomeIcon
                         data-item-key={key}
                         onClick={(el) => {
