@@ -29,6 +29,14 @@ const Gallery = ({ gallery }) => {
       : setActiveGallery([
           ...gallery.filter((item) => item.tags.includes(activeTab)),
         ]);
+    const tabItems = [...document.querySelectorAll("li[class*='tab_item']")];
+    tabItems.map((item, key) => {
+      if (item.dataset.itemsKey == activeTab) {
+        item.setAttribute("active", "");
+      } else {
+        item.removeAttribute("active");
+      }
+    });
   }, [activeTab]);
   // Enable the slider
   useEffect(() => {
@@ -47,6 +55,7 @@ const Gallery = ({ gallery }) => {
           src="/images/aboutus/heading-element.png"
           width="171px"
           height="21px"
+          alt=""
         />
       </figure>
       <div className={GalleryStyles.tabs_container}>
@@ -86,11 +95,7 @@ const Gallery = ({ gallery }) => {
                   data-id={key}
                 >
                   <figure className={GalleryStyles.gallery_item_image}>
-                    <Image
-                      src={value.imageSrc}
-                      layout="fill"
-                      alt=""
-                    />
+                    <Image src={value.imageSrc} layout="fill" alt="" />
                   </figure>
                   <div className={GalleryStyles.gallery_item_slider_button}>
                     <div className={GalleryStyles.gallery_item_slider_icon}>

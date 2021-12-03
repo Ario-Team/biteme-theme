@@ -7,7 +7,10 @@
   width: 100%;
   height: auto;
   padding: 80px 0;
-  background: black;
+  background-image: url("/images/aboutus/body-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .heading2 {
@@ -60,6 +63,8 @@
   cursor: pointer;
   position: relative;
   z-index: 1;
+  transition: 400ms ease;
+  transition-property: background-color, color;
 }
 
 .tab_item[active] {
