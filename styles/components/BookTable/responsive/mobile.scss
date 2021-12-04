@@ -1,4 +1,10 @@
 @media screen and (min-width: 320px) {
+  .animations_container {
+    > div[class*="animation"] {
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
   .heading2 {
     font-size: 35px;
   }

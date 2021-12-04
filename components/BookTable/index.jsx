@@ -3,11 +3,38 @@ import { InView } from "react-intersection-observer";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import animationController from "./utils/animationController";
 
 const BookTable = () => {
   return (
-    <InView as="div" className={BookTableStyles.container}>
-      <div className={BookTableStyles.animations}></div>
+    <InView
+      as="div"
+      className={BookTableStyles.container}
+      threshold={[0.05]}
+      onChange={animationController}
+    >
+      <div className={BookTableStyles.animations_container}>
+        <div className={BookTableStyles.animation_one}>
+          <figure>
+            <Image
+              src="/images/BookTable/book-table-element-1.png"
+              width="212px"
+              height="227px"
+              alt="animation"
+            />
+          </figure>
+        </div>
+        <div className={BookTableStyles.animation_two}>
+          <figure>
+            <Image
+              src="/images/BookTable/book-table-element-2.png"
+              width="340px"
+              height="478px"
+              alt="animation"
+            />
+          </figure>
+        </div>
+      </div>
       <div className={BookTableStyles.main_content}>
         <h2 className={BookTableStyles.heading2}>Reservation</h2>
         <h1 className={BookTableStyles.heading1}>Book a table</h1>
