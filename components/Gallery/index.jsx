@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import GalleryStyles from "styles/components/Gallery/Gallery.module.scss";
 import GallerySlider from "components/GallerySlider";
+import { InView } from "react-intersection-observer";
+import animationController from "./utils/animationController";
 
 const Gallery = ({ gallery }) => {
   let tabs = new Set();
@@ -47,7 +49,44 @@ const Gallery = ({ gallery }) => {
     }
   }, [slider]);
   return (
-    <section className={GalleryStyles.container}>
+    <InView
+      as="section"
+      className={GalleryStyles.container}
+      threshold={[0.05, 0.5]}
+      onChange={animationController}
+    >
+      <div className={GalleryStyles.animation_container}>
+        <div className={GalleryStyles.animation_one}>
+          <figure>
+            <Image
+              src="/images/Gallery/gallery-elements-1.png"
+              width="205px"
+              height="193px"
+              alt="Animation"
+            />
+          </figure>
+        </div>
+        <div className={GalleryStyles.animation_two}>
+          <figure>
+            <Image
+              src="/images/Gallery/gallery-elements-2.png"
+              width="65px"
+              height="65px"
+              alt="Animation"
+            />
+          </figure>
+        </div>
+        <div className={GalleryStyles.animation_three}>
+          <figure>
+            <Image
+              src="/images/Gallery/gallery-elements-3.png"
+              width="249px"
+              height="280px"
+              alt="Animation"
+            />
+          </figure>
+        </div>
+      </div>
       <h2 className={GalleryStyles.heading2}>Fresh &#38; healthy food</h2>
       <h1 className={GalleryStyles.heading1}>Gallery</h1>
       <figure className={GalleryStyles.sub_image}>
@@ -129,7 +168,7 @@ const Gallery = ({ gallery }) => {
       ) : (
         ""
       )}
-    </section>
+    </InView>
   );
 };
 export default Gallery;
