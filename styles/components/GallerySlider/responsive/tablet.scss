@@ -1,0 +1,15 @@
+@media screen and (min-width: 768px) {
+  .slider_container {
+    margin: 220px auto !important;
+    width: 570px;
+    height: 490px;
+  }
+  .slider_item_image_container {
+    width: 570px;
+    height: 490px;
+  }
+  .prev_button,
+  .next_button {
+    top: 50%;
+  }
+}

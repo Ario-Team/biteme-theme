@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation } from "swiper";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faWindowClose,
+  faTimes,
   faArrowRight,
   faArrowLeft,
 } from "@fortawesome/free-solid-svg-icons";
@@ -18,7 +18,7 @@ const GallerySlider = forwardRef(({ gallery, start }, ref) => {
   return (
     <div className={GallerySliderStyles.container}>
       <button className={GallerySliderStyles.close_button} ref={ref}>
-        <FontAwesomeIcon icon={faWindowClose} />
+        <FontAwesomeIcon icon={faTimes} />
       </button>
       <Swiper
         className={GallerySliderStyles.slider_container}
