@@ -7,10 +7,17 @@ import {
   faCoffee,
   faTrophy,
 } from "@fortawesome/free-solid-svg-icons";
+import { InView } from "react-intersection-observer";
+import animationController from "./utils/animationController";
 
 const Statics = () => {
   return (
-    <div className={StaticsStyle.container}>
+    <InView
+      as="div"
+      className={StaticsStyle.container}
+      threshold={[0.05]}
+      onChange={animationController}
+    >
       <div className={StaticsStyle.animation_one}>
         <figure>
           <Image
@@ -71,7 +78,7 @@ const Statics = () => {
           <p className={StaticsStyle.static_description}>Best awards</p>
         </div>
       </div>
-    </div>
+    </InView>
   );
 };
 

@@ -1,14 +1,15 @@
 @media screen and (min-width: 993px) {
   .animation_one {
     left: 0px;
-    display: block;
   }
   .animation_two {
     right: 0px;
-    display: block;
   }
+  .animation_one,
+  .animation_two,
   .animation_three {
-    display: block;
+    visibility: visible;
+    opacity: 1;
   }
   .statics_container {
     width: 970px;

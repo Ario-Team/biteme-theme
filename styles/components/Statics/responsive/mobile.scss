@@ -1,12 +1,9 @@
 @media screen and (min-width: 320px) {
-  .animation_one {
-    display: none;
-  }
-  .animation_two {
-    display: none;
-  }
+  .animation_one,
+  .animation_two,
   .animation_three {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
   }
   .statics_container {
     width: 320px;
