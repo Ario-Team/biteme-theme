@@ -11,36 +11,36 @@ import {
 const Statics = () => {
   return (
     <div className={StaticsStyle.container}>
-        <div className={StaticsStyle.animation1}>
-          <figure>
-            <Image
-              src="/images/Statics/stats-elements-1.png"
-              width="180px"
-              height="210px"
-              alt=""
-            />
-          </figure>
-        </div>
-        <div className={StaticsStyle.animation2}>
-          <figure>
-            <Image
-              src="/images/Statics/stats-elements-2.png"
-              width="133px"
-              height="155px"
-              alt=""
-            />
-          </figure>
-        </div>
-        <div className={StaticsStyle.animation3}>
-          <figure>
-            <Image
-              src="/images/Statics/stats-elements-3.png"
-              width="371px"
-              height="166px"
-              alt=""
-            />
-          </figure>
-        </div>
+      <div className={StaticsStyle.animation_one}>
+        <figure>
+          <Image
+            src="/images/Statics/stats-elements-1.png"
+            width="180px"
+            height="210px"
+            alt=""
+          />
+        </figure>
+      </div>
+      <div className={StaticsStyle.animation_two}>
+        <figure>
+          <Image
+            src="/images/Statics/stats-elements-2.png"
+            width="133px"
+            height="155px"
+            alt=""
+          />
+        </figure>
+      </div>
+      <div className={StaticsStyle.animation_three}>
+        <figure>
+          <Image
+            src="/images/Statics/stats-elements-3.png"
+            width="371px"
+            height="166px"
+            alt=""
+          />
+        </figure>
+      </div>
       <div className={StaticsStyle.statics_container}>
         <div className={StaticsStyle.static}>
           <figure className={StaticsStyle.static_icon}>
