@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import Header from "components/Header";
 import foodList from "../fakeData/foodMenuData";
 import galleryData from "../fakeData/galleryData";
+import { useEffect, useState } from "react";
 
 const AboutUs = dynamic(() => import("components/AboutUs"));
 const OfferBox = dynamic(() => import("components/OfferBox"));
@@ -18,8 +19,22 @@ const Gallery = dynamic(() => import("components/Gallery"));
 const UpcomingEvents = dynamic(() => import("components/UpcomingEvents"));
 const ContactUs = dynamic(() => import("components/ContactUs"));
 const Newsletter = dynamic(() => import("components/Newsletter"));
+const ScrollUpButton = dynamic(() => import("components/ScrollUpButton"));
 
 export default function Home({ foodList, galleryData }) {
+  const [scrollButtonVisible, setScrollButtonVisible] = useState(false);
+  useEffect(() => {
+    window.onscroll = () => {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        setScrollButtonVisible(true);
+      } else {
+        setScrollButtonVisible(false);
+      }
+    };
+  }, []);
   return (
     <main className={indexStyles.container}>
       <Head>
@@ -39,6 +54,7 @@ export default function Home({ foodList, galleryData }) {
       <UpcomingEvents />
       <ContactUs />
       <Newsletter />
+      <ScrollUpButton visible={scrollButtonVisible} />
     </main>
   );
 }
