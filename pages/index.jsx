@@ -17,6 +17,7 @@ const Catering = dynamic(() => import("components/Catering"));
 const Gallery = dynamic(() => import("components/Gallery"));
 const UpcomingEvents = dynamic(() => import("components/UpcomingEvents"));
 const ContactUs = dynamic(() => import("components/ContactUs"));
+const Newsletter = dynamic(() => import("components/Newsletter"));
 
 export default function Home({ foodList, galleryData }) {
   return (
@@ -37,6 +38,7 @@ export default function Home({ foodList, galleryData }) {
       <Gallery gallery={galleryData} />
       <UpcomingEvents />
       <ContactUs />
+      <Newsletter />
     </main>
   );
 }
