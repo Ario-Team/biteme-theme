@@ -1,0 +1,124 @@
+.container {
+  width: 100%;
+  height: max-content;
+  background-image: url("/images/Newsletter/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8vh 0;
+  color: #fff;
+}
+
+.heading2 {
+  font-family: Allura, "cursive";
+  font-size: 2.813rem;
+  font-weight: normal;
+  line-height: 1;
+  color: #deb150;
+  margin-bottom: 1vh;
+}
+
+.heading1 {
+  font-size: 2.813rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+.sub_image_container {
+  margin-top: 1vh;
+  margin-bottom: 4vh;
+}
+.paragraph {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: center;
+  margin-bottom: 3vh;
+}
+
+.form {
+  border: 1px solid white;
+  display: flex;
+  height: 6vh;
+}
+.form * {
+  border: 0;
+}
+
+.email_container {
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid #cecece;
+  border-bottom: 2px solid #cecece;
+  border-left: 2px solid #cecece;
+}
+.email_input {
+  width: 100%;
+  height: 100%;
+  padding-left: 3vw;
+  color: #fff;
+  background: transparent;
+}
+
+.submit_button {
+  background-color: #deb150;
+  color: #202127;
+  border-top: 2px solid #cecece;
+  border-bottom: 2px solid #cecece;
+  border-right: 2px solid #cecece;
+  height: 100%;
+  font-size: 0.813rem;
+  padding: 1vw;
+  transition: 400ms ease;
+  transition-property: color, background-color, cursor;
+  cursor: auto;
+}
+
+.submit_button:hover {
+  color: #deb150;
+  background-color: #202127;
+  cursor: pointer;
+}
+
+.social_icon_container {
+  margin: 2.5vh 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.social_icon {
+  margin-right: 3vw;
+  border: 1px solid #434448;
+  padding: 1.5vw;
+  border-radius: 100%;
+  cursor: auto;
+  color: #a8a8a8;
+  transition: 400ms ease;
+  transition-property: background-color, color, cursor;
+}
+
+.social_icon:hover {
+  border-color: #deb150;
+  background: #deb150;
+  color: #202127;
+  cursor: pointer;
+}
+
+.copyright {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2;
+  color: #cbced6;
+  letter-spacing: 0.2vw;
+  > a {
+    color: #deb150;
+    text-decoration: none;
+    transition: 400ms ease;
+    transition-property: color;
+  }
+  > a:hover {
+    color: white;
+  }
+}
