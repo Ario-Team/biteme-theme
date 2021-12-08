@@ -3,6 +3,10 @@
     width: 60vw;
   }
   .social_icon {
-    padding: 2vw;
+    width: 60px;
+    height: 60px;
+  }
+  .social_icon > svg {
+    font-size: 22px !important;
   }
 }

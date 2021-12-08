@@ -1,11 +1,7 @@
 @media screen and (min-width: 768px) {
   .animation_container {
-    > .animation_one,
-    .animation_two,
-    .animation_three {
-      visibility: visible;
-      opacity: 1;
-    }
+    visibility: visible;
+    opacity: 1;
   }
   .gallery {
     width: 750px;

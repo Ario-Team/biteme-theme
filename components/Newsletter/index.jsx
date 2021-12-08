@@ -40,40 +40,53 @@ const Newsletter = () => {
         </div>
         <div className={NewsletterStyles.submit_button_container}>
           <button className={NewsletterStyles.submit_button} type="submit">
-            <FontAwesomeIcon icon={faPaperPlane} />
+            <FontAwesomeIcon
+              className={NewsletterStyles.social_icon_svg}
+             icon={faPaperPlane} />
           </button>
         </div>
       </form>
       <div className={NewsletterStyles.social_icon_container}>
         <Link href="/facebook" passHref>
           <div className={NewsletterStyles.social_icon}>
-            <FontAwesomeIcon icon={faFacebookF} />
+            <FontAwesomeIcon
+              className={NewsletterStyles.social_icon_svg}
+             icon={faFacebookF} />
           </div>
         </Link>
         <Link href="/twitter" passHref>
           <div className={NewsletterStyles.social_icon}>
-            <FontAwesomeIcon icon={faTwitter} />
+            <FontAwesomeIcon
+              className={NewsletterStyles.social_icon_svg}
+             icon={faTwitter} />
           </div>
         </Link>
         <Link href="/googlePlus" passHref>
           <div className={NewsletterStyles.social_icon}>
-            <FontAwesomeIcon icon={faGooglePlusG} />
+            <FontAwesomeIcon
+              className={NewsletterStyles.social_icon_svg}
+             icon={faGooglePlusG} />
           </div>
         </Link>
         <Link href="/pinterest" passHref>
           <div className={NewsletterStyles.social_icon}>
-            <FontAwesomeIcon icon={faPinterest} />
+            <FontAwesomeIcon
+              className={NewsletterStyles.social_icon_svg}
+             icon={faPinterest} />
           </div>
         </Link>
         <Link href="/youtube" passHref>
           <div className={NewsletterStyles.social_icon}>
-            <FontAwesomeIcon icon={faYoutube} />
+            <FontAwesomeIcon
+              className={NewsletterStyles.social_icon_svg}
+             icon={faYoutube} />
           </div>
         </Link>
       </div>
-      <p className={NewsletterStyles.copyright}>
-        © 2021, All Rights Reserved, Made by <Link href="/">Ario Team</Link>
-      </p>
+      <div className={NewsletterStyles.copyright}>
+      <p className={NewsletterStyles.copyright_paragraph}>© 2021, All Rights Reserved, Made by </p>
+      <Link href="/">Ario Team</Link>
+      </div>
     </div>
   );
 };
