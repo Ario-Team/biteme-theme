@@ -5,6 +5,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import animationController from "./utils/animationController";
 
+// Import static images
+import animationOnePicture from "/public/images/BookTable/book-table-element-1.png";
+import animationTwoPicture from "/public/images/BookTable/book-table-element-2.png";
+import headingElementPicture from "/public/images/aboutus/heading-element.png";
+
 const BookTable = () => {
   return (
     <InView
@@ -17,7 +22,7 @@ const BookTable = () => {
         <div className={BookTableStyles.animation_one}>
           <figure>
             <Image
-              src="/images/BookTable/book-table-element-1.png"
+              src={animationOnePicture}
               width="212px"
               height="227px"
               alt="animation"
@@ -27,7 +32,7 @@ const BookTable = () => {
         <div className={BookTableStyles.animation_two}>
           <figure>
             <Image
-              src="/images/BookTable/book-table-element-2.png"
+              src={animationTwoPicture}
               width="340px"
               height="478px"
               alt="animation"
@@ -41,7 +46,7 @@ const BookTable = () => {
         <div className={BookTableStyles.heading_image_container}>
           <figure className={BookTableStyles.heading_image}>
             <Image
-              src="/images/aboutus/heading-element.png"
+              src={headingElementPicture}
               alt=""
               width="171px"
               height="21px"

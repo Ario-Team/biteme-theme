@@ -7,6 +7,12 @@ import GallerySlider from "components/GallerySlider";
 import { InView } from "react-intersection-observer";
 import animationController from "./utils/animationController";
 
+// Import static images
+import animationOnePicture from "/public/images/Gallery/gallery-elements-1.png";
+import animationTwoPicture from "/public/images/Gallery/gallery-elements-2.png";
+import animationThreePicture from "/public/images/Gallery/gallery-elements-3.png";
+import headingElementPicture from "/public/images/aboutus/heading-element.png";
+
 const Gallery = ({ gallery }) => {
   let tabs = new Set();
   const [activeGallery, setActiveGallery] = useState(gallery);
@@ -59,7 +65,7 @@ const Gallery = ({ gallery }) => {
         <div className={GalleryStyles.animation_one}>
           <figure>
             <Image
-              src="/images/Gallery/gallery-elements-1.png"
+              src={animationOnePicture}
               width="205px"
               height="193px"
               alt="Animation"
@@ -69,7 +75,7 @@ const Gallery = ({ gallery }) => {
         <div className={GalleryStyles.animation_two}>
           <figure>
             <Image
-              src="/images/Gallery/gallery-elements-2.png"
+              src={animationTwoPicture}
               width="65px"
               height="65px"
               alt="Animation"
@@ -79,7 +85,7 @@ const Gallery = ({ gallery }) => {
         <div className={GalleryStyles.animation_three}>
           <figure>
             <Image
-              src="/images/Gallery/gallery-elements-3.png"
+              src={animationThreePicture}
               width="249px"
               height="280px"
               alt="Animation"
@@ -90,12 +96,7 @@ const Gallery = ({ gallery }) => {
       <h2 className={GalleryStyles.heading2}>Fresh &#38; healthy food</h2>
       <h1 className={GalleryStyles.heading1}>Gallery</h1>
       <figure className={GalleryStyles.sub_image}>
-        <Image
-          src="/images/aboutus/heading-element.png"
-          width="171px"
-          height="21px"
-          alt=""
-        />
+        <Image src={headingElementPicture} width="171px" height="21px" alt="" />
       </figure>
       <div className={GalleryStyles.tabs_container}>
         <ul className={GalleryStyles.tab}>

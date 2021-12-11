@@ -4,6 +4,12 @@ import animationController from "./utils/animationController";
 import Image from "next/image";
 import TeamSlider from "components/TeamSlider";
 
+// Import static images
+import animationOnePicture from "/public/images/Team/team-element-1.png";
+import animationTwoPicture from "/public/images/Team/team-element-2.png";
+import animationThreePicture from "/public/images/Team/team-element-3.png";
+import headingElementPicture from "/public/images/aboutus/heading-element.png";
+
 const Team = () => {
   return (
     <InView
@@ -16,7 +22,7 @@ const Team = () => {
         <div>
           <figure>
             <Image
-              src="/images/Team/team-element-1.png"
+              src={animationOnePicture}
               width="55px"
               height="169px"
               alt=""
@@ -26,7 +32,7 @@ const Team = () => {
         <div>
           <figure>
             <Image
-              src="/images/Team/team-element-2.png"
+              src={animationTwoPicture}
               width="94px"
               height="173px"
               alt=""
@@ -37,7 +43,7 @@ const Team = () => {
       <div className={TeamStyles.animations_container_two}>
         <figure>
           <Image
-            src="/images/Team/team-element-3.png"
+            src={animationThreePicture}
             width="222px"
             height="265px"
             alt=""
@@ -50,7 +56,7 @@ const Team = () => {
         <div>
           <figure>
             <Image
-              src="/images/aboutus/heading-element.png"
+              src={headingElementPicture}
               width="171px"
               height="21px"
               alt=""

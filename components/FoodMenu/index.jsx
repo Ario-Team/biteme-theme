@@ -4,6 +4,11 @@ import Image from "next/image";
 import animationController from "./utils/animationController";
 import FoodMenuStyles from "styles/components/FoodMenu/FoodMenu.module.scss";
 
+// Import static images
+import animationOnePicture from "/public/images/FoodMenu/animations/menu-element-1.png";
+import animationTwoPicture from "/public/images/FoodMenu/animations/menu-element-2.png";
+import headingElementPicture from "/public/images/aboutus/heading-element.png";
+
 const FoodMenu = ({ list }) => {
   const [activeMenu, setActiveMenu] = useState("0");
   useEffect(() => {
@@ -46,9 +51,9 @@ const FoodMenu = ({ list }) => {
     >
       {/* Animations container */}
       <div className={FoodMenuStyles.animation_one}>
-        <figure className="wow rotateInDownLeft" data-wow-duration="2s">
+        <figure>
           <Image
-            src="/images/FoodMenu/animations/menu-element-1.png"
+            src={animationOnePicture}
             width="210px"
             height="288px"
             alt=""
@@ -58,7 +63,7 @@ const FoodMenu = ({ list }) => {
       <div className={FoodMenuStyles.animation_two}>
         <figure>
           <Image
-            src="/images/FoodMenu/animations/menu-element-2.png"
+            src={animationTwoPicture}
             width="240px"
             height="386px"
             alt=""
@@ -74,7 +79,7 @@ const FoodMenu = ({ list }) => {
         {/* Image under Heading 1 */}
         <figure className={FoodMenuStyles.third_title}>
           <Image
-            src="/images/aboutus/heading-element.png"
+            src={headingElementPicture}
             width="171px"
             height="21px"
             alt=""

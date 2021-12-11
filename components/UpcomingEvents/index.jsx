@@ -44,7 +44,9 @@ const UpcomingEvents = () => {
           </ul>
           <div style={{ clear: "both" }}></div>
           <Link href="/book" passHref>
-            <button className={UpcomingEventsStyle.event_button}>Book Ticket</button>
+            <button className={UpcomingEventsStyle.event_button}>
+              Book Ticket
+            </button>
           </Link>
         </section>
         <section className={UpcomingEventsStyle.event_container}>
@@ -78,7 +80,9 @@ const UpcomingEvents = () => {
           </ul>
           <div style={{ clear: "both" }}></div>
           <Link href="/book" passHref>
-            <button className={UpcomingEventsStyle.event_button}>Book Ticket</button>
+            <button className={UpcomingEventsStyle.event_button}>
+              Book Ticket
+            </button>
           </Link>
         </section>
       </div>

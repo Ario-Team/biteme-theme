@@ -10,6 +10,11 @@ import {
 import { InView } from "react-intersection-observer";
 import animationController from "./utils/animationController";
 
+// Import static images
+import animationOnePicture from "/public/images/Statics/stats-elements-1.png";
+import animationTwoPicture from "/public/images/Statics/stats-elements-2.png";
+import animationThreePicture from "/public/images/Statics/stats-elements-3.png";
+
 const Statics = () => {
   return (
     <InView
@@ -21,7 +26,7 @@ const Statics = () => {
       <div className={StaticsStyle.animation_one}>
         <figure>
           <Image
-            src="/images/Statics/stats-elements-1.png"
+            src={animationOnePicture}
             width="180px"
             height="210px"
             alt=""
@@ -31,7 +36,7 @@ const Statics = () => {
       <div className={StaticsStyle.animation_two}>
         <figure>
           <Image
-            src="/images/Statics/stats-elements-2.png"
+            src={animationTwoPicture}
             width="133px"
             height="155px"
             alt=""
@@ -41,7 +46,7 @@ const Statics = () => {
       <div className={StaticsStyle.animation_three}>
         <figure>
           <Image
-            src="/images/Statics/stats-elements-3.png"
+            src={animationThreePicture}
             width="371px"
             height="166px"
             alt=""

@@ -11,6 +11,9 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 
+// Import static images
+import headingElementPicture from "/public/images/aboutus/heading-element.png";
+
 const Newsletter = () => {
   return (
     <div className={NewsletterStyles.container}>
@@ -19,7 +22,7 @@ const Newsletter = () => {
       <figure className={NewsletterStyles.sub_image_container}>
         <Image
           className={NewsletterStyles.sub_image_container}
-          src="/images/aboutus/heading-element.png"
+          src={headingElementPicture}
           width="171px"
           height="21px"
           alt="Subheader image"
@@ -42,7 +45,8 @@ const Newsletter = () => {
           <button className={NewsletterStyles.submit_button} type="submit">
             <FontAwesomeIcon
               className={NewsletterStyles.social_icon_svg}
-             icon={faPaperPlane} />
+              icon={faPaperPlane}
+            />
           </button>
         </div>
       </form>
@@ -51,41 +55,48 @@ const Newsletter = () => {
           <div className={NewsletterStyles.social_icon}>
             <FontAwesomeIcon
               className={NewsletterStyles.social_icon_svg}
-             icon={faFacebookF} />
+              icon={faFacebookF}
+            />
           </div>
         </Link>
         <Link href="/twitter" passHref>
           <div className={NewsletterStyles.social_icon}>
             <FontAwesomeIcon
               className={NewsletterStyles.social_icon_svg}
-             icon={faTwitter} />
+              icon={faTwitter}
+            />
           </div>
         </Link>
         <Link href="/googlePlus" passHref>
           <div className={NewsletterStyles.social_icon}>
             <FontAwesomeIcon
               className={NewsletterStyles.social_icon_svg}
-             icon={faGooglePlusG} />
+              icon={faGooglePlusG}
+            />
           </div>
         </Link>
         <Link href="/pinterest" passHref>
           <div className={NewsletterStyles.social_icon}>
             <FontAwesomeIcon
               className={NewsletterStyles.social_icon_svg}
-             icon={faPinterest} />
+              icon={faPinterest}
+            />
           </div>
         </Link>
         <Link href="/youtube" passHref>
           <div className={NewsletterStyles.social_icon}>
             <FontAwesomeIcon
               className={NewsletterStyles.social_icon_svg}
-             icon={faYoutube} />
+              icon={faYoutube}
+            />
           </div>
         </Link>
       </div>
       <div className={NewsletterStyles.copyright}>
-      <p className={NewsletterStyles.copyright_paragraph}>© 2021, All Rights Reserved, Made by </p>
-      <Link href="/">Ario Team</Link>
+        <p className={NewsletterStyles.copyright_paragraph}>
+          © 2021, All Rights Reserved, Made by{" "}
+        </p>
+        <Link href="/">Ario Team</Link>
       </div>
     </div>
   );

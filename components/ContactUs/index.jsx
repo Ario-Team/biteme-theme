@@ -9,6 +9,10 @@ import {
 import { InView } from "react-intersection-observer";
 import animationController from "./utils/animationController";
 
+// Import static images
+import animationTwoPicture from "/public/images/ContactUs/contact-elements-2.png";
+import headingElementPicture from "/public/images/aboutus/heading-element.png";
+
 const ContactUs = () => {
   return (
     <InView
@@ -33,7 +37,7 @@ const ContactUs = () => {
           <figure className={ContactUsStyle.animation_two_image_container}>
             <Image
               className={ContactUsStyle.animation_two_image}
-              src="/images/ContactUs/contact-elements-2.png"
+              src={animationTwoPicture}
               width="150px"
               height="178px"
               alt="Animation picture"
@@ -48,7 +52,7 @@ const ContactUs = () => {
           <figure className={ContactUsStyle.image_container}>
             <Image
               className={ContactUsStyle.image}
-              src="/images/aboutus/heading-element.png"
+              src={headingElementPicture}
               width="171px"
               height="21px"
               alt="Heading element"
@@ -78,7 +82,9 @@ const ContactUs = () => {
                   icon={faMapMarkerAlt}
                   color="#deb150"
                 />
-                <p className={ContactUsStyle.contact_info_paragraph}>3750, Foody Hill, Washindont, DC 59870</p>
+                <p className={ContactUsStyle.contact_info_paragraph}>
+                  3750, Foody Hill, Washindont, DC 59870
+                </p>
               </div>
             </div>
             <div>
@@ -88,7 +94,9 @@ const ContactUs = () => {
                   icon={faPhoneSquare}
                   color="#deb150"
                 />
-                <p className={ContactUsStyle.contact_info_paragraph}>+1 123 456 7890 • +1 987 654 3210</p>
+                <p className={ContactUsStyle.contact_info_paragraph}>
+                  +1 123 456 7890 • +1 987 654 3210
+                </p>
               </div>
             </div>
             <div>
@@ -98,7 +106,9 @@ const ContactUs = () => {
                   icon={faEnvelope}
                   color="#deb150"
                 />
-                <p className={ContactUsStyle.contact_info_paragraph}>contact@Restaurantname .com</p>
+                <p className={ContactUsStyle.contact_info_paragraph}>
+                  contact@Restaurantname .com
+                </p>
               </div>
             </div>
           </div>

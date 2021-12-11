@@ -13,6 +13,9 @@ import windowResize from "./utils/windowResize";
 import handleMenuAnimation from "./utils/handleMenuAnimation";
 import setStikyNav from "./utils/setStikyNav";
 
+// Import static images
+import logoPicture from "/public/images/logo-icon.png";
+
 const Header = () => {
   const headbottom = useRef();
   const main = useRef();
@@ -53,12 +56,7 @@ const Header = () => {
       >
         <div className={HeaderStyle.head_logo}>
           <Link href="/" passHref={true}>
-            <Image
-              src="/images/logo-icon.png"
-              width="168px"
-              height="55px"
-              alt="Logo"
-            />
+            <Image src={logoPicture} width="168px" height="55px" alt="Logo" />
           </Link>
         </div>
         <div

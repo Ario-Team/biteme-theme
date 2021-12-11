@@ -4,6 +4,9 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
+// Import static images
+import headingElementPicture from "/public/images/aboutus/heading-element.png";
+
 const Catering = () => {
   return (
     <div className={CateringStyles.container}>
@@ -13,7 +16,7 @@ const Catering = () => {
           <h1 className={CateringStyles.heading1}>Catering service</h1>
           <figure className={CateringStyles.sub_image_container}>
             <Image
-              src="/images/aboutus/heading-element.png"
+              src={headingElementPicture}
               width="171px"
               height="21px"
               alt=""

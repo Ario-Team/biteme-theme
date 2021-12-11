@@ -4,6 +4,17 @@ import Link from "next/link";
 import { InView } from "react-intersection-observer";
 import animationController from "./utils/animationController";
 
+// Import static images
+import animationOnePicture from "/public/images/aboutus/element-1.png";
+import animationTwoPicture from "/public/images/aboutus/element-2.png";
+import animationThreePicture from "/public/images/aboutus/element-3.png";
+import animationFourPicture from "/public/images/aboutus/element-4.png";
+import headingElementPicture from "/public/images/aboutus/heading-element.png";
+import badgeOnePicture from "/public/images/aboutus/boxes-icon/feature1.png";
+import badgeTwoPicture from "/public/images/aboutus/boxes-icon/feature2.png";
+import badgeThreePicture from "/public/images/aboutus/boxes-icon/feature3.png";
+import chiefPicture from "/public/images/aboutus/chef.png";
+
 const AboutUs = () => {
   return (
     // <div className={AboutUsStyles.container}>
@@ -16,7 +27,7 @@ const AboutUs = () => {
         <div>
           <figure>
             <Image
-              src="/images/aboutus/element-1.png"
+              src={animationOnePicture}
               alt=""
               width="351px"
               height="438px"
@@ -24,7 +35,7 @@ const AboutUs = () => {
           </figure>
           <figure>
             <Image
-              src="/images/aboutus/element-2.png"
+              src={animationTwoPicture}
               alt=""
               width="206px"
               height="206px"
@@ -34,7 +45,7 @@ const AboutUs = () => {
         <div>
           <figure>
             <Image
-              src="/images/aboutus/element-3.png"
+              src={animationThreePicture}
               width="289px"
               height="304px"
               alt=""
@@ -42,7 +53,7 @@ const AboutUs = () => {
           </figure>
           <figure>
             <Image
-              src="/images/aboutus/element-4.png"
+              src={animationFourPicture}
               alt=""
               width="194px"
               height="146px"
@@ -55,7 +66,7 @@ const AboutUs = () => {
         <h1 className={AboutUsStyles.heading_bottom}>About us</h1>
         <figure className={AboutUsStyles.heading_subfigure}>
           <Image
-            src="/images/aboutus/heading-element.png"
+            src={headingElementPicture}
             width="171px"
             height="21px"
             alt=""
@@ -82,7 +93,7 @@ const AboutUs = () => {
               <figure className={AboutUsStyles.badge_item_icon}>
                 <Image
                   className={AboutUsStyles.badge_img}
-                  src="/images/aboutus/boxes-icon/feature1.png"
+                  src={badgeOnePicture}
                   width="65px"
                   height="55px"
                   alt=""
@@ -96,7 +107,7 @@ const AboutUs = () => {
               <figure className={AboutUsStyles.badge_item_icon}>
                 <Image
                   className={AboutUsStyles.badge_img}
-                  src="/images/aboutus/boxes-icon/feature2.png"
+                  src={badgeTwoPicture}
                   width="65px"
                   height="55px"
                   alt=""
@@ -110,7 +121,7 @@ const AboutUs = () => {
               <figure className={AboutUsStyles.badge_item_icon}>
                 <Image
                   className={AboutUsStyles.badge_img}
-                  src="/images/aboutus/boxes-icon/feature3.png"
+                  src={badgeThreePicture}
                   width="65px"
                   height="55px"
                   alt=""
@@ -125,7 +136,7 @@ const AboutUs = () => {
       </div>
       <div className={AboutUsStyles.chief_container}>
         <figure className={AboutUsStyles.chief_image}>
-          <Image src="/images/aboutus/chef.png" layout="fill" alt="" />
+          <Image src={chiefPicture} layout="fill" alt="" />
         </figure>
       </div>
     </div>

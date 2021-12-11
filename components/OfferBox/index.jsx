@@ -4,6 +4,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import OfferBoxStyles from "styles/components/OfferBox/OfferBox.module.scss";
 
+// Import static images
+import headingElementPicture from "/public/images/aboutus/heading-element.png";
+import specialMenuIcon from "/public/images/OfferBox/special-menu-icon.png";
+import specialMenuOneBackground from "/public/images/OfferBox/special-menu-img1.jpg";
+import specialMenuTwoBackground from "/public/images/OfferBox/special-menu-img2.jpg";
+
 const OfferBox = () => {
   return (
     <div className={OfferBoxStyles.main_container}>
@@ -15,7 +21,7 @@ const OfferBox = () => {
         {/* Image under the H1 */}
         <figure>
           <Image
-            src="/images/aboutus/heading-element.png"
+            src={headingElementPicture}
             width="171px"
             height="21px"
             alt=""
@@ -49,7 +55,7 @@ const OfferBox = () => {
                 </Link>
                 <figure className={OfferBoxStyles.offer_bg_icon}>
                   <Image
-                    src="/images/OfferBox/special-menu-icon.png"
+                    src={specialMenuIcon}
                     width="168px"
                     height="162px"
                     alt=""
@@ -61,7 +67,7 @@ const OfferBox = () => {
           {/* Image left */}
           <figure>
             <Image
-              src="/images/OfferBox/special-menu-img1.jpg"
+              src={specialMenuOneBackground}
               width="314px"
               height="572px"
               layout="responsive"
@@ -71,7 +77,7 @@ const OfferBox = () => {
           {/* Image right */}
           <figure>
             <Image
-              src="/images/OfferBox/special-menu-img2.jpg"
+              src={specialMenuTwoBackground}
               width="314px"
               height="572px"
               layout="responsive"

@@ -4,7 +4,8 @@ const withBundleAnalyzer = require("@next/bundle-analyzer")({
 module.exports = {
   withBundleAnalyzer,
   reactStrictMode: true,
-  swcMinify: false,
+  swcMinify: true,
+  optimizeFonts: true,
   images: {
     domains: ["kalanidhithemes.com"],
   },

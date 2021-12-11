@@ -6,6 +6,9 @@ import { useEffect, createRef } from "react";
 
 SwiperCore.use([Pagination, Autoplay]);
 
+// Import static images
+import headingElementPicture from "/public/images/aboutus/heading-element.png";
+
 export default function Customers() {
   const sliderRef = createRef();
   return (
@@ -14,12 +17,7 @@ export default function Customers() {
       <h2 className={CustomersStyle.first_heading}>Our customer says</h2>
       <h1 className={CustomersStyle.last_heading}>testimonial</h1>
       <figure className={CustomersStyle.img_heading}>
-        <Image
-          src="/images/aboutus/heading-element.png"
-          width="171px"
-          height="21px"
-          alt=""
-        />
+        <Image src={headingElementPicture} width="171px" height="21px" alt="" />
       </figure>
       {/* Customers slider */}
       <Swiper

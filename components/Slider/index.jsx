@@ -7,6 +7,10 @@ import SliderStyle from "styles/components/Slider/Slider.module.scss";
 // Enable the swiper plugins
 SwiperCore.use([Pagination, Navigation]);
 
+// Import static images
+import captionTopPicture from "/public/images/slider/caption/caption-top.png";
+import captionBottomPicture from "/public/images/slider/caption/caption-bottom.png";
+
 export default function Slider() {
   return (
     <Swiper
@@ -27,12 +31,7 @@ export default function Slider() {
       >
         <div className={SliderStyle.slider_item}>
           <div>
-            <Image
-              src="/images/slider/caption/caption-top.png"
-              alt=""
-              width="141px"
-              height="21px"
-            />
+            <Image src={captionTopPicture} alt="" width="141px" height="21px" />
           </div>
           <h2>Welcome to our</h2>
           <h3>Restaurant</h3>
@@ -47,7 +46,7 @@ export default function Slider() {
           </div>
           <div>
             <Image
-              src="/images/slider/caption/caption-bottom.png"
+              src={captionBottomPicture}
               alt=""
               width="141px"
               height="21px"
