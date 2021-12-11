@@ -26,8 +26,8 @@ export default function Home({ foodList, galleryData }) {
   useEffect(() => {
     window.onscroll = () => {
       if (
-        document.body.scrollTop > 20 ||
-        document.documentElement.scrollTop > 20
+        document.body.scrollTop > 40 ||
+        document.documentElement.scrollTop > 40
       ) {
         setScrollButtonVisible(true);
       } else {
@@ -40,6 +40,7 @@ export default function Home({ foodList, galleryData }) {
       <Head>
         <title>Biteme | Home</title>
       </Head>
+      <h1>Hello World Mohammad from sublime text</h1>
       <Header />
       <AboutUs />
       <OfferBox />
