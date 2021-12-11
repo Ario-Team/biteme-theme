@@ -42,7 +42,11 @@ const Newsletter = () => {
           />
         </div>
         <div className={NewsletterStyles.submit_button_container}>
-          <button className={NewsletterStyles.submit_button} type="submit">
+          <button
+            className={NewsletterStyles.submit_button}
+            type="submit"
+            name="Submit the newsletter"
+          >
             <FontAwesomeIcon
               className={NewsletterStyles.social_icon_svg}
               icon={faPaperPlane}

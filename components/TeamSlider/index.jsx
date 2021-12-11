@@ -328,13 +328,13 @@ const TeamSlider = () => {
           </div>
         </SwiperSlide>
         <div className={TeamSliderStyle.navigation_buttons}>
-          <button ref={prevRef}>
+          <button ref={prevRef} name="Previous slider">
             <FontAwesomeIcon
               icon={faArrowLeft}
               className={TeamSliderStyle.button}
             />
           </button>
-          <button ref={nextRef}>
+          <button ref={nextRef} name="Next slider">
             <FontAwesomeIcon
               icon={faArrowRight}
               className={TeamSliderStyle.button}
