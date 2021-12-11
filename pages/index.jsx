@@ -3,8 +3,8 @@ import indexStyles from "styles/pages/index.module.scss";
 import dynamic from "next/dynamic";
 import Header from "components/Header";
 import foodList from "../fakeData/foodMenuData";
-import galleryData from "../fakeData/galleryData";
 import { useEffect, useState } from "react";
+import getGalleryData from "functions/getGalleryData";
 
 const AboutUs = dynamic(() => import("components/AboutUs"));
 const OfferBox = dynamic(() => import("components/OfferBox"));
@@ -60,6 +60,7 @@ export default function Home({ foodList, galleryData }) {
 }
 
 export async function getServerSideProps() {
+  const galleryData = await getGalleryData().then((data) => data);
   return {
     props: {
       foodList,
