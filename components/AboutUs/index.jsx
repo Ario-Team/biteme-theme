@@ -14,6 +14,7 @@ import badgeOnePicture from "/public/images/aboutus/boxes-icon/feature1.png";
 import badgeTwoPicture from "/public/images/aboutus/boxes-icon/feature2.png";
 import badgeThreePicture from "/public/images/aboutus/boxes-icon/feature3.png";
 import chiefPicture from "/public/images/aboutus/chef.png";
+import { isMobile } from "react-device-detect";
 
 const AboutUs = () => {
   return (
@@ -21,7 +22,7 @@ const AboutUs = () => {
     <div className={AboutUsStyles.information_container}>
       <InView
         className={AboutUsStyles.animations_container}
-        onChange={animationController}
+        onChange={isMobile ? null : animationController}
         threshold={[0.05, 0.4]}
       >
         <div>

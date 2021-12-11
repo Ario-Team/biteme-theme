@@ -3,6 +3,7 @@ import { InView } from "react-intersection-observer";
 import animationController from "./utils/animationController";
 import Image from "next/image";
 import TeamSlider from "components/TeamSlider";
+import { isMobile } from "react-device-detect";
 
 // Import static images
 import animationOnePicture from "/public/images/Team/team-element-1.png";
@@ -16,7 +17,7 @@ const Team = () => {
       as="section"
       threshold={[0.05, 0.4]}
       className={TeamStyles.container}
-      onChange={animationController}
+      onChange={isMobile ? null : animationController}
     >
       <div className={TeamStyles.animations_container}>
         <div>

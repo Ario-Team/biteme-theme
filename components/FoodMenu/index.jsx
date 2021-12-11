@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import animationController from "./utils/animationController";
 import FoodMenuStyles from "styles/components/FoodMenu/FoodMenu.module.scss";
+import { isMobile } from "react-device-detect";
 
 // Import static images
 import animationOnePicture from "/public/images/FoodMenu/animations/menu-element-1.png";
@@ -47,7 +48,7 @@ const FoodMenu = ({ list }) => {
     <InView
       className={FoodMenuStyles.container}
       as="section"
-      onChange={animationController}
+      onChange={isMobile ? null : animationController}
       threshold={[0.05, 0.4]}
     >
       {/* Animations container */}

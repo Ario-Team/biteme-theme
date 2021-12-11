@@ -4,6 +4,7 @@ import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import animationController from "./utils/animationController";
+import { isMobile } from "react-device-detect";
 
 // Import static images
 import animationOnePicture from "/public/images/BookTable/book-table-element-1.png";
@@ -16,7 +17,7 @@ const BookTable = () => {
       as="section"
       className={BookTableStyles.container}
       threshold={[0.05]}
-      onChange={animationController}
+      onChange={isMobile ? null : animationController}
     >
       <div className={BookTableStyles.animations_container}>
         <div className={BookTableStyles.animation_one}>

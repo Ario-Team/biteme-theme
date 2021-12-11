@@ -9,6 +9,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { InView } from "react-intersection-observer";
 import animationController from "./utils/animationController";
+import { isMobile } from "react-device-detect";
 
 // Import static images
 import animationOnePicture from "/public/images/Statics/stats-elements-1.png";
@@ -21,7 +22,7 @@ const Statics = () => {
       as="section"
       className={StaticsStyle.container}
       threshold={[0.05]}
-      onChange={animationController}
+      onChange={isMobile ? null : animationController}
     >
       <div className={StaticsStyle.animation_one}>
         <figure>

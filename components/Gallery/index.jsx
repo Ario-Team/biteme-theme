@@ -6,6 +6,7 @@ import GalleryStyles from "styles/components/Gallery/Gallery.module.scss";
 import GallerySlider from "components/GallerySlider";
 import { InView } from "react-intersection-observer";
 import animationController from "./utils/animationController";
+import { isMobile } from "react-device-detect";
 
 // Import static images
 import animationOnePicture from "/public/images/Gallery/gallery-elements-1.png";
@@ -59,7 +60,7 @@ const Gallery = ({ gallery }) => {
       as="section"
       className={GalleryStyles.container}
       threshold={[0.05, 0.5]}
-      onChange={animationController}
+      onChange={isMobile ? null : animationController}
     >
       <div className={GalleryStyles.animation_container}>
         <div className={GalleryStyles.animation_one}>

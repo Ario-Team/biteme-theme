@@ -8,6 +8,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { InView } from "react-intersection-observer";
 import animationController from "./utils/animationController";
+import { isMobile } from "react-device-detect";
 
 // Import static images
 import animationTwoPicture from "/public/images/ContactUs/contact-elements-2.png";
@@ -17,7 +18,7 @@ const ContactUs = () => {
   return (
     <InView
       as="section"
-      onChange={animationController}
+      onChange={isMobile ? null : animationController}
       threshold={[0.05, 0.4]}
       className={ContactUsStyle.container}
     >
