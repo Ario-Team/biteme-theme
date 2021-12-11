@@ -27,6 +27,7 @@ export default function Customers() {
         pagination={{ clickable: true }}
         autoplay={{ delay: "5000" }}
         loop={true}
+        speed="1s"
         breakpoints={{
           320: {
             slidesPerView: "1",
