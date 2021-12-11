@@ -79,6 +79,7 @@ const TeamSlider = () => {
         controller={{ control: mainSwiper }}
         className={TeamSliderStyle.right_slider}
         navigation={{ nextEl: nextRef.current, prevEl: prevRef.current }}
+        speed="1.5s"
       >
         <SwiperSlide className={TeamSliderStyle.right_slider_item}>
           <div>
