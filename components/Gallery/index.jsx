@@ -39,7 +39,7 @@ const Gallery = ({ gallery }) => {
         item.removeAttribute("active");
       }
     });
-  }, [activeTab]);
+  }, [activeTab, gallery]);
   // Enable the slider
   useEffect(() => {
     if (slider) {
@@ -47,7 +47,7 @@ const Gallery = ({ gallery }) => {
         setSlider(false);
       };
     }
-  }, [slider]);
+  }, [slider, closeRef]);
   return (
     <InView
       as="section"
@@ -115,7 +115,10 @@ const Gallery = ({ gallery }) => {
                 key={key}
                 data-items-key={tab}
                 onClick={(el) => {
-                  setActiveTab(el.target.dataset.itemsKey);
+                  setActiveTab(0);
+                  setTimeout(() => {
+                    setActiveTab(el.target.dataset.itemsKey);
+                  }, 100);
                 }}
               >
                 {tab}
@@ -132,6 +135,10 @@ const Gallery = ({ gallery }) => {
                   className={GalleryStyles.gallery_item}
                   key={key}
                   data-id={key}
+                  style={{
+                    animation: "zoomIn",
+                    animationDuration: ".5s",
+                  }}
                 >
                   <figure className={GalleryStyles.gallery_item_image}>
                     <Image src={value.imageSrc} layout="fill" alt="" />
