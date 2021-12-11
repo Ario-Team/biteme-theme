@@ -132,7 +132,7 @@ const Gallery = ({ gallery }) => {
         {activeGallery != null
           ? activeGallery.map((value, key) => {
               return (
-                <section
+                <div
                   className={GalleryStyles.gallery_item}
                   key={key}
                   data-id={key}
@@ -144,7 +144,7 @@ const Gallery = ({ gallery }) => {
                   <figure className={GalleryStyles.gallery_item_image}>
                     <Image src={value.imageSrc} layout="fill" alt="" />
                   </figure>
-                  <div className={GalleryStyles.gallery_item_slider_button}>
+                  <section className={GalleryStyles.gallery_item_slider_button}>
                     <div className={GalleryStyles.gallery_item_slider_icon}>
                       <FontAwesomeIcon
                         data-item-key={key}
@@ -155,14 +155,14 @@ const Gallery = ({ gallery }) => {
                         icon={faPlus}
                       />
                     </div>
-                    <h5 className={GalleryStyles.gallery_item_title}>
+                    <h1 className={GalleryStyles.gallery_item_title}>
                       {value.title}
-                    </h5>
-                    <h6 className={GalleryStyles.gallery_item_description}>
+                    </h1>
+                    <h2 className={GalleryStyles.gallery_item_description}>
                       {value.description}
-                    </h6>
-                  </div>
-                </section>
+                    </h2>
+                  </section>
+                </div>
               );
             })
           : ""}

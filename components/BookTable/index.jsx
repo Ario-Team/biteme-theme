@@ -13,7 +13,7 @@ import headingElementPicture from "/public/images/aboutus/heading-element.png";
 const BookTable = () => {
   return (
     <InView
-      as="div"
+      as="section"
       className={BookTableStyles.container}
       threshold={[0.05]}
       onChange={animationController}

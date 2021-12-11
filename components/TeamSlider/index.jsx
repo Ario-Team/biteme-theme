@@ -20,7 +20,7 @@ const TeamSlider = () => {
   const nextRef = useRef(null);
   const prevRef = useRef(null);
   return (
-    <div className={TeamSliderStyle.slider_container}>
+    <section className={TeamSliderStyle.slider_container}>
       <Swiper
         modules={[Controller]}
         onSwiper={setMainSwiper}
@@ -89,11 +89,11 @@ const TeamSlider = () => {
               alt=""
             />
           </div>
-          <div>
-            <h4 className={TeamSliderStyle.right_slider_item_name}>
+          <section>
+            <h1 className={TeamSliderStyle.right_slider_item_name}>
               Due Stive
-            </h4>
-            <h5 className={TeamSliderStyle.right_slider_item_title}>Founder</h5>
+            </h1>
+            <h1 className={TeamSliderStyle.right_slider_item_title}>Founder</h1>
             <p className={TeamSliderStyle.right_slider_item_description}>
               Lorem Ipsum is simply dummy text of the printing and typeseing
               industry rem Ipsum has been the industrys standard dummy
@@ -128,7 +128,7 @@ const TeamSlider = () => {
                 </Link>
               </div>
             </div>
-          </div>
+          </section>
         </SwiperSlide>
         <SwiperSlide className={TeamSliderStyle.right_slider_item}>
           <div>
@@ -138,11 +138,11 @@ const TeamSlider = () => {
               alt=""
             />
           </div>
-          <div>
-            <h4 className={TeamSliderStyle.right_slider_item_name}>
+          <section>
+            <h1 className={TeamSliderStyle.right_slider_item_name}>
               Due Stive
-            </h4>
-            <h5 className={TeamSliderStyle.right_slider_item_title}>Founder</h5>
+            </h1>
+            <h1 className={TeamSliderStyle.right_slider_item_title}>Founder</h1>
             <p className={TeamSliderStyle.right_slider_item_description}>
               Lorem Ipsum is simply dummy text of the printing and typeseing
               industry rem Ipsum has been the industrys standard dummy
@@ -177,57 +177,7 @@ const TeamSlider = () => {
                 </Link>
               </div>
             </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className={TeamSliderStyle.right_slider_item}>
-          <div>
-            {" "}
-            <Image
-              src="http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/team-3.png"
-              layout="fill"
-              alt=""
-            />
-          </div>
-          <div>
-            <h4 className={TeamSliderStyle.right_slider_item_name}>
-              Due Stive
-            </h4>
-            <h5 className={TeamSliderStyle.right_slider_item_title}>Founder</h5>
-            <p className={TeamSliderStyle.right_slider_item_description}>
-              Lorem Ipsum is simply dummy text of the printing and typeseing
-              industry rem Ipsum has been the industrys standard dummy
-            </p>
-            <div
-              className={
-                TeamSliderStyle.right_slider_item_social_icons_container
-              }
-            >
-              <div className={TeamSliderStyle.icon}>
-                <Link href="/facebook" passHref>
-                  <FontAwesomeIcon
-                    className={TeamSliderStyle.icon_item}
-                    icon={faFacebookF}
-                  />
-                </Link>
-              </div>
-              <div className={TeamSliderStyle.icon}>
-                <Link href="/twitter" passHref>
-                  <FontAwesomeIcon
-                    className={TeamSliderStyle.icon_item}
-                    icon={faTwitter}
-                  />
-                </Link>
-              </div>
-              <div className={TeamSliderStyle.icon}>
-                <Link href="/googleplus" passHref>
-                  <FontAwesomeIcon
-                    className={TeamSliderStyle.icon_item}
-                    icon={faGooglePlusG}
-                  />
-                </Link>
-              </div>
-            </div>
-          </div>
+          </section>
         </SwiperSlide>
         <SwiperSlide className={TeamSliderStyle.right_slider_item}>
           <div>
@@ -237,11 +187,11 @@ const TeamSlider = () => {
               alt=""
             />
           </div>
-          <div>
-            <h4 className={TeamSliderStyle.right_slider_item_name}>
+          <section>
+            <h1 className={TeamSliderStyle.right_slider_item_name}>
               Due Stive
-            </h4>
-            <h5 className={TeamSliderStyle.right_slider_item_title}>Founder</h5>
+            </h1>
+            <h1 className={TeamSliderStyle.right_slider_item_title}>Founder</h1>
             <p className={TeamSliderStyle.right_slider_item_description}>
               Lorem Ipsum is simply dummy text of the printing and typeseing
               industry rem Ipsum has been the industrys standard dummy
@@ -276,7 +226,7 @@ const TeamSlider = () => {
                 </Link>
               </div>
             </div>
-          </div>
+          </section>
         </SwiperSlide>
         <SwiperSlide className={TeamSliderStyle.right_slider_item}>
           <div>
@@ -286,11 +236,11 @@ const TeamSlider = () => {
               alt=""
             />
           </div>
-          <div>
-            <h4 className={TeamSliderStyle.right_slider_item_name}>
+          <section>
+            <h1 className={TeamSliderStyle.right_slider_item_name}>
               Due Stive
-            </h4>
-            <h5 className={TeamSliderStyle.right_slider_item_title}>Founder</h5>
+            </h1>
+            <h1 className={TeamSliderStyle.right_slider_item_title}>Founder</h1>
             <p className={TeamSliderStyle.right_slider_item_description}>
               Lorem Ipsum is simply dummy text of the printing and typeseing
               industry rem Ipsum has been the industrys standard dummy
@@ -325,7 +275,56 @@ const TeamSlider = () => {
                 </Link>
               </div>
             </div>
+          </section>
+        </SwiperSlide>
+        <SwiperSlide className={TeamSliderStyle.right_slider_item}>
+          <div>
+            <Image
+              src="http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/team-3.png"
+              layout="fill"
+              alt=""
+            />
           </div>
+          <section>
+            <h1 className={TeamSliderStyle.right_slider_item_name}>
+              Due Stive
+            </h1>
+            <h1 className={TeamSliderStyle.right_slider_item_title}>Founder</h1>
+            <p className={TeamSliderStyle.right_slider_item_description}>
+              Lorem Ipsum is simply dummy text of the printing and typeseing
+              industry rem Ipsum has been the industrys standard dummy
+            </p>
+            <div
+              className={
+                TeamSliderStyle.right_slider_item_social_icons_container
+              }
+            >
+              <div className={TeamSliderStyle.icon}>
+                <Link href="/facebook" passHref>
+                  <FontAwesomeIcon
+                    className={TeamSliderStyle.icon_item}
+                    icon={faFacebookF}
+                  />
+                </Link>
+              </div>
+              <div className={TeamSliderStyle.icon}>
+                <Link href="/twitter" passHref>
+                  <FontAwesomeIcon
+                    className={TeamSliderStyle.icon_item}
+                    icon={faTwitter}
+                  />
+                </Link>
+              </div>
+              <div className={TeamSliderStyle.icon}>
+                <Link href="/googleplus" passHref>
+                  <FontAwesomeIcon
+                    className={TeamSliderStyle.icon_item}
+                    icon={faGooglePlusG}
+                  />
+                </Link>
+              </div>
+            </div>
+          </section>
         </SwiperSlide>
         <div className={TeamSliderStyle.navigation_buttons}>
           <button ref={prevRef} aria-label="Previous slider">
@@ -342,7 +341,7 @@ const TeamSlider = () => {
           </button>
         </div>
       </Swiper>
-    </div>
+    </section>
   );
 };
 

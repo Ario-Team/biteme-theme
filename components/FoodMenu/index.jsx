@@ -46,6 +46,7 @@ const FoodMenu = ({ list }) => {
   return (
     <InView
       className={FoodMenuStyles.container}
+      as="section"
       onChange={animationController}
       threshold={[0.05, 0.4]}
     >
@@ -122,7 +123,7 @@ const FoodMenu = ({ list }) => {
                         <div className={FoodMenuStyles.menu_right_items}>
                           {value.foods.map((food, foodKey) => {
                             return (
-                              <div
+                              <section
                                 key={foodKey}
                                 className={FoodMenuStyles.menu_item}
                               >
@@ -139,11 +140,11 @@ const FoodMenu = ({ list }) => {
                                 <div
                                   className={FoodMenuStyles.menu_item_content}
                                 >
-                                  <h4
+                                  <h1
                                     className={FoodMenuStyles.menu_item_title}
                                   >
                                     {food.title}
-                                  </h4>
+                                  </h1>
                                   <div
                                     className={FoodMenuStyles.menu_item_price}
                                   >
@@ -157,7 +158,7 @@ const FoodMenu = ({ list }) => {
                                     {food.description}
                                   </p>
                                 </div>
-                              </div>
+                              </section>
                             );
                           })}
                         </div>

@@ -2,7 +2,6 @@ import CustomersStyle from "styles/components/Customers/Customers.module.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Pagination, Autoplay } from "swiper";
 import Image from "next/image";
-import { useEffect, createRef } from "react";
 
 SwiperCore.use([Pagination, Autoplay]);
 
@@ -10,9 +9,8 @@ SwiperCore.use([Pagination, Autoplay]);
 import headingElementPicture from "/public/images/aboutus/heading-element.png";
 
 export default function Customers() {
-  const sliderRef = createRef();
   return (
-    <div className={CustomersStyle.container}>
+    <section className={CustomersStyle.container}>
       {/* Title */}
       <h2 className={CustomersStyle.first_heading}>Our customer says</h2>
       <h1 className={CustomersStyle.last_heading}>testimonial</h1>
@@ -37,7 +35,7 @@ export default function Customers() {
       >
         {/* Sliders*/}
         <SwiperSlide className={CustomersStyle.item}>
-          <div className={CustomersStyle.item_child}>
+          <section className={CustomersStyle.item_child}>
             {/*Customer picture*/}
             <figure className={CustomersStyle.item_image}>
               <Image
@@ -54,13 +52,13 @@ export default function Customers() {
               Loremsimply
             </p>
             {/* Title */}
-            <h5 className={CustomersStyle.item_title}>Monster Dustinegre</h5>
+            <h1 className={CustomersStyle.item_title}>Monster Dustinegre</h1>
             {/* Desription */}
-            <h6 className={CustomersStyle.item_last_title}>MD, Envato</h6>
-          </div>
+            <h2 className={CustomersStyle.item_last_title}>MD, Envato</h2>
+          </section>
         </SwiperSlide>
         <SwiperSlide className={CustomersStyle.item}>
-          <div className={CustomersStyle.item_child}>
+          <section className={CustomersStyle.item_child}>
             <figure className={CustomersStyle.item_image}>
               <Image
                 src="http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/testimonial-user-2.png"
@@ -74,12 +72,12 @@ export default function Customers() {
               try Lorem Ipsum has een the indus try&apos;s standard dummy text
               Loremsimply
             </p>
-            <h5 className={CustomersStyle.item_title}>Monster Dustinegre</h5>
-            <h6 className={CustomersStyle.item_last_title}>MD, Envato</h6>
-          </div>
+            <h1 className={CustomersStyle.item_title}>Monster Dustinegre</h1>
+            <h2 className={CustomersStyle.item_last_title}>MD, Envato</h2>
+          </section>
         </SwiperSlide>
         <SwiperSlide className={CustomersStyle.item}>
-          <div className={CustomersStyle.item_child}>
+          <section className={CustomersStyle.item_child}>
             <figure className={CustomersStyle.item_image}>
               <Image
                 src="http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/testimonial-user-2.png"
@@ -93,12 +91,12 @@ export default function Customers() {
               try Lorem Ipsum has een the indus try&apos;s standard dummy text
               Loremsimply
             </p>
-            <h5 className={CustomersStyle.item_title}>Monster Dustinegre</h5>
-            <h6 className={CustomersStyle.item_last_title}>MD, Envato</h6>
-          </div>
+            <h1 className={CustomersStyle.item_title}>Monster Dustinegre</h1>
+            <h2 className={CustomersStyle.item_last_title}>MD, Envato</h2>
+          </section>
         </SwiperSlide>
         <SwiperSlide className={CustomersStyle.item}>
-          <div className={CustomersStyle.item_child}>
+          <section className={CustomersStyle.item_child}>
             <figure className={CustomersStyle.item_image}>
               <Image
                 src="http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/testimonial-user-2.png"
@@ -112,12 +110,12 @@ export default function Customers() {
               try Lorem Ipsum has een the indus try&apos;s standard dummy text
               Loremsimply
             </p>
-            <h5 className={CustomersStyle.item_title}>Monster Dustinegre</h5>
-            <h6 className={CustomersStyle.item_last_title}>MD, Envato</h6>
-          </div>
+            <h1 className={CustomersStyle.item_title}>Monster Dustinegre</h1>
+            <h2 className={CustomersStyle.item_last_title}>MD, Envato</h2>
+          </section>
         </SwiperSlide>
         <SwiperSlide className={CustomersStyle.item}>
-          <div className={CustomersStyle.item_child}>
+          <section className={CustomersStyle.item_child}>
             <figure className={CustomersStyle.item_image}>
               <Image
                 src="http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/testimonial-user-2.png"
@@ -131,12 +129,12 @@ export default function Customers() {
               try Lorem Ipsum has een the indus try&apos;s standard dummy text
               Loremsimply
             </p>
-            <h5 className={CustomersStyle.item_title}>Monster Dustinegre</h5>
-            <h6 className={CustomersStyle.item_last_title}>MD, Envato</h6>
-          </div>
+            <h1 className={CustomersStyle.item_title}>Monster Dustinegre</h1>
+            <h2 className={CustomersStyle.item_last_title}>MD, Envato</h2>
+          </section>
         </SwiperSlide>
         <SwiperSlide className={CustomersStyle.item}>
-          <div className={CustomersStyle.item_child}>
+          <section className={CustomersStyle.item_child}>
             <figure className={CustomersStyle.item_image}>
               <Image
                 src="http://kalanidhithemes.com/live-preview/landing-page/BiteMe/html/black-version/images/testimonial-user-2.png"
@@ -150,11 +148,11 @@ export default function Customers() {
               try Lorem Ipsum has een the indus try&apos;s standard dummy text
               Loremsimply
             </p>
-            <h5 className={CustomersStyle.item_title}>Monster Dustinegre</h5>
-            <h6 className={CustomersStyle.item_last_title}>MD, Envato</h6>
-          </div>
+            <h1 className={CustomersStyle.item_title}>Monster Dustinegre</h1>
+            <h2 className={CustomersStyle.item_last_title}>MD, Envato</h2>
+          </section>
         </SwiperSlide>
       </Swiper>
-    </div>
+    </section>
   );
 }

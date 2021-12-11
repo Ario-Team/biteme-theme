@@ -12,7 +12,7 @@ import specialMenuTwoBackground from "/public/images/OfferBox/special-menu-img2.
 
 const OfferBox = () => {
   return (
-    <div className={OfferBoxStyles.main_container}>
+    <section className={OfferBoxStyles.main_container}>
       <div className={OfferBoxStyles.container}>
         {/* H2 */}
         <h2>Hot offer</h2>
@@ -32,10 +32,10 @@ const OfferBox = () => {
           {/* Content */}
           <div>
             <div>
-              <div>
-                <h3 className={OfferBoxStyles.offerbox_heading3}>
+              <section>
+                <h1 className={OfferBoxStyles.offerbox_heading3}>
                   Italian pizza
-                </h3>
+                </h1>
                 <div className={OfferBoxStyles.discount_percent}>40% Off</div>
                 <div className={OfferBoxStyles.price}>
                   <span>$40</span>
@@ -61,7 +61,7 @@ const OfferBox = () => {
                     alt=""
                   />
                 </figure>
-              </div>
+              </section>
             </div>
           </div>
           {/* Image left */}
@@ -86,7 +86,7 @@ const OfferBox = () => {
           </figure>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

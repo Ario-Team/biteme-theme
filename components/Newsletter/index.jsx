@@ -16,7 +16,7 @@ import headingElementPicture from "/public/images/aboutus/heading-element.png";
 
 const Newsletter = () => {
   return (
-    <div className={NewsletterStyles.container}>
+    <section className={NewsletterStyles.container}>
       <h2 className={NewsletterStyles.heading2}>Be updated</h2>
       <h1 className={NewsletterStyles.heading1}>Subscribe us</h1>
       <figure className={NewsletterStyles.sub_image_container}>
@@ -102,7 +102,7 @@ const Newsletter = () => {
         </p>
         <Link href="/">Ario Team</Link>
       </div>
-    </div>
+    </section>
   );
 };
 

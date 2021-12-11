@@ -13,7 +13,7 @@ import headingElementPicture from "/public/images/aboutus/heading-element.png";
 const Team = () => {
   return (
     <InView
-      as="div"
+      as="section"
       threshold={[0.05, 0.4]}
       className={TeamStyles.container}
       onChange={animationController}

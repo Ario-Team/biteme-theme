@@ -89,7 +89,7 @@ const AboutUs = () => {
         </div>
         <div className={AboutUsStyles.badge_boxes}>
           <Link href="/delivery" passHref={true}>
-            <div className={AboutUsStyles.badge_item}>
+            <section className={AboutUsStyles.badge_item}>
               <figure className={AboutUsStyles.badge_item_icon}>
                 <Image
                   className={AboutUsStyles.badge_img}
@@ -99,11 +99,11 @@ const AboutUs = () => {
                   alt=""
                 />
               </figure>
-              <h5 className={AboutUsStyles.badge_item_title}>Free delivery</h5>
-            </div>
+              <h1 className={AboutUsStyles.badge_item_title}>Free delivery</h1>
+            </section>
           </Link>
           <Link href="/coocked" passHref={true}>
-            <div className={AboutUsStyles.badge_item}>
+            <section className={AboutUsStyles.badge_item}>
               <figure className={AboutUsStyles.badge_item_icon}>
                 <Image
                   className={AboutUsStyles.badge_img}
@@ -113,11 +113,11 @@ const AboutUs = () => {
                   alt=""
                 />
               </figure>
-              <h5 className={AboutUsStyles.badge_item_title}>Freshly cooked</h5>
-            </div>
+              <h1 className={AboutUsStyles.badge_item_title}>Freshly cooked</h1>
+            </section>
           </Link>
           <Link href="/support" passHref={true}>
-            <div className={AboutUsStyles.badge_item}>
+            <section className={AboutUsStyles.badge_item}>
               <figure className={AboutUsStyles.badge_item_icon}>
                 <Image
                   className={AboutUsStyles.badge_img}
@@ -127,10 +127,10 @@ const AboutUs = () => {
                   alt=""
                 />
               </figure>
-              <h5 className={AboutUsStyles.badge_item_title}>
+              <h1 className={AboutUsStyles.badge_item_title}>
                 24 Hourse support
-              </h5>
-            </div>
+              </h1>
+            </section>
           </Link>
         </div>
       </div>

@@ -9,7 +9,7 @@ import headingElementPicture from "/public/images/aboutus/heading-element.png";
 
 const Catering = () => {
   return (
-    <div className={CateringStyles.container}>
+    <section className={CateringStyles.container}>
       <section className={CateringStyles.content_container}>
         <div className={CateringStyles.content}>
           <h2 className={CateringStyles.heading2}>For your special day</h2>
@@ -35,7 +35,7 @@ const Catering = () => {
           </Link>
         </div>
       </section>
-    </div>
+    </section>
   );
 };
 

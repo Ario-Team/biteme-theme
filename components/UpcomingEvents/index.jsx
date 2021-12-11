@@ -6,7 +6,7 @@ import { faMapMarker, faClock } from "@fortawesome/free-solid-svg-icons";
 
 const UpcomingEvents = () => {
   return (
-    <div className={UpcomingEventsStyle.container}>
+    <section className={UpcomingEventsStyle.container}>
       <h2 className={UpcomingEventsStyle.heading2}>Enjoy our</h2>
       <h1 className={UpcomingEventsStyle.heading1}>Upcoming Events</h1>
       <div
@@ -28,9 +28,9 @@ const UpcomingEvents = () => {
             </div>
           </figure>
           <Link href="/events/newYear" passHref>
-            <h3 className={UpcomingEventsStyle.event_title}>
+            <h1 className={UpcomingEventsStyle.event_title}>
               New year party with DJ
-            </h3>
+            </h1>
           </Link>
           <ul className={UpcomingEventsStyle.event_address_time}>
             <li className={UpcomingEventsStyle.event_address}>
@@ -64,9 +64,9 @@ const UpcomingEvents = () => {
             </div>
           </figure>
           <Link href="/events/newYear" passHref>
-            <h3 className={UpcomingEventsStyle.event_title}>
+            <h1 className={UpcomingEventsStyle.event_title}>
               DJ &#38; Dance Party
-            </h3>
+            </h1>
           </Link>
           <ul className={UpcomingEventsStyle.event_address_time}>
             <li className={UpcomingEventsStyle.event_address}>
@@ -86,7 +86,7 @@ const UpcomingEvents = () => {
           </Link>
         </section>
       </div>
-    </div>
+    </section>
   );
 };
 

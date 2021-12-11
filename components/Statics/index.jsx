@@ -18,7 +18,7 @@ import animationThreePicture from "/public/images/Statics/stats-elements-3.png";
 const Statics = () => {
   return (
     <InView
-      as="div"
+      as="section"
       className={StaticsStyle.container}
       threshold={[0.05]}
       onChange={animationController}

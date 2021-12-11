@@ -29,7 +29,7 @@ const Header = () => {
     });
   }, []);
   return (
-    <div className={HeaderStyle.header} onScroll={setStikyNav} ref={main}>
+    <section className={HeaderStyle.header} onScroll={setStikyNav} ref={main}>
       <Slider />
       <div className={HeaderStyle.head_top}>
         <div className={HeaderStyle.headtop_left}>
@@ -93,7 +93,7 @@ const Header = () => {
           </nav>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

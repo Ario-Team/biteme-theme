@@ -16,7 +16,7 @@ import headingElementPicture from "/public/images/aboutus/heading-element.png";
 const ContactUs = () => {
   return (
     <InView
-      as="div"
+      as="section"
       onChange={animationController}
       threshold={[0.05, 0.4]}
       className={ContactUsStyle.container}
@@ -45,7 +45,7 @@ const ContactUs = () => {
           </figure>
         </div>
       </div>
-      <div className={ContactUsStyle.form_container}>
+      <section className={ContactUsStyle.form_container}>
         <div className={ContactUsStyle.form}>
           <h2 className={ContactUsStyle.heading2}>Contact us</h2>
           <h1 className={ContactUsStyle.heading1}>Reach to us</h1>
@@ -58,7 +58,7 @@ const ContactUs = () => {
               alt="Heading element"
             />
           </figure>
-          <h4 className={ContactUsStyle.heading4}>Opening hours</h4>
+          <h1 className={ContactUsStyle.heading4}>Opening hours</h1>
           <div className={ContactUsStyle.times_container}>
             <div className={ContactUsStyle.time_container}>
               <p>Mon - Thu</p>
@@ -73,7 +73,7 @@ const ContactUs = () => {
               </div>
             </div>
           </div>
-          <h4 className={ContactUsStyle.heading4}>Contact info</h4>
+          <h2 className={ContactUsStyle.heading4}>Contact info</h2>
           <div className={ContactUsStyle.contact_info_container}>
             <div>
               <div className={ContactUsStyle.contact_info_item}>
@@ -114,7 +114,7 @@ const ContactUs = () => {
           </div>
         </div>
         {/* <div className={ContactUsStyle.map}></div> */}
-      </div>
+      </section>
     </InView>
   );
 };
