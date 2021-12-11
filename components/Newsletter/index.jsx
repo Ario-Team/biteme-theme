@@ -45,7 +45,7 @@ const Newsletter = () => {
           <button
             className={NewsletterStyles.submit_button}
             type="submit"
-            name="Submit the newsletter"
+            aria-label="Submit the newsletter"
           >
             <FontAwesomeIcon
               className={NewsletterStyles.social_icon_svg}
