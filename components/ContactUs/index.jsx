@@ -78,7 +78,7 @@ const ContactUs = () => {
                   icon={faMapMarkerAlt}
                   color="#deb150"
                 />
-                <p>3750, Foody Hill, Washindont, DC 59870</p>
+                <p className={ContactUsStyle.contact_info_paragraph}>3750, Foody Hill, Washindont, DC 59870</p>
               </div>
             </div>
             <div>
@@ -88,7 +88,7 @@ const ContactUs = () => {
                   icon={faPhoneSquare}
                   color="#deb150"
                 />
-                <p>+1 123 456 7890 • +1 987 654 3210</p>
+                <p className={ContactUsStyle.contact_info_paragraph}>+1 123 456 7890 • +1 987 654 3210</p>
               </div>
             </div>
             <div>
@@ -98,7 +98,7 @@ const ContactUs = () => {
                   icon={faEnvelope}
                   color="#deb150"
                 />
-                <p>contact@Restaurantname.com</p>
+                <p className={ContactUsStyle.contact_info_paragraph}>contact@Restaurantname .com</p>
               </div>
             </div>
           </div>

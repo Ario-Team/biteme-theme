@@ -1,0 +1,12 @@
+@media only screen and (min-width: 576px) {
+  .container {
+    padding: 8vh 0 4vh 0;
+  }
+  .social_icon {
+    width: 55px;
+    height: 55px;
+  }
+  .social_icon > svg {
+    font-size: 21px !important;
+  }
+}
