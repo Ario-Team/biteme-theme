@@ -40,7 +40,6 @@ export default function Home({ foodList, galleryData }) {
       <Head>
         <title>Biteme | Home</title>
       </Head>
-      <h1>Hello World Mohammad from sublime text</h1>
       <Header />
       <AboutUs />
       <OfferBox />
