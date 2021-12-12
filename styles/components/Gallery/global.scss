@@ -116,7 +116,7 @@
   transition: 400ms ease;
 }
 
-.gallery_item:hover div,
+.gallery_item:hover section,
 .gallery_item:hover figure::before {
   opacity: 1;
 }
@@ -176,6 +176,7 @@
   color: #ffffff;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .gallery_item_slider_icon > svg {
