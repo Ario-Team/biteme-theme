@@ -1,6 +1,6 @@
-export default function setStikyNav(element, mainElement, window, nav) {
+export default function setStikyNav(element, window, nav) {
   const windowY = window.scrollY;
-  const navY = mainElement.dataset.initOffset;
+  const navY = nav.scrollHeight;
   if (windowY >= navY) {
     nav.classList.add("stiky");
   } else {

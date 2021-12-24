@@ -1,0 +1,18 @@
+@media screen and (min-width: 1201px) {
+  .head_bottom {
+    z-index: 3;
+  }
+  .head_logo {
+    flex: 0 0 16.5%;
+  }
+  .head_logo > div {
+    width: 168px;
+    height: 55px;
+  }
+  .head_menu {
+    flex: 0 0 41.5%;
+  }
+  .head_menu > nav > ul > li {
+    font-size: 12px;
+  }
+}

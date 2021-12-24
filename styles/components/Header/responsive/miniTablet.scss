@@ -31,19 +31,4 @@
   .headtop_bottom > a:nth-of-type(2) {
     font-size: 13px;
   }
-  .head_bottom {
-    height: 86px;
-    align-items: center;
-    z-index: 3;
-  }
-  .head_logo {
-    flex: 0 0 30.5%;
-    justify-content: right;
-    padding-left: 0px;
-    z-index: 3;
-  }
-  .head_logo > div {
-    width: 150px;
-    height: 50px;
-  }
-  }
+}

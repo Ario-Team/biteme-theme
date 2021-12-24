@@ -1,0 +1,15 @@
+@media screen and (min-width: 1440px) {
+  .head_logo {
+    flex: 0 0 23.5%;
+  }
+  .head_logo > span > img {
+    width: 168px;
+    height: 55px;
+  }
+  .head_menu {
+    flex: 0 0 35%;
+  }
+  .head_menu > nav > ul > li {
+    font-size: 12px;
+  }
+}

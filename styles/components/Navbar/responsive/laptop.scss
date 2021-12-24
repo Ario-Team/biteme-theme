@@ -1,0 +1,47 @@
+@media screen and (min-width: 993px) {
+  .head_bottom {
+    visibility: visible;
+    height: 71px;
+    font-size: 13px;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 3;
+  }
+  .head_logo {
+    flex: 0 0 18.5%;
+  }
+  .head_logo > div {
+    width: 168px;
+    height: 55px;
+  }
+  .head_menu {
+    flex: 0 0 51.5%;
+    z-index: 3;
+    height: 100%;
+    align-items: center;
+    position: relative;
+    visibility: visible;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .head_menu > nav {
+    display: block;
+    width: 100%;
+    position: absolute;
+    border: none;
+  }
+  .head_menu > nav > ul {
+    grid-template-columns: 15% 15% 15% 15% 15% 15% 15%;
+  }
+  .head_menu > nav > ul > li {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: sans-serif;
+    width: auto;
+  }
+
+  .navbar_toggle_menu {
+    display: none;
+  }
+}

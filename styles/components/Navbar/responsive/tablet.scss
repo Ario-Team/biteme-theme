@@ -1,0 +1,12 @@
+@media screen and (min-width: 768px) {
+  .head_bottom {
+    height: 71px;
+  }
+  .head_logo {
+    flex: 0 0 25%;
+  }
+  .head_logo > div {
+    width: 168px;
+    height: 55px;
+  }
+}
