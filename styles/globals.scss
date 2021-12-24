@@ -72,3 +72,11 @@ a:visited {
   animation-duration: 400ms;
   background-color: rgba(0, 0, 0, 0.8) !important;
 }
+
+.container {
+  background-image: url(/images/aboutus/body-bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+}
