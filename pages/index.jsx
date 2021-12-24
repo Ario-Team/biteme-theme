@@ -3,7 +3,6 @@ import indexStyles from "styles/pages/index.module.scss";
 import dynamic from "next/dynamic";
 import Header from "components/Header";
 import foodList from "../fakeData/foodMenuData";
-import { useEffect, useState } from "react";
 import getGalleryData from "functions/getGalleryData";
 
 const AboutUs = dynamic(() => import("components/AboutUs"));
