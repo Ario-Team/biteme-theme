@@ -1,12 +1,29 @@
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import ButtonStyles from "styles/components/ScroolUpButton/ScroolUpButton.module.scss";
 
-const ScrollUpButton = ({ visible }) => {
+const ScrollUpButton = () => {
+  // Visibile status
+  const [scrollButtonVisible, setScrollButtonVisible] = useState(false);
+  // Button ref
   const buttonRef = useRef(null);
+  // When mounted detect status
   useEffect(() => {
-    if (visible) {
+    window.onscroll = () => {
+      if (
+        document.body.scrollTop > 40 ||
+        document.documentElement.scrollTop > 40
+      ) {
+        setScrollButtonVisible(true);
+      } else {
+        setScrollButtonVisible(false);
+      }
+    };
+  }, []);
+  // When button status changed
+  useEffect(() => {
+    if (scrollButtonVisible) {
       if (buttonRef.current) {
         buttonRef.current.style.display = "block";
       }
@@ -15,7 +32,7 @@ const ScrollUpButton = ({ visible }) => {
         buttonRef.current.style.display = "none";
       }
     }
-  }, [visible]);
+  }, [scrollButtonVisible]);
   return (
     <button
       ref={buttonRef}
