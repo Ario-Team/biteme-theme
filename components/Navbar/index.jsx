@@ -7,16 +7,28 @@ import handleMenuAnimation from "./utils/handleMenuAnimation";
 import setStikyNav from "./utils/setStikyNav";
 import windowResize from "./utils/windowResize";
 
-export default function Navbar() {
-  const headbottom = useRef();
+export default function Navbar({ customStyles }) {
+  // Navbar ref
+  const navbarRef = useRef(null);
+  // Initilize the functions on the mount
   useEffect(() => {
     window.addEventListener("resize", windowResize);
     window.addEventListener("scroll", (e) => {
-      setStikyNav(e, window, headbottom.current);
+      setStikyNav(e, window, navbarRef.current);
     });
+    // Unmount
+    return () => {
+      window.onresize = null;
+      window.onscroll = null;
+    };
   }, []);
   return (
-    <div id="head_bottom" className={NavbarStyle.head_bottom} ref={headbottom}>
+    <div
+      id="head_bottom"
+      style={customStyles ? customStyles : null}
+      className={NavbarStyle.head_bottom}
+      ref={navbarRef}
+    >
       <div className={NavbarStyle.head_logo}>
         <Link href="/" passHref={true}>
           <Image src={logoPicture} width="168px" height="55px" alt="Logo" />
