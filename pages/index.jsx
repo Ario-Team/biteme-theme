@@ -7,7 +7,6 @@ import getGalleryData from "functions/getGalleryData";
 
 const AboutUs = dynamic(() => import("components/AboutUs"));
 const OfferBox = dynamic(() => import("components/OfferBox"));
-const FoodMenu = dynamic(() => import("components/FoodMenu"));
 const PapularDishes = dynamic(() => import("components/PapularDishes"));
 const BookTable = dynamic(() => import("components/BookTable"));
 const Team = dynamic(() => import("components/Team"));
@@ -29,7 +28,6 @@ export default function Home({ foodList, galleryData }) {
       <Header />
       <AboutUs />
       <OfferBox />
-      <FoodMenu list={foodList} />
       <PapularDishes />
       <BookTable />
       <Team />
