@@ -22,19 +22,6 @@ const Newsletter = dynamic(() => import("components/Newsletter"));
 const ScrollUpButton = dynamic(() => import("components/ScrollUpButton"));
 
 export default function Home({ foodList, galleryData }) {
-  const [scrollButtonVisible, setScrollButtonVisible] = useState(false);
-  useEffect(() => {
-    window.onscroll = () => {
-      if (
-        document.body.scrollTop > 40 ||
-        document.documentElement.scrollTop > 40
-      ) {
-        setScrollButtonVisible(true);
-      } else {
-        setScrollButtonVisible(false);
-      }
-    };
-  }, []);
   return (
     <main className={indexStyles.container}>
       <Head>
@@ -54,7 +41,7 @@ export default function Home({ foodList, galleryData }) {
       <UpcomingEvents />
       <ContactUs />
       <Newsletter />
-      <ScrollUpButton visible={scrollButtonVisible} />
+      <ScrollUpButton />
     </main>
   );
 }
