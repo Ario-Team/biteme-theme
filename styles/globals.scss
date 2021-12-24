@@ -10,15 +10,12 @@ p {
   font-family: "Montserrat", sans-serif;
 }
 
-/* html,
+html,
 body,
 #__next {
-    display: block;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-} */
+  width: 100%;
+  height: 100%;
+}
 
 *,
 *::before,
@@ -79,4 +76,5 @@ a:visited {
   background-attachment: fixed;
   background-size: cover;
   overflow: hidden;
+  width: 100%;
 }
