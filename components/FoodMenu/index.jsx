@@ -164,14 +164,12 @@ const FoodMenu = ({ list }) => {
                           })}
                         </div>
                       </div>
-                      );
                     </>
                   );
                 })
               }
             </div>
           </div>
-          {/* Menu Items */}
         </div>
       </div>
     </InView>
