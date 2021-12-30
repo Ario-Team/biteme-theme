@@ -18,6 +18,7 @@ export default function Slider() {
       navigation
       pagination={{ clickable: true }}
       scrollbar
+      speed="0.5s"
     >
       <SwiperSlide
         style={{
