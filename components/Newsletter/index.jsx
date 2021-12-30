@@ -14,9 +14,10 @@ import {
 // Import static images
 import headingElementPicture from "/public/images/aboutus/heading-element.png";
 
-const Newsletter = () => {
+const Newsletter = ({signupBox}) => {
   return (
     <section className={NewsletterStyles.container}>
+      {signupBox ? <>
       <h2 className={NewsletterStyles.heading2}>Be updated</h2>
       <h1 className={NewsletterStyles.heading1}>Subscribe us</h1>
       <figure className={NewsletterStyles.sub_image_container}>
@@ -33,7 +34,7 @@ const Newsletter = () => {
         <br />
         Gift voucher by StartLorem Ipsum is simply dummy
       </p>
-      <form className={NewsletterStyles.form}>
+       <form className={NewsletterStyles.form}>
         <div className={NewsletterStyles.email_container}>
           <input
             className={NewsletterStyles.email_input}
@@ -53,7 +54,7 @@ const Newsletter = () => {
             />
           </button>
         </div>
-      </form>
+      </form></> : ""}
       <div className={NewsletterStyles.social_icon_container}>
         <Link href="/facebook" passHref>
           <div className={NewsletterStyles.social_icon}>

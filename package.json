@@ -34,6 +34,7 @@
     "swiper": "^7.2.0"
   },
   "devDependencies": {
+    "eslint": "^8.5.0",
     "eslint-config-next": "12.0.2",
     "prettier": "^2.4.1"
   }

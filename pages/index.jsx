@@ -37,7 +37,7 @@ export default function Home({ foodList, galleryData }) {
       <Gallery gallery={galleryData} />
       <UpcomingEvents />
       <ContactUs />
-      <Newsletter />
+      <Newsletter signupBox />
       <ScrollUpButton />
     </main>
   );
