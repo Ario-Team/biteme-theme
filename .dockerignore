@@ -1,0 +1,7 @@
+.github
+.next
+.vscode
+README.md
+yarn.lock
+package-lock.json
+node_modules

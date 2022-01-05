@@ -7,7 +7,8 @@ export default async function getGalleryData() {
       }
     )
       .then((res) => res.json())
-      .then((json) => json);
-    resolve(sliderShowsJson[0].galleryData);
+      .then((json) => json)
+      .catch((error) => null);
+    resolve(sliderShowsJson ? sliderShowsJson[0].galleryData : []);
   });
 }
